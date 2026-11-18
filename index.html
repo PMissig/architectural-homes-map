@@ -393,7 +393,7 @@ function notifyForm(el,h){
      <p class="msg" aria-live="polite"></p>
    </form>`;
   const f=el.querySelector("form"),msg=f.querySelector(".msg");
-  const relayout=()=>{const m=markers.get(h.id);m&&m.getPopup()&&m.getPopup().update();};
+  const relayout=()=>{const m=markers.get(h.id),p=m&&m.getPopup();if(p&&p.isOpen()){p._updateLayout();p._updatePosition();p._adjustPan&&p._adjustPan();}}; // reflow only: update() would re-run card() and wipe the form
   f.querySelector('[data-act="cancel"]').onclick=()=>{const fresh=card(h);el.replaceWith(fresh);relayout();};
   relayout();f.querySelector("input").focus();
   f.addEventListener("submit",async e=>{
