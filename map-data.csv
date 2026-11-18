@@ -1,0 +1,614 @@
+id,house,architect,area,status,lost_note,designation,for_sale,listing_url,architect_page_url,year,sqft,beds,baths,units,lat,lon
+h001,Sprague House,A. A. Sprague,Pasadena,Standing,,,,,,1910,5131,4,5,1,34.1409,-118.1576
+h002,Leavitt House,A. Quincey Jones and Frederick E. Emmons,Glendale,Needs review,,,,,,1999,4255,4,3,1,34.1906,-118.2252
+h003,Jones House and Studio,A. Quincy Jones,Hollywood Hills West,Standing,,,,,,1939,2158,2,2,1,34.1063,-118.3788
+h004,Winans Apartment,A. Quincy Jones,Brentwood,Standing,,,,,,1948,10313,12,14,1,34.0778,-118.4686
+h005,Nordlinger House,A. Quincy Jones,Brentwood,Standing,,,,,,1948,2950,4,4,1,34.075,-118.4669
+h006,national Boulevard Apartments,A. Quincy Jones,Holmby Hills,Standing,,,,,,1950,12488,9,8,1,34.0781,-118.4297
+h007,Garfield Court Apartments,A.J. Waid,East Hollywood,Standing,,,,,,1927,,,,2,34.1061,-118.3112
+h008,Ralphs House,"Ain , Johnson, and Day",Pasadena,Standing,,,,,,1950,3678,6,4,1,34.1595,-118.1741
+h009,Cole House,"Ain , Johnson, and Day",Los Feliz,Standing,,,,,,1948,1285,2,2,1,34.1164,-118.2782
+h010,Avenel Housing,"Ain , Johnson, and Day",Los Angeles,Standing,,National Register of Historic Places No. 05000070,,,,1947,1096,2,1,1,34.1085,-118.2677
+h011,Shairer House,"Ain , Johnson, and Day",Brentwood,Standing,,,,,,1949,3004,7,4,1,34.0553,-118.4704
+h012,Miller House,"Ain , Johnson, and Day",Beverly Hills,Standing,,,,,,1948,3037,3,4,1,34.1004,-118.4039
+h013,Norton House,Alfred Heineman,Pasadena,Standing,,,,,,1905,2390,4,2,1,34.1359,-118.1603
+h014,House,Alfred Heineman,Los Feliz,Standing,,,,,,1918,1988,2,1,1,34.1148,-118.2851
+h015,Siple House,Allen Siple,Los Angeles,Standing,,,,,,1953,2932,2,2,1,34.0865,-118.503
+h016,Clark House,Alson Clark,Pasadena,Standing,,,TRUE,,,1969,2148,2,3,1,34.1327,-118.1759
+h017,Wayne House,Alvin Lustig,Los Angeles,Standing,,,,,,1950,3674,3,3,1,34.0954,-118.3815
+h018,Douroux House,Antoine Predock,Venice,Standing,,,,,,1992,3356,3,3,1,33.9828,-118.4714
+h019,Lanterman House,Arthur L. Haley,La Canada Flintridge,Standing,,National Register of Historic Places No. 94001504,,,,1914,9053,4,3,1,34.205,-118.2073
+h020,"House, circa 1915",Arthur S. Heineman,Redondo Beach,Standing,,,,,,1915,,,,2,33.8331,-118.3892
+h021,"House, circa 1911",Arthur S. Heineman,Pasadena,Standing,,,,,,1913,2695,4,2,1,34.132,-118.1376
+h022,Hindry House,Arthur S. Heineman,Pasadena,Standing,,,,,,1910,6388,7,5,1,34.157,-118.1637
+h023,Pomeroy House,Arthur S. Heineman,Pasadena,Standing,,National Register of Historic Places No. 98000962,,,,1917,6319,4,4,1,34.1237,-118.1337
+h024,Freeman House,Arthur S. Heineman,Pasadena,Standing,,National Register of Historic Places No. 11000654,,,,1913,8129,5,8,1,34.1256,-118.1323
+h025,O'Brien House,Arthur S. Heineman,Pasadena,Standing,,,,,,1909,5412,6,5,1,34.122,-118.1369
+h026,Ross House,Arthur S. Heineman,Pasadena,Standing,,National Register of Historic Places No. 04000325,,,,1911,4657,5,3,1,34.1239,-118.1355
+h027,Rodgers House,Arthur S. Herbergon Jr.,Studio City,Standing,,,,,,1934,6399,5,5,1,34.1421,-118.3976
+h028,Louise Denkin House,B. Cooper Corbett,Los Angeles,Standing,,LA Historic-Cultural Monument No. 591,,,,1913,6168,9,3,1,34.0316,-118.3252
+h029,House,Barcume and King,Hollywood Hills West,Standing,,,,,,1937,1618,4,3,1,34.1228,-118.3641
+h030,Myers House,Barton Myers Associates,Hollywood,Standing,,,,,,1958,3264,4,4,1,34.1106,-118.3375
+h031,Phelps-Simonson House,Barton Phelps and Associates,Beverly Glen,Standing,,,,,,1985,2300,2,3,1,34.0994,-118.4434
+h032,Epstein House,Barton Phelps and Associates,Beverly Hills,Standing,,,,,,1990,3106,4,4,1,34.0978,-118.4227
+h033,Puelicher House,Boyd Georgi,Pasadena,Standing,,,,,,1960,1978,3,2,1,34.1278,-118.173
+h034,Blankenhorn-Lamphear House,Bradbeer and Ferris,Pasadena,Standing,,,,,,1901,3017,6,2,1,34.1319,-118.1591
+h035,Hopper House,Brian Murphy,Venice,Standing,,,,,,1981,,,,3,33.9941,-118.4745
+h036,Paxson House,Buff and Hensman,Eagle Rock,Standing,,,,,,1968,1936,3,3,1,34.1325,-118.2094
+h037,Case Study House #20,"Buff, Straub & Hensman",Altadena,Standing,,National Register of Historic Places No. 13000517,,,,1958,2368,3,3,1,34.1831,-118.1378
+h038,Thompson House,"Buff, Straub & Hensman",San Marino,Standing,,,,,,1959,3322,3,3,1,34.1272,-118.1296
+h039,Forthmann House,Burgess J. Reeve,San Pedro,Standing,,,,,,1939,,,,2,33.7267,-118.2902
+h040,Apartment Building,Carl Kay,East Hollywood,Standing,,,,,,1940,3095,6,6,1,34.1062,-118.298
+h041,Herman House,Carl Louis Maston,Westgate Heights,Standing,,,,,,1978,4578,4,4,1,34.0708,-118.4832
+h042,Chiat House,Carl Maston,South Pasadena,Standing,,,,,,1967,2808,4,3,1,34.1012,-118.1636
+h043,Garden Apartments,Carl Maston,Palms,Standing,,,,,,1954,3229,5,6,1,34.0309,-118.4126
+h044,Hollister House,Chales and Henry Greene,Pasadena,Standing,,,,,,1906,5385,6,6,1,34.1293,-118.1566
+h045,Ware House,Chales and Henry Greene,Pasadena,Standing,,National Register of Historic Places No. 04000015,,,,1913,5444,6,6,1,34.1325,-118.1596
+h046,Phillips House,Chales and Henry Greene,Pasadena,Standing,,,,,,1907,4485,5,4,1,34.1333,-118.16
+h047,De Forest House,Chales and Henry Greene,Pasadena,Standing,,,,,,1910,2488,2,2,1,34.1363,-118.1595
+h048,Freeman Ford House,Chales and Henry Greene,Pasadena,Standing,,,,,,1908,6790,6,5,1,34.1423,-118.1646
+h049,Robinson House,Chales and Henry Greene,Pasadena,Standing,,,,,,1906,8054,4,4,1,34.1435,-118.1631
+h050,Bolton House,Chales and Henry Greene,Pasadena,Standing,,National Register of Historic Places No. 80004491,,,,1917,5725,6,7,1,34.1403,-118.1567
+h051,Eames House and Studio,Chales and Ray Eames,Pacific Palisades,Standing,,LA Historic-Cultural Monument No. 381; National Register of Historic Places No. 06000978,,,,1949,,,,4,34.0294,-118.5172
+h052,Burns House,Chales W. Moore,Santa Monica,Standing,,,,,,1974,2017,2,2,1,34.031,-118.5144
+h053,Abel House,Chales W. Moore,Santa Monica,Standing,,,,,,1978,4551,5,5,1,34.0439,-118.5111
+h054,James A. Culbertson House,Charles and Henry Greene,San Pedro,Standing,,,,,,1896,,,,2,33.7443,-118.2888
+h055,Brandt-Serrurier House,Charles and Henry Greene,Altadena,Lost,Lost in the January 2025 Eaton Fire,,,,,1905,1322,3,2,1,34.1866,-118.1275
+h056,Bowen House,Charles and Henry Greene,Altadena,Lost,Lost in the January 2025 Eaton Fire,,,,,1908,3496,3,3,1,34.1861,-118.1396
+h057,Sanborn House,Charles and Henry Greene,Pasadena,Standing,,,,,,1905,6307,14,4,1,34.1458,-118.1299
+h058,Crow-Crocker House,Charles and Henry Greene,Pasadena,Standing,,,,,,1908,3168,4,3,1,34.1293,-118.1353
+h059,E. J. Blacker House,Charles and Henry Greene,Pasadena,Standing,,,,,,1911,4219,7,3,1,34.1332,-118.1372
+h060,Mervin House,Charles and Henry Greene,Pasadena,Standing,,National Register of Historic Places No. 12001164,,,,1905,3843,5,3,1,34.125,-118.1575
+h061,Halsted House,Charles and Henry Greene,Pasadena,Standing,,,,,,1901,3806,5,5,1,34.1478,-118.1635
+h062,Van Rossem House,Charles and Henry Greene,Pasadena,Standing,,,,,,1906,2968,4,2,1,34.1499,-118.161
+h063,Duncan-Irwin House,Charles and Henry Greene,Pasadena,Standing,,,,,,1906,5964,8,8,1,34.1514,-118.1627
+h064,Chales Sumner Greene House,Charles and Henry Greene,Pasadena,Standing,,,,,,1902,4138,7,4,1,34.1515,-118.1614
+h065,White Sisters House,Charles and Henry Greene,Pasadena,Standing,,,,,,1902,2637,4,4,1,34.152,-118.1631
+h066,Van Rossem-Neill House,Charles and Henry Greene,Pasadena,Standing,,,,,,1908,3076,5,3,1,34.1498,-118.1598
+h067,Hawks House,Charles and Henry Greene,Pasadena,Standing,,,,,,1905,3398,4,3,1,34.1517,-118.1633
+h068,Willet House,Charles and Henry Greene,Pasadena,Standing,,,,,,1908,2855,3,4,1,34.1515,-118.161
+h069,Ranney House,Charles and Henry Greene,Pasadena,Standing,,,,,,1907,3471,5,3,1,34.1497,-118.1595
+h070,Gamble House,Charles and Henry Greene,Pasadena,Standing,,National Register of Historic Places No. 71000155,,,,,,,,1,34.1523,-118.1626
+h071,Cole House,Charles and Henry Greene,Pasadena,Standing,,,,,,1908,5403,,,1,34.1517,-118.1629
+h072,Bentz House,Charles and Henry Greene,Pasadena,Standing,,National Register of Historic Places No. 77000299,,,,1906,3300,5,3,1,34.1557,-118.1635
+h073,R. R. Blacker House,Charles and Henry Greene,Pasadena,Standing,,National Register of Historic Places No. 86000147,,,,1907,7584,6,4,1,34.1267,-118.1323
+h074,Cordelia Culbertson House,Charles and Henry Greene,Pasadena,Standing,,National Register of Historic Places No. 85002198,,,,1912,8559,6,7,1,34.1279,-118.1354
+h075,Spinks House,Charles and Henry Greene,Pasadena,Standing,,,,,,1906,5046,5,3,1,34.1224,-118.1312
+h076,Longley House,Charles and Henry Greene,South Pasadena,Standing,,National Register of Historic Places No. 74000527,,,,1897,4513,5,4,1,34.1193,-118.1548
+h077,Garfield House,Charles and Henry Greene,South Pasadena,Standing,,National Register of Historic Places No. 73000405,,,,1905,4100,5,4,1,34.1206,-118.1552
+h078,Wheeler House,Charles and Henry Greene,Harvard Heights,Standing,,LA Historic-Cultural Monument No. 991,,,,1904,2620,4,3,1,34.0436,-118.3044
+h079,Anthony House,Charles and Henry Greene,Beverly Hills,Standing,,Beverly Hills Landmark No. 14,,,,1907,4565,4,5,1,34.0796,-118.4157
+h080,Witbeck House,Charles and Henry Greene,Santa Monica,Standing,,,,,,1917,4938,7,6,1,34.0223,-118.5062
+h081,Morrell House,Charles E. Shattuck,Highland Park,Standing,,LA Historic-Cultural Monument No. 379,,,,1905,1826,3,2,1,34.1083,-118.2005
+h082,Lindsay House,Charles F. Whittlesey,Los Angeles,Standing,,LA Historic-Cultural Monument No. 496,,,,1909,,,,2,34.0316,-118.3204
+h083,Walker House,Charles F. Whittlesey,Los Angeles,Standing,,LA Historic-Cultural Monument No. 419,,,,1911,52472,46,64,1,34.0312,-118.3195
+h084,Lindsay House,Charles F. Whittlesey,Los Angeles,Standing,,,,,,1912,4956,6,6,1,34.0322,-118.3244
+h085,Willheim House,Charles W. Moore,Sherman Oaks,Standing,,,,,,1981,2173,2,2,1,34.1435,-118.4633
+h086,Rancho Estates,Cliff May Eichler,Long Beach,Standing,,,,,,1970,2162,4,3,1,33.814,-118.0976
+h087,Kubly House,Craig Ellwood,Pasadena,Standing,,,,,,1965,2156,4,2,1,34.1492,-118.1688
+h088,Moore House,Craig Ellwood,Los Feliz,Standing,,,,,,1965,1701,3,2,1,34.1154,-118.2949
+h089,Courtyard Apartments,Craig Ellwood,Hollywood,Standing,,LA Historic-Cultural Monument No. 801,,,,1953,3360,8,4,1,34.1004,-118.3215
+h090,Eltinge House,Craig Ellwood,Silver Lake,Standing,,,,,,1918,5779,4,3,1,34.0927,-118.2597
+h091,Hunt House,Craig Ellwood,Malibu,Standing,,National Register of Historic Places No. 100004118,,,,1957,1335,2,2,1,34.0304,-118.7079
+h092,Anderson House,Craig Ellwood,Santa Monica,Standing,,,,,,1955,1569,2,2,1,34.0401,-118.5125
+h093,Elton House,Craig Ellwood,Santa Monica,Standing,,,,,,1953,2560,3,2,1,34.0401,-118.5169
+h094,Zimmerman House,Craig Ellwood,Brentwood,Standing,,,,,,1950,2770,5,3,1,34.065,-118.4845
+h095,Hale House,Craig Ellwood,Beverly Hills,Standing,,,,,,1951,1852,2,2,1,34.113,-118.4277
+h096,Broughton House,Craig Ellwood,Los Angeles,Standing,,,,,,1949,1827,3,3,1,34.0914,-118.4369
+h097,Case Study House #16,Craig Ellwood,Beverly Glen,Standing,,National Register of Historic Places No. 13000515,,,,1953,1664,2,2,1,34.1016,-118.4519
+h098,Gunther House,D. E. Postle Co,Altadena,Standing,,,,,,1922,5459,3,5,1,34.1848,-118.111
+h099,Smith House,David A. Ogilvie,Pasadena,Standing,,,,,,1929,3793,5,3,1,34.1468,-118.1676
+h100,"House, 1926",David A. Ogilvie,South Pasadena,Standing,,,,,,1925,5264,8,3,1,34.1113,-118.1405
+h101,House,David J. Witmer,Los Feliz,Standing,,,,,,1923,4112,6,5,1,34.1093,-118.2941
+h102,Gerb in California Houses,David Ming-Li Lowe,Sawtelle Japantown,Standing,,,,,,1990,3890,3,3,1,34.0404,-118.4443
+h103,Coffey House,David Serrurier,Alhambra,Standing,,,,,,1956,1664,4,2,1,34.0939,-118.1161
+h104,Naiditch House,Dean Nota,Altadena,Standing,,,,,,1994,2684,3,3,1,34.1969,-118.121
+h105,Lane House,Dennis and Farwell,Hollywood,Needs review,,,,,,1940,26802,10,12,1,34.1028,-118.343
+h106,Janes House,Dennis and Farwell,Hollywood,Needs review,,,,,,1986,12921,,,1,34.1022,-118.3336
+h107,Dennis House,Dennis and Farwell,Westlake,Standing,,LA Historic-Cultural Monument No. 129,,,,1903,4410,5,1,1,34.049,-118.2669
+h108,Martin House,Donald Martin,Eagle Rock,Standing,,,,,,1963,2144,2,3,1,34.1317,-118.209
+h109,Swift House,Donald McMurray,Pasadena,Standing,,,,,,1926,6130,7,5,1,34.1322,-118.1637
+h110,Delores del Rio House,Douglas Honnold,Santa Monica,Standing,,,,,,1930,5284,3,4,1,34.0394,-118.5103
+h111,Rucker House,Douglas W. Rucker,Malibu,Standing,,,,,,1973,,,,2,34.0416,-118.6902
+h112,Toleston House,E. P. Zimmerman,Pasadena,Standing,,,,,,1911,4449,9,3,1,34.1309,-118.1391
+h113,Jevne House,Eager and Eager,Pasadena,Standing,,,,,,1913,,,,2,34.1273,-118.1677
+h114,Apartment Building,Earl D. Stonerod,Harvard Heights,Standing,,,,,,1936,5983,,,1,34.0446,-118.3096
+h115,Sunset Lanai Apartments,Edward Ficket,West Hollywood,Standing,,,,,,1952,23978,,,1,34.0957,-118.3713
+h116,Fire Engine House No. 18,Edward Ficket,Los Angeles,Standing,,LA Historic-Cultural Monument No. 349,,,,,,,,1,34.0318,-118.3088
+h117,House,Edward Richard Lind,Melrose Hill,Standing,,,,,,1938,1462,2,2,1,34.0858,-118.2965
+h118,Fowler House,Edward W. Fowler,Pasadena,Standing,,,,,,1928,4738,6,5,1,34.1479,-118.1677
+h119,Brauch House,Egasse and Brauch,Eagle Rock,Standing,,,,,,1923,2187,4,2,1,34.1432,-118.2181
+h120,Bowen House,Elmer Grey,Los Angeles,Standing,,,,,,1925,8160,7,5,1,34.0669,-118.3319
+h121,708 House,Eric Owen Moss,Pacific Palisades,Lost,Lost in the January 2025 Palisades Fire,,,,,1949,1912,3,3,1,34.044,-118.5331
+h122,Lawson/Western House,Eric Owen Moss,Brentwood Heights,Standing,,,,,,1991,5134,4,6,1,34.059,-118.473
+h123,Petal House,Eric Owen Moss,Westside Village,Standing,,,,,,1945,1644,4,2,1,34.033,-118.4253
+h124,Soffer House,Eric Wright,Pacific Palisades,Lost,Lost in the January 2025 Palisades Fire,,,,,1949,2258,2,2,1,34.049,-118.5392
+h125,Batchelder House,Ernest A. Batchelder,Pasadena,Standing,,National Register of Historic Places No. 78000695,,,,1910,2728,2,2,1,34.1363,-118.1674
+h126,Spears House,Ernest Irving Freese,Alhambra,Standing,,,,,,1925,,,,2,34.0725,-118.1483
+h127,Nilsson House,Eugene Kupper,Los Angeles,Standing,,,,,,1999,7640,7,6,1,34.0925,-118.4442
+h128,Walt Disney House,F. Scott Crowhurst,Los Feliz,Standing,,,,,,1932,6388,4,5,1,34.1152,-118.2828
+h129,Pearce House,Frank Lloyd Wright,Bradbury,Standing,,,,,,1955,1988,2,2,1,34.1461,-117.9664
+h130,Millard House,Frank Lloyd Wright,Pasadena,Standing,,National Register of Historic Places No. 76000493,,,,1924,4230,3,3,1,34.1555,-118.1596
+h131,John Sowden House,Frank Lloyd Wright,East Hollywood,Standing,,LA Historic-Cultural Monument No. 762; National Register of Historic Places No. 71000151,,,,1927,5600,4,5,1,34.106,-118.2997
+h132,Ennis House,Frank Lloyd Wright,Los Feliz,Standing,,LA Historic-Cultural Monument No. 149; National Register of Historic Places No. 71000145; California Historical Landmark No. 1011,,,,1924,5484,3,4,1,34.1153,-118.2942
+h133,Storer House,Frank Lloyd Wright,Hollywood Hills West,Standing,,LA Historic-Cultural Monument No. 96; National Register of Historic Places No. 71000152,,,,1924,2967,4,3,1,34.0999,-118.3663
+h134,Freeman House,Frank Lloyd Wright,Hollywood,Standing,,LA Historic-Cultural Monument No. 247; National Register of Historic Places No. 71000146; California Historical Landmark No. 1011,,,,1925,2884,3,2,1,34.1074,-118.3397
+h135,Arch Oboler Gatehouse & Studio,Frank Lloyd Wright,Malibu,Standing,,,,,,1941,2486,2,2,1,34.0978,-118.8433
+h136,Sturges House,Frank Lloyd Wright,Brentwood Heights,Standing,,LA Historic-Cultural Monument No. 577,,,,1939,,,,2,34.0665,-118.4834
+h137,Andeton Court Shops,Frank Lloyd Wright,Beverly Hills,Standing,,Beverly Hills Landmark No. 6,,,,1954,9704,,,1,34.0667,-118.402
+h138,Scott House,Frank M. Tyler,Harvard Heights,Standing,,LA Historic-Cultural Monument No. 963,,,,1906,4523,5,3,1,34.0385,-118.3057
+h139,General Panel House,Frank o. Gehry,Los Angeles,Standing,,,,,,1951,1889,4,3,1,34.1232,-118.3623
+h140,Danziger Studio,Frank o. Gehry,Fairfax,Standing,,,,,,1966,2349,2,2,1,34.0843,-118.3444
+h141,Wosk House,Frank o. Gehry,Beverly Hills,Standing,,,,,,1907,12147,14,17,1,34.0597,-118.4061
+h142,Davis House,Frank O. Gehry and Associates,Malibu,Standing,,,,,,1972,4094,2,2,1,34.0342,-118.8234
+h143,Norton House,Frank O. Gehry and Associates,Venice,Standing,,,,,,1983,3231,3,2,1,33.9828,-118.4708
+h144,Spiller House,Frank O. Gehry and Associates,Venice,Standing,,,,,,1979,2229,3,5,1,33.9888,-118.4759
+h145,Goldberg/Bean House,Franklin D. Israel Design Associates,Hollywood,Standing,,,,,,1950,3407,3,3,1,34.1079,-118.3448
+h146,Lamy/Newton House,Franklin D. Israel Design Associates,Los Angeles,Standing,,,,,,1940,2756,4,5,1,34.0837,-118.3358
+h147,Woodbury House,Frederick L. Roehrig,Altadena,Standing,,National Register of Historic Places No. 93001463,,,,1887,6159,6,5,1,34.1883,-118.1322
+h148,Marshall-Eagle House,Frederick L. Roehrig,Pasadena,Standing,,,,,,1921,73039,,,1,34.1312,-118.1624
+h149,McMurran House,Frederick L. Roehrig,Pasadena,Standing,,,,,,1916,3615,4,4,1,34.157,-118.1646
+h150,Van Nuys House,Frederick L. Roehrig,Larchmont,Standing,,,,,,1890,12565,13,9,1,34.0682,-118.3174
+h151,Wrigley House,G. Lawrence Stimson,Pasadena,Standing,,,,,,,,,,1,34.1384,-118.1605
+h152,House,G. Lawrence Stimson,Pasadena,Standing,,,,,,1908,3630,4,4,1,34.1378,-118.1626
+h153,"House, 1910",G. Lawrence Stimson,Glendale,Standing,,,,,,1913,,,,2,34.1988,-118.2379
+h154,Flintoft House,G. S. Bliss,Pasadena,Standing,,,,,,1911,3682,6,3,1,34.1308,-118.1404
+h155,Val d'Amour Apartments,G. W. Powers,Koreatown,Standing,,LA Historic-Cultural Monument No. 875,,,,1929,51234,,,1,34.0566,-118.3089
+h156,Crenshaw House,Gable and Wyant,Santa Monica,Standing,,,,,,1926,5162,6,5,1,34.0453,-118.4977
+h157,Van Pelt House,Garrett Van Pelt,Pasadena,Standing,,,,,,1926,2814,4,4,1,34.1267,-118.1375
+h158,Perrin House,Garvin Hodson,Pasadena,Standing,,,,,,1927,4831,7,4,1,34.1262,-118.1573
+h159,Clark House,George A. Clark,Pasadena,Standing,,,,,,1910,2645,5,3,1,34.1335,-118.1669
+h160,Kapin House,George Kapin,Glassell Park,Standing,,,,,,1921,1256,2,1,1,34.1198,-118.2177
+h161,Pike House,George Vernon Russell,Hollywood,Standing,,,,,,1951,2814,4,4,1,34.1083,-118.3368
+h162,Young House,George Washington Smith,Pasadena,Standing,,,,,,1927,6909,7,5,1,34.1296,-118.1665
+h163,Prindle House,George Washington Smith,Pasadena,Standing,,,,,,1926,7970,9,7,1,34.1252,-118.1337
+h164,Gorden B. Kaufmann House,Gordon B. Kaufmann,Arcadia,Needs review,,,,,,1962,2367,3,3,1,34.1715,-118.0268
+h165,Wilbur House,Gordon B. Kaufmann,Pasadena,Standing,,,,,,1930,7579,7,5,1,34.1444,-118.171
+h166,Helms House,Gordon B. Kaufmann,Beverly Hills,Standing,,Beverly Hills Landmark No. 22,,,,1928,9517,8,7,1,34.0751,-118.4211
+h167,Berns House,Gordon Drake,Malibu,Standing,,,,,,1950,4456,3,3,1,34.037,-118.8632
+h168,House,Grable and Austin,Pasadena,Standing,,,,,,1913,3700,4,3,1,34.1365,-118.1602
+h169,Williams House,Grable and Austin,Pasadena,Standing,,,,,,1911,2270,4,2,1,34.1361,-118.1625
+h170,Austin House,Grable and Austin,Pasadena,Standing,,,,,,1912,2887,4,4,1,34.1337,-118.1629
+h171,Ernest House,Gregory Ain,East Hollywood,Standing,,LA Historic-Cultural Monument No. 840,,,,1937,2082,3,3,1,34.111,-118.3108
+h172,Edwards House,Gregory Ain,East Hollywood,Standing,,LA Historic-Cultural Monument No. 260,,,,1936,1426,2,2,1,34.1119,-118.3143
+h173,Ain House,Gregory Ain,Hollywood Hills West,Standing,,,,,,1943,1964,3,2,1,34.1208,-118.3694
+h174,Beckman House,Gregory Ain,Fairfax,Standing,,,,,,1938,2411,3,3,1,34.0772,-118.3382
+h175,Byler House,Gregory Ain,Mount Washington,Standing,,,,,,1937,1597,3,2,1,34.0985,-118.2202
+h176,Tierman House,Gregory Ain,Silver Lake,Standing,,LA Historic-Cultural Monument No. 124,,,,1938,1400,2,2,1,34.1013,-118.2692
+h177,Orans House,Gregory Ain,Silver Lake,Standing,,,,,,1941,2144,3,3,1,34.1022,-118.2676
+h178,Daniels House,Gregory Ain,Silver Lake,Standing,,,,,,1939,992,2,1,1,34.0959,-118.2702
+h179,Dunsmuir Apartments,Gregory Ain,Mid-Wilshire,Standing,,LA Historic-Cultural Monument No. 954,,,,1938,4784,8,8,1,34.052,-118.3514
+h180,Vorkapich Garden House,Gregory Ain,Beverly Hills,Needs review,,,,,,2001,7245,7,9,1,34.1084,-118.4373
+h181,Mesner House,Gregory Ain,Sherman Oaks,Standing,,,,,,1953,4665,6,6,1,34.1463,-118.4531
+h182,Grossman House,Greta Magnusson Grossman,Beverly Hills,Standing,,,,,,1948,2101,3,3,1,34.1008,-118.406
+h183,Byles and Weston House,H. Douglas Byles and Eugene Weston 3,Pasadena,Standing,,,,,,1950,1040,2,1,1,34.1743,-118.1636
+h184,Model House,H. Roy Kelley,Sherman Oaks,Standing,,,,,,1934,2155,3,3,1,34.1451,-118.441
+h185,Dumbacher House,Hagy Belzberg,Pasadena,Standing,,,,,,1994,3783,3,6,1,34.1568,-118.1764
+h186,Fargo House,Harry Grey,Los Angeles,Standing,,LA Historic-Cultural Monument No. 464,,,,1909,2500,5,1,1,34.1126,-118.1802
+h187,Bauer House,Harwell H. Harris,Glendale,Standing,,,,,,1938,1795,2,2,1,34.15,-118.2085
+h188,Laing House,Harwell H. Harris,Pasadena,Standing,,,,,,1935,1449,2,2,1,34.1327,-118.1825
+h189,Birtcher-Share House,Harwell H. Harris,Mount Washington,Standing,,LA Historic-Cultural Monument No. 612,,,,1942,3228,2,3,1,34.1098,-118.2187
+h190,Hawk House,Harwell H. Harris,Silver Lake,Standing,,,,,,1939,1201,2,1,1,34.1,-118.2568
+h191,Hansen House,Harwell H. Harris,Silver Lake,Standing,,,,,,1951,1440,2,1,1,34.1028,-118.2678
+h192,Alexander House,Harwell H. Harris,Silver Lake,Standing,,,,,,1940,1665,3,2,1,34.1028,-118.269
+h193,Hopmans House,Harwell H. Harris,Silver Lake,Standing,,,,,,1960,2497,2,2,1,34.0898,-118.2719
+h194,Walther House,Harwell H. Harris,Silver Lake,Standing,,,,,,1937,,,,3,34.0883,-118.2666
+h195,Entenza House,Harwell H. Harris,Santa Monica,Standing,,,,,,1937,824,2,1,1,34.035,-118.5157
+h196,Pumphrey House,Harwell H. Harris,Santa Monica,Standing,,,,,,1940,1728,4,3,1,34.0351,-118.5114
+h197,Dean McHenry House,Harwell H. Harris,Holmby Hills,Standing,,,,,,1940,2280,5,4,1,34.0686,-118.4321
+h198,English House,Harwell H. Harris,Beverly Hills,Standing,,,,,,1950,7509,5,7,1,34.0975,-118.4089
+h199,Alice Lynch House,Harwood Hewitt,Los Angeles,Standing,,LA Historic-Cultural Monument No. 621,,,,1922,2560,5,3,1,34.0363,-118.3196
+h200,Schulitz House,Helmut Schulitz,Beverly Hills,Standing,,,,,,1976,1932,3,2,1,34.0977,-118.4017
+h201,Savage House,Henry Greene,Pasadena,Standing,,,,,,1924,1870,2,2,1,34.1693,-118.1472
+h202,Cohan House,Hudson and Munsell,Pico-Union,Standing,,LA Historic-Cultural Monument No. 84,,,,1908,4234,5,2,1,34.0456,-118.2795
+h203,Raphael House,Hunt and Eager,Pico-Union,Standing,,LA Historic-Cultural Monument No. 87,,,,1903,4310,10,3,1,34.0469,-118.2818
+h204,Evanardy-Kinney House,Hunt and Eager,Pico-Union,Standing,,LA Historic-Cultural Monument No. 88,,,,1905,6591,9,5,1,34.0465,-118.2802
+h205,Speirs House,Hunt and Grey,San Pedro,Standing,,,,,,1904,,,,2,33.7437,-118.2904
+h206,Miltimore House,Irving J. Gill,South Pasadena,Standing,,National Register of Historic Places No. 72000235,,,,1911,3751,4,3,1,34.1118,-118.1442
+h207,Waxman House,J. Barry Moffat,Studio City,Standing,,,,,,1964,1972,3,2,1,34.1362,-118.391
+h208,Apartment Building 1930,J. C. Smale,Miracle Mile,Standing,,LA Historic-Cultural Monument No. 427,,,,1930,22224,18,17,1,34.0664,-118.3444
+h209,Apartment House,J. Knauer,Los Feliz,Standing,,,,,,1939,5049,8,4,1,34.1036,-118.2808
+h210,Ahmed Apartment Building,J. M. Close,Melrose Hill,Standing,,,,,,1926,13842,20,40,1,34.0922,-118.3129
+h211,Karnak Apartment,J. M. Close,East Hollywood,Standing,,,,,,1925,12168,,30,1,34.0927,-118.313
+h212,House,J. R. Davidson,La Canada Flintridge,Standing,,,,,,1966,2349,3,2,1,34.2129,-118.2051
+h213,Sabsay House,J. R. Davidson,Silver Lake,Standing,,,,,,1941,1776,4,2,1,34.1,-118.255
+h214,Kingsley Houses,J. R. Davidson,Pacific Palisades,Standing,,,,,,1947,6804,6,6,1,34.0588,-118.503
+h215,Mann House,J. R. Davidson,Pacific Palisades,Standing,,,,,,1941,5266,8,5,1,34.0586,-118.501
+h216,Stothart-Phillips House,J. R. Davidson,Santa Monica,Standing,,,,,,1938,,,,2,34.0482,-118.4945
+h217,Rabinowitz House,J. R. Davidson,Los Angeles,Standing,,,,,,1958,2269,3,3,1,34.1156,-118.4628
+h218,Four Apartment Units,J. R. Davidson,Brentwood,Standing,,,,,,1965,1156,2,2,1,34.0492,-118.4685
+h219,Los Feliz Manor Apartment Building,Jack Grundfor,Los Feliz,Standing,,,,,,1929,30460,19,31,1,34.1117,-118.2885
+h220,McClure House,James H. Bradbeer,Los Angeles,Standing,,LA Historic-Cultural Monument No. 107,,,,1953,5907,7,6,1,34.1163,-118.1782
+h221,Condominium Town House,Janotta-Breska Associates,Santa Monica,Standing,,,,,,1981,,,,4,34.0055,-118.4717
+h222,Mannheim House,Jean Mannheim,Pasadena,Standing,,,,,,1909,2323,3,1,1,34.1387,-118.1659
+h223,Cheesewright House #1,"Jeffrey, Van Trees, and Millar",Pasadena,Standing,,,,,,1910,3420,4,3,1,34.1343,-118.1648
+h224,Cheesewright House #2,"Jeffrey, Van Trees, and Millar",Pasadena,Standing,,,,,,1913,4349,7,5,1,34.1386,-118.167
+h225,Lingenbrink House,Jock Peters,Hollywood,Standing,,,,,,1930,1743,2,2,1,34.1065,-118.3328
+h226,Barclay House,John Byers,Pacific Palisades,Needs review,,,,,,1997,13143,7,12,1,34.0561,-118.4998
+h227,Bradbury House,John Byers,Santa Monica,Standing,,LA Historic-Cultural Monument No. 594,,,,1955,,,,2,34.0262,-118.5167
+h228,Byers House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 52,,,,1925,4802,4,4,1,34.0463,-118.4979
+h229,Tinglof House,John Byers,Santa Monica,Standing,,,,,,1926,4271,6,6,1,34.0453,-118.497
+h230,Zimmer House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 84,,,,1924,,,,2,34.044,-118.4992
+h231,Thompson House,John Byers,Santa Monica,Standing,,,,,,1925,,,,2,34.0441,-118.4975
+h232,Bundy House,John Byers,Santa Monica,Standing,,,,,,1925,5960,8,8,1,34.0464,-118.4995
+h233,Armstrong-Cobb House,John Byers,Santa Monica,Standing,,,,,,1926,5924,8,6,1,34.0445,-118.5011
+h234,Temple House,John Byers,Brentwood,Standing,,,,,,1936,5042,4,6,1,34.0606,-118.4913
+h235,Stedman House,John Byers,Brentwood,Standing,,,,,,1936,4208,5,5,1,34.0629,-118.4843
+h236,Hamilton House,John Byers,Brentwood,Standing,,,,,,,,,,1,34.0593,-118.4856
+h237,Kerr House,John Byers,Brentwood,Standing,,,,,,1934,4498,6,4,1,34.0641,-118.4877
+h238,Murray House,John Byers,Brentwood,Standing,,,,,,1930,3542,4,3,1,34.0658,-118.4868
+h239,MacBennel House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 61,,,,1840,3014,5,6,1,34.0273,-118.5077
+h240,Gorham-Holliday House,John Byers,Santa Monica,Needs review,,,,,,1987,5998,4,5,1,34.028,-118.5136
+h241,Carrillo House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 110,,,,1925,3526,4,5,1,34.0412,-118.5025
+h242,House,John Byers and Edla Muir,Pacific Palisades,Lost,Lost in the January 2025 Palisades Fire,,,,,1940,1760,2,2,1,34.0455,-118.5395
+h243,Leonard J. Malin House,John Lauter,Los Angeles,Standing,,LA Historic-Cultural Monument No. 785,,,,1960,2062,3,2,1,34.1258,-118.3683
+h244,Mauer House,John Lauter,Mount Washington,Standing,,LA Historic-Cultural Monument No. 481,,,,1948,2547,3,3,1,34.1053,-118.2186
+h245,Familian House,John Lauter,Beverly Hills,Standing,,,,,,1971,8335,7,9,1,34.0836,-118.4179
+h246,Bell House,John Lautner,Hollywood Hills West,Standing,,,,,,1942,,,,2,34.1205,-118.3666
+h247,Garcia House,John Lautner,Los Angeles,Standing,,,,,,1961,2596,3,3,1,34.1222,-118.3571
+h248,Wolff Residence,John Lautner,Los Angeles,Standing,,LA Historic-Cultural Monument No. 852,,,,1961,2833,4,4,1,34.0962,-118.3795
+h249,Los Angeles County Museum of Art,John Lautner,Park La Brea,Needs review,,,,,,2008,,,,2,34.0635,-118.3599
+h250,Silvertop House and Garden,John Lautner,Silver Lake,Standing,,,,,,1958,4721,3,4,1,34.1008,-118.2698
+h251,Lautner House,John Lautner,Silver Lake,Standing,,,,,,1939,1244,3,2,1,34.0991,-118.2703
+h252,Sagheb House,John Lautner,Malibu,Standing,,,,,,1986,4620,2,4,1,34.0388,-118.8781
+h253,Sheets Apartments,John Lautner,Westwood,Standing,,LA Historic-Cultural Monument No. 367,,,,1950,7300,12,13,1,34.0688,-118.4477
+h254,Helene Lautner Associates,John Lautner,Venice,Standing,,,,,,1973,44784,,,1,33.9607,-118.4373
+h255,Foster Carling Residence,John Lautner,Los Angeles,Standing,,,,,,1950,1999,2,3,1,34.12,-118.3473
+h256,Sheets Apartments,John Lautner,Westwood,Standing,,,,,,1936,11847,,,1,34.0695,-118.4506
+h257,Rex House #1,John Rex,Riviera,Standing,,,,,,1949,3571,6,5,1,34.0708,-118.4942
+h258,Rex House #2,John Rex,Riviera,Needs review,,,,,,2011,5977,5,5,1,34.0705,-118.4938
+h259,Sunrise Plaza Apartment,John Siebel Associates,West Hollywood,Standing,,,,,,1982,,,,22,34.0911,-118.3863
+h260,Reynolds House,John Woolf,Los Angeles,Standing,,,,,,1958,3995,3,3,1,34.0707,-118.3332
+h261,Pendleton House,John Woolf,Beverly Hills,Standing,,,,,,1942,3834,2,3,1,34.0897,-118.4135
+h262,Griffith House,"Johnson, Kaufman, and Coate",Pasadena,Standing,,,,,,1924,5166,5,5,1,34.1261,-118.1307
+h263,House,Jones and Emmons,Pacific Palisades,Lost,Lost in the January 2025 Palisades Fire,,,,,1953,1383,3,2,1,34.0486,-118.5418
+h264,Emmons House,Jones and Emmons,Santa Monica,Standing,,LA Historic-Cultural Monument No. 694,,,,1954,1997,2,3,1,34.0392,-118.5155
+h265,Shorecleff-Tower Apartments,Jones and Emmons,Santa Monica,Standing,,,TRUE,,,1963,,,,47,34.0235,-118.5115
+h266,Greenshaw House,Joseph Cather Newsom,Los Angeles,Standing,,LA Historic-Cultural Monument No. 565,,,,1905,3094,4,2,1,34.1253,-118.1789
+h267,Sessions House,Joseph Cather Newsom,Echo Park,Standing,,LA Historic-Cultural Monument No. 52,,,,1898,4529,5,3,1,34.0673,-118.2536
+h268,Lewis House,Joseph Cather Newsom,Westlake,Standing,,LA Historic-Cultural Monument No. 39,,,,1901,4559,5,3,1,34.0597,-118.2599
+h269,"House, 1900",Joseph Cather Newsom,Pico-Union,Standing,,,,,,1910,4544,5,4,1,34.0548,-118.2845
+h270,Fitzgerald House,Joseph Cather Newsom,Los Angeles,Standing,,LA Historic-Cultural Monument No. 258,,,,1906,,,,3,34.0321,-118.3171
+h271,Post House #2,Joseph J. Blick,Pasadena,Standing,,National Register of Historic Places No. 11000499,,,,1898,4648,3,5,1,34.1404,-118.1627
+h272,Martindale House,Joseph Kucera,Pasadena,Standing,,,,,,1924,6449,5,5,1,34.1264,-118.1648
+h273,House,Kamran Khauakani,Beverly Hills,Standing,,,,,,1984,11670,6,7,1,34.0904,-118.4152
+h274,Case Study House #10,Kemper Nomland and Kemper Nomland Jr.,Pasadena,Standing,,National Register of Historic Places No. 13000514,,,,1947,2874,3,3,1,34.1307,-118.1719
+h275,Villa de Leon,Kenneth MacDonald,Pacific Palisades,Standing,,,,,,1927,,,,3,34.0433,-118.5647
+h276,OP12 Dispersed Affordable Housing,Koning Eizenberg Architecture,Santa Monica,Standing,,,,,,1988,5270,13,8,1,34.0072,-118.4843
+h277,Koning Eizenberg House,Koning Eizenberg Architecture,Santa Monica,Standing,,,,,,1989,2421,2,2,1,34.0404,-118.482
+h278,House,L. C. Brockway,Pasadena,Standing,,,,,,1927,3184,4,4,1,34.1268,-118.1674
+h279,Wolff House,Ladd and Kelsey,Los Angeles,Standing,,,,,,1958,1810,2,2,1,34.1151,-118.3454
+h280,Quan House,Ladd and Kelsey,Beverly Hills,Standing,,,,,,1956,5078,3,4,1,34.0942,-118.4158
+h281,Dickinson House,Lawrence Test,Pasadena,Standing,,,,,,1941,2718,3,3,1,34.1511,-118.1616
+h282,Jacobs House,Lee Hershberger,Pasadena,Standing,,,,,,1991,4883,5,6,1,34.1397,-118.157
+h283,"House, 1950",Leland Evison,Pasadena,Standing,,,,,,1950,2402,4,4,1,34.1236,-118.1618
+h284,Schonbach House,Leland Evison,Pasadena,Standing,,,,,,1948,2086,4,3,1,34.1584,-118.1709
+h285,Meade House,Lester Sherer,Los Angeles,Standing,,,,,,1927,13041,9,10,1,34.077,-118.3359
+h286,Cravens House,Lewis P. Hobart,Pasadena,Standing,,,,,,1930,19970,11,7,1,34.1248,-118.1605
+h287,Dorland House,Lloyd Wright,Altadena,Standing,,,,,,1949,1442,3,1,1,34.1812,-118.1223
+h288,Mace House,Lloyd Wright,Hollywood Hills West,Standing,,,,,,1959,1442,2,2,1,34.0981,-118.3715
+h289,Henry Bollman House,Lloyd Wright,Los Angeles,Standing,,LA Historic-Cultural Monument No. 235,,,,1923,2518,4,2,1,34.0989,-118.3612
+h290,Otto Bollman House,Lloyd Wright,Hollywood,Standing,,,,,,1923,2299,3,2,1,34.1116,-118.3405
+h291,Weber House,Lloyd Wright,Country Club Park,Standing,,LA Historic-Cultural Monument No. 707,,,,1921,1859,3,2,1,34.0553,-118.3156
+h292,Nables House,Lloyd Wright,Santa Monica,Standing,,,,,,1950,2284,3,3,1,34.0495,-118.4951
+h293,Avery House,Lloyd Wright,Brentwood,Standing,,,,,,1936,6096,5,6,1,34.0623,-118.4932
+h294,Samuel House,Lloyd Wright,Westgate Heights,Standing,,,,,,1934,3496,3,3,1,34.071,-118.4755
+h295,Evans house,Lloyd Wright,Westgate Heights,Standing,,,,,,1936,3161,4,5,1,34.0694,-118.4747
+h296,Healy House,Lloyd Wright,Westwood,Needs review,,,,,,1991,11027,5,8,1,34.077,-118.4466
+h297,Karaski House,Lloyd Wright,Beverly Hills,Standing,,National Register of Historic Places No. 11000933; Beverly Hills Landmark No. 7,,,,1961,3170,4,4,1,34.0581,-118.4104
+h298,Greer House,Lloyd Wright,North Hills,Standing,,,,,,1956,,,,2,34.2376,-118.4742
+h299,Lomax House,Lomax-Mills Associates,Hollywood Hills West,Standing,,,,,,1971,2970,4,4,1,34.1055,-118.3806
+h300,House,Lomax-Mills Associates,Westgate Heights,Standing,,,,,,1973,2309,3,2,1,34.0669,-118.48
+h301,"House, circa 1906",Louis B. Easton,Altadena,Lost,Lost in the January 2025 Eaton Fire,,,,,1906,816,3,1,1,34.1899,-118.158
+h302,Loannes House,Louis B. Easton,Pasadena,Standing,,,,,,1910,3522,4,3,1,34.1324,-118.1388
+h303,Volney-Craig House,Louis B. Easton,Pasadena,Standing,,,,,,1913,1730,2,1,1,34.1342,-118.1632
+h304,Mead House,Louis B. Easton,Pasadena,Standing,,National Register of Historic Places No. 98000961,,,,1908,2878,4,2,1,34.1393,-118.1576
+h305,Kempton House,Lyman Ennis,Pasadena,Standing,,,,,,1961,2078,4,2,1,34.1313,-118.1782
+h306,Times Demonstration House,"Mark Daniels, architect and landscape architect",Pacific Palisades,Standing,,LA Historic-Cultural Monument No. 589,,,,1927,6741,7,6,1,34.0465,-118.5547
+h307,Apartment Building,Marsh and Russell,Venice,Standing,,,,,,1911,1952,4,2,1,33.989,-118.4721
+h308,Staats House,Marston and Van Pelt,Pasadena,Standing,,,,,,1925,8124,5,7,1,34.1394,-118.1621
+h309,Garford House,Marston and Van Pelt,Pasadena,Standing,,,,,,1916,6898,6,6,1,34.1268,-118.1368
+h310,Claremont Apartments,Max Meltzmann,Santa Monica,Standing,,National Register of Historic Places No. 96000777; Santa Monica Landmark No. 29,,,,1929,34340,25,50,1,34.0214,-118.4995
+h311,Lyndon House,Maynard Lyndon,Malibu,Standing,,,,,,1949,1655,2,2,1,34.0093,-118.7946
+h312,Shrader House,Mead and Requa,Hollywood,Standing,,,,,,,,,,1,34.1048,-118.3368
+h313,Downey House,Melinda Gray,Malibu,Standing,,,,,,1989,3734,4,5,1,34.0361,-118.8622
+h314,Clark House,Melinda Gray,Santa Monica,Standing,,,,,,1996,2375,3,3,1,34.0305,-118.5144
+h315,Guerra House,Melinda Gray,Santa Monica,Standing,,,,,,1991,3899,3,3,1,34.0271,-118.5141
+h316,Sovereign Hotel and Apartments,Meyer Radon,Santa Monica,Standing,,Santa Monica Landmark No. 31,,,,1928,,,,2,34.0211,-118.5012
+h317,Bernini House,Michael McDonough,Santa Monica,Standing,,,,,,1989,7143,5,8,1,34.0419,-118.4991
+h318,"CDLT 1,2 House",Michael Rotondi,Silver Lake,Standing,,,,,,1949,1381,2,3,1,34.0961,-118.272
+h319,Carlson-Reges House,Michael Rotondi,Dogtown,Standing,,,,,,1922,4407,1,1,1,34.0636,-118.2219
+h320,Sierra Mar House,Michael W. Folonis and Associates,Los Angeles,Standing,,,,,,1952,2555,3,3,1,34.0946,-118.3939
+h321,Chambers/Folonis House,Michael W. Folonis and Associates,Santa Monica,Standing,,,,,,,,,,1,34.0012,-118.4724
+h322,Beverly House,Michael W. Folonis and Associates,Santa Monica,Standing,,,,,,1922,2160,3,3,1,34.0056,-118.4779
+h323,Villa de Malaga Apartments,Miguel Angelo Flores and Associates,West Hollywood,Standing,,,,,,1922,6700,14,21,1,34.0928,-118.3679
+h324,Snipper House,Miguel Angelo Flores and Associates,Venice,Standing,,,,,,1987,4028,3,4,1,33.9834,-118.4701
+h325,Ulm House,Milton Black,Los Feliz,Standing,,,,,,1937,2309,3,3,1,34.1166,-118.2817
+h326,Goss House,Milton H. Caughey,Westgate Heights,Standing,,,,,,1950,2070,4,3,1,34.0694,-118.4744
+h327,Cernitz House,Milton J. Black,Pacific Palisades,Needs review,,,,,,2000,8167,6,9,1,34.0371,-118.5111
+h328,Westwood-Ambassador Apartments,Milton J. Black,Holmby Hills,Standing,,,,,,,4482,,,1,34.0666,-118.432
+h329,"Apartment Building, 1938",Milton J. Black and R. Borman,Miracle Mile,Standing,,,,,,1938,6142,5,8,1,34.0663,-118.3465
+h330,Weaver House,Milwaukee Building Company,Santa Monica,Standing,,National Register of Historic Places No. 89002114; Santa Monica Landmark No. 20,,,,1912,4118,6,4,1,34.0263,-118.5148
+h331,Rodes House,"Moore, Ruble, and Yudell",Los Angeles,Standing,,,,,,1962,2160,4,4,1,34.0823,-118.4939
+h332,Toberman Storage Warehouse,"Morgan, Walls, and Clements",Hollywood,Standing,,,,,,1926,163947,,,1,34.0884,-118.3406
+h333,Morgenstern Warehouse,Moss and Stafford,Downtown,Standing,,,,,,1979,12726,,,1,34.0395,-118.2584
+h334,"House, circa",Mr.bird,Pacific Palisades,Lost,Lost in the January 2025 Palisades Fire,,,,,1951,2795,5,5,1,34.0409,-118.5566
+h335,Kelton-Missouri Townhouses,Mutlow-Dimster Partnership,Tehrangeles,Standing,,,,,,1980,1777,3,2,1,34.0483,-118.4349
+h336,Myron Hunt House,Myron Hunt,West Covina,Standing,,,,,,1905,,,,2,34.074,-117.8727
+h337,Hong House,Myron Hunt,Altadena,Lost,Lost in the January 2025 Eaton Fire,,,,,1917,3828,3,3,1,34.1868,-118.1411
+h338,House,Myron Hunt and H. C. Chambers,La Canada Flintridge,Standing,,,,,,1928,7356,6,6,1,34.1904,-118.1823
+h339,Brand House,Nathaniel Dryden,Glendale,Standing,,,,,,,,,,1,34.1813,-118.2747
+h340,Three Houses,Oakley Norton,Eagle Rock,Standing,,,,,,1965,2796,5,3,1,34.1327,-118.209
+h341,Three Houses,Oakley Norton,Eagle Rock,Standing,,,,,,1962,1512,2,3,1,34.1305,-118.2112
+h342,Franks House,Palmer Sabin,Pasadena,Standing,,,,,,1930,3394,6,4,1,34.1687,-118.1683
+h343,Bilike House,Parkinson and Bergstrom,South Pasadena,Standing,,,,,,1918,14307,,,1,34.1122,-118.1613
+h344,"House, circa 1910",Paul Arnold Needham,Hollywood Hills West,Standing,,,,,,1914,3782,4,3,1,34.1087,-118.3699
+h345,Paul R. Williams House,Paul R Williams and Associates,Victoria Park,Standing,,LA Historic-Cultural Monument No. 170,,,,1951,4440,4,5,1,34.0417,-118.3294
+h346,Gabriel Duque House,Paul R. Williams,Los Angeles,Standing,,,,,,1933,5888,5,9,1,34.0781,-118.3377
+h347,Banning House #1,Paul R. Williams,Los Angeles,Standing,,,,,,1929,5733,6,5,1,34.0799,-118.3361
+h348,Rothman House,Paul R. Williams,Los Angeles,Standing,,,,,,1926,7322,5,5,1,34.0629,-118.3274
+h349,Leistikow House,Paul R. Williams,Country Club Park,Standing,,,,,,1923,6165,9,5,1,34.0634,-118.3214
+h350,Zeigler House,Paul Sterling Hoag,Los Angeles,Standing,,,,,,1952,2158,3,3,1,34.084,-118.4749
+h351,Parker House,Paul Sterling Hoag,Beverly Hills,Standing,,,,,,1951,5357,4,5,1,34.0904,-118.4102
+h352,Dyer House,Paul Sterling Hoag,Sherman Oaks,Standing,,,,,,1979,2061,2,2,1,34.1416,-118.4489
+h353,House,Paul Thoryk,Santa Monica,Standing,,,,,,1975,3940,4,4,1,34.0352,-118.514
+h354,Degnan House,Paul Williams,La Canada Flintridge,Standing,,,,,,1929,7724,5,4,1,34.2216,-118.2094
+h355,Mitchell House,Paul Williams,La Canada Flintridge,Standing,,,,,,1923,5144,6,7,1,34.193,-118.1917
+h356,Founder's Church of Religious Science,Paul Williams,Koreatown,Standing,,,,,,1959,14838,,,1,34.0625,-118.2947
+h357,national Boulevard Apartments,Paul Williams,Nevin,Standing,,,,,,1926,23685,,,1,34.0164,-118.2583
+h358,Golden State Mutual Life Insurance Building,Paul Williams,Los Angeles,Standing,,LA Historic-Cultural Monument No. 1000,,,,1948,54234,,,1,34.0331,-118.3069
+h359,Hunt Residence,Paul Williams,Brentwood,Standing,,,TRUE,,,1940,3867,4,4,1,34.0683,-118.4908
+h360,Trousdale Estates,Paul Williams,Beverly Hills,Standing,,,,,,1960,3364,5,6,1,34.1012,-118.3971
+h361,Westwood Medical Plaza,Paul Williams,Westwood,Standing,,,,,,1962,147876,,,1,34.058,-118.4432
+h362,Castera-Ward Residence,Paul Williams,Los Angeles,Standing,,LA Historic-Cultural Monument No. 893,,,,1937,11650,8,7,1,34.0813,-118.4461
+h363,Saks Fifth Avenue,Paul Williams,Beverly Hills,Standing,,,,,,1938,87886,,,1,34.067,-118.402
+h364,Hillside Memorial Park,Paul Williams,Fox Hills,Standing,,,,,,1958,,,,2,33.976,-118.3864
+h365,De Bretteville-Simon Houses,Peter de Bretteville,Hollywood Hills West,Standing,,,,,,1975,2476,2,2,1,34.1179,-118.3706
+h366,De Bretteville-Simon Houses,Peter de Bretteville,Hollywood Hills West,Standing,,,,,,1975,2188,3,3,1,34.1174,-118.3735
+h367,Churchill House,Pierpont and Walter S. Davis,Los Angeles,Standing,,,,,,1926,6057,8,6,1,34.0752,-118.3354
+h368,Bailey House,Pierre Koenig,Los Angeles,Standing,,LA Historic-Cultural Monument No. 669; National Register of Historic Places No. 13000518,,,,1958,1280,2,2,1,34.1152,-118.3928
+h369,Stahl House,Pierre Koenig,Hollywood Hills West,Standing,,LA Historic-Cultural Monument No. 670; National Register of Historic Places No. 13000519,TRUE,,,1959,2200,2,2,1,34.0995,-118.3706
+h370,Seidel House,Pierre Koenig,Los Angeles,Standing,,,,,,1959,3846,3,3,1,34.0893,-118.5048
+h371,Beagles House,Pierre Koenig,Pacific Palisades,Standing,,,,,,1963,2407,3,3,1,34.0397,-118.5541
+h372,Koenig House #2,Pierre Koenig,Brentwood,Standing,,,,,,1926,2827,3,3,1,34.0458,-118.4733
+h373,Apartment Building,"Pulliam, Matthews, and Associates",Pasadena,Standing,,,,,,1964,16104,30,30,1,34.1406,-118.128
+h374,Cunningham House,"Pulliam, Matthews, and Associates",Pasadena,Standing,,,,,,1976,6191,7,6,1,34.1335,-118.1708
+h375,Heidemann House,"Pulliam, Matthews, and Associates",Beverly Hills,Standing,,,,,,1971,5758,3,5,1,34.0902,-118.4265
+h376,Schrage House,Raphael S. Soriano,Los Feliz,Standing,,,,,,1951,2598,3,3,1,34.1187,-118.2838
+h377,Gogol House,Raphael S. Soriano,Los Feliz,Standing,,,,,,1939,2138,2,2,1,34.1107,-118.2819
+h378,Shulman House and Studio,Raphael S. Soriano,Hollywood Hills West,Standing,,LA Historic-Cultural Monument No. 325,,,,1950,3382,4,3,1,34.1242,-118.368
+h379,Polito House,Raphael S. Soriano,Hollywood Hills West,Standing,,,,,,1940,1496,2,2,1,34.0996,-118.3755
+h380,Koosis House,Raphael S. Soriano,Hollywood,Standing,,,,,,1940,2374,3,2,1,34.1069,-118.3413
+h381,Lipetz House,Raphael S. Soriano,Silver Lake,Standing,,LA Historic-Cultural Monument No. 967,,,,1936,1550,2,2,1,34.0934,-118.2681
+h382,Meyers House,Raphael S. Soriano,Echo Park,Standing,,,,,,1938,1532,2,2,1,34.0883,-118.268
+h383,Ross House,Raphael S. Soriano,Silver Lake,Standing,,LA Historic-Cultural Monument No. 964,,,,1938,1751,3,2,1,34.0908,-118.2487
+h384,Lukens House,Raphael S. Soriano,Los Angeles,Standing,,LA Historic-Cultural Monument No. 866,,,,1940,1363,2,2,1,34.0299,-118.3238
+h385,Cast Study House,Raphael S. Soriano,Pacific Palisades,Standing,,,,,,1950,3199,5,4,1,34.0497,-118.5067
+h386,Curtis-Noyes House,Raphael S. Soriano,Westwood,Standing,,,,,,1950,6037,5,7,1,34.0771,-118.4413
+h387,Phineas Kappe Residence,Raymond Kappe,Whittier,Standing,,,,,,1955,,,,2,33.9284,-117.9983
+h388,Bernheim House,Raymond Kappe,Los Angeles,Standing,,,,,,1959,1957,3,2,1,34.0771,-118.4856
+h389,Gould House,Raymond Kappe,Los Angeles,Standing,,LA Historic-Cultural Monument No. 886,,,,1967,3448,5,4,1,34.0808,-118.4882
+h390,Gertler House,Raymond Kappe,Santa Monica,Standing,,,,,,1970,4755,4,3,1,34.0357,-118.5163
+h391,Kappe House,Raymond Kappe,Pacific Palisades,Standing,,LA Historic-Cultural Monument No. 623,,,,1967,4157,5,3,1,34.0431,-118.5164
+h392,National Boulevard Apartments,Raymond Kappe,Palms,Standing,,,,,,1955,3965,6,5,1,34.0313,-118.4118
+h393,House,Raymond Kappe,Manhattan Beach,Standing,,,,,,1985,5226,2,6,1,33.8863,-118.4132
+h394,Fredonia Apartment Building,Raymond Kappe,Los Angeles,Standing,,,TRUE,,,1963,,,,12,34.1349,-118.361
+h395,Barsha House,Raymond Kappe,Sherman Oaks,Standing,,,,,,1960,3171,4,3,1,34.1331,-118.473
+h396,Handman House,Raymond Kappe,Sherman Oaks,Standing,,,,,,1963,4193,3,4,1,34.14,-118.4728
+h397,Brenta Apartments,Rebecca Binder,Venice,Standing,,,,,,1991,8980,16,16,1,33.9941,-118.4568
+h398,Gardner House,Rebecca Binder,Venice,Standing,,,,,,1991,2708,3,3,1,33.9823,-118.4681
+h399,Bernstein House,Rebecca Binder,Sherman Oaks,Standing,,,,,,1949,3880,5,4,1,34.1475,-118.4642
+h400,Fancis House,Reginald D. Johnson,Glendora,Standing,,,,,,1930,,,,2,34.131,-117.8717
+h401,Tod Ford House,Reginald D. Johnson,Glendora,Standing,,,,,,1918,,,,2,34.1316,-117.8745
+h402,Landreth House,Reginald D. Johnson,Pasadena,Needs review,,,,,,1998,9269,7,10,1,34.1214,-118.1324
+h403,Lotery House,Rex Lotery,Los Angeles,Standing,,,,,,1962,,,,2,34.0782,-118.4905
+h404,Lassoff House,Rex Lotery,Los Angeles,Standing,,,,,,1989,2311,3,3,1,34.0714,-118.4985
+h405,Model House for the Trousdale Development Company,Rex Lotery,Beverly Hills,Standing,,,,,,1965,4439,4,4,1,34.1086,-118.3964
+h406,Kritzer House,Rex Lotery,Beverly Hills,Standing,,,,,,1966,4460,4,4,1,34.0869,-118.4113
+h407,Greenberg House,Ricardo Legoretta,Brentwood,Standing,,,TRUE,,,1990,9316,4,7,1,34.0594,-118.4848
+h408,Beckstrand House,Richard J. Neutra,Palos Verdes Estates,Standing,,,,,,1940,1668,3,3,1,33.7931,-118.4052
+h409,Beard House,Richard J. Neutra,Altadena,Standing,,,,,,1934,1473,3,2,1,34.1833,-118.1082
+h410,Lovell House,Richard J. Neutra,Los Feliz,Standing,,LA Historic-Cultural Monument No. 123; National Register of Historic Places No. 71000147,,,,1929,4807,5,4,1,34.1195,-118.2862
+h411,Mosk House,Richard J. Neutra,Beachwood Canyon,Standing,,,,,,1932,1708,2,2,1,34.1163,-118.317
+h412,Ward House,Richard J. Neutra,Los Angeles,Standing,,LA Historic-Cultural Monument No. 1014,,,,1939,1510,2,2,1,34.1307,-118.3396
+h413,The Loring House,Richard J. Neutra,Los Angeles,Standing,,,,,,1958,1834,3,3,1,34.1155,-118.3586
+h414,The Hendershot House,Richard J. Neutra,Los Angeles,Standing,,,,,,1963,2196,2,2,1,34.1216,-118.3596
+h415,Kun Houses,Richard J. Neutra,Hollywood Hills West,Standing,,,,,,1950,2017,3,3,1,34.1033,-118.3618
+h416,Jardinette Apartments,Richard J. Neutra,Melrose Hill,Standing,,LA Historic-Cultural Monument No. 390; National Register of Historic Places No. 86003524,,,,1929,27708,13,43,1,34.0865,-118.3104
+h417,Perkins House,Richard J. Neutra,Pasadena,Standing,,,,,,1955,1080,1,1,1,34.1319,-118.1795
+h418,Hinds House,Richard J. Neutra,Mount Washington,Standing,,,,,,1950,1082,2,2,1,34.1057,-118.2153
+h419,Neutra Richard & Dion Archit,Richard J. Neutra,Silver Lake,Standing,,,,,,1951,4875,,,1,34.0996,-118.2573
+h420,Neutra VDL Studio and Residences,Richard J. Neutra,Silver Lake,Standing,,LA Historic-Cultural Monument No. 640; National Register of Historic Places No. 03000774,,,,1964,3501,5,4,1,34.0986,-118.2591
+h421,Treweek House,Richard J. Neutra,Silver Lake,Standing,,,,,,1948,2600,4,3,1,34.0982,-118.2626
+h422,McIntosh House,Richard J. Neutra,Silver Lake,Standing,,,,,,1939,870,2,1,1,34.0867,-118.2804
+h423,Koblick House,Richard J. Neutra,Silver Lake,Standing,,,,,,1936,1620,2,2,1,34.0913,-118.267
+h424,Reunion House,Richard J. Neutra,Silver Lake,Needs review,,,,,,1979,3944,5,4,1,34.0958,-118.2592
+h425,Flavin House,Richard J. Neutra,Silver Lake,Standing,,,,,,1957,1929,2,3,1,34.0973,-118.2612
+h426,Ohara House,Richard J. Neutra,Silver Lake,Standing,,,,,,1959,1564,3,2,1,34.0948,-118.2622
+h427,Akai House,Richard J. Neutra,Silver Lake,Standing,,,,,,1962,2290,4,3,1,34.0971,-118.262
+h428,Yew House,Richard J. Neutra,Silver Lake,Standing,,,,,,1956,2401,3,3,1,34.0975,-118.2626
+h429,Kambara House,Richard J. Neutra,Silver Lake,Standing,,,,,,1960,2557,4,3,1,34.0954,-118.2602
+h430,Inadomi House,Richard J. Neutra,Silver Lake,Standing,,,,,,1959,2484,4,3,1,34.0963,-118.2594
+h431,Sokol House,Richard J. Neutra,Silver Lake,Standing,,,,,,1948,2382,4,3,1,34.0971,-118.2627
+h432,Holiday House Motel,Richard J. Neutra,Malibu,Standing,,,,,,1949,3354,,,1,34.0252,-118.7679
+h433,Bailey House,Richard J. Neutra,Pacific Palisades,Standing,,,,,,1948,1849,3,3,1,34.0291,-118.518
+h434,Sten-Frenke House,Richard J. Neutra,Santa Monica,Standing,,LA Historic-Cultural Monument No. 647,,,,1933,2959,3,4,1,34.0286,-118.5171
+h435,Ruben House,Richard J. Neutra,Santa Monica,Needs review,,,,,,1993,6135,3,6,1,34.0403,-118.5129
+h436,Nesbitt House,Richard J. Neutra,Brentwood,Standing,,,,,,1942,3443,1,4,1,34.0481,-118.4914
+h437,Rourke House,Richard J. Neutra,Beverly Hills,Standing,,,,,,1949,2122,3,3,1,34.1157,-118.3943
+h438,Brown House,Richard J. Neutra,Los Angeles,Standing,,,,,,1955,3795,3,6,1,34.0809,-118.4522
+h439,Plywood Model Experimental House,Richard J. Neutra,Brentwood,Standing,,,,,,1935,,,,2,34.0645,-118.4646
+h440,Strathmore Apartments,Richard J. Neutra,Westwood,Standing,,LA Historic-Cultural Monument No. 351; National Register of Historic Places No. 13000754,,,,1937,1180,3,2,1,34.0657,-118.4523
+h441,Kelton Apartments,Richard J. Neutra,Westwood,Standing,,,,,,1941,3253,5,4,1,34.0667,-118.4546
+h442,Elkay Apartments,Richard J. Neutra,Westwood,Standing,,,,,,1949,5905,9,5,1,34.0673,-118.4521
+h443,Van Cleff House,Richard J. Neutra,Westwood,Standing,,,,,,1942,2856,4,4,1,34.0678,-118.4354
+h444,Greenberg House,Richard J. Neutra,Westwood,Standing,,,,,,1949,2633,3,3,1,34.069,-118.4365
+h445,Worrel House,Robert B. Stacey-Judd,Santa Monica,Standing,,Santa Monica Landmark No. 50,,,,1924,2786,4,3,1,34.0316,-118.5068
+h446,Fenyes House,Robert Farquhar,Pasadena,Standing,,,,,,1932,2320,,,1,34.1579,-118.1488
+h447,Pergola House,Robert Gordon Fraser,Pasadena,Standing,,,,,,1951,2208,2,2,1,34.1274,-118.1637
+h448,Apartment Building,Robert H. Ainworth,Pasadena,Standing,,,,,,1928,,,,8,34.135,-118.1561
+h449,Lohrie House,Rodney Walker,Westlake,Standing,,,,,,,,,,1,34.0643,-118.2631
+h450,West House,Rodney Walker,Pacific Palisades,Standing,,National Register of Historic Places No. 13000516,,,,1948,1701,2,2,1,34.0308,-118.5201
+h451,Bernatti House,Rodney Walker,Los Angeles,Standing,,,,,,1947,885,2,1,1,34.093,-118.4395
+h452,Stevens House,Rodney Walker,Studio City,Standing,,,,,,1942,1877,3,2,1,34.1359,-118.4098
+h453,The Deigh Residence,Rodney Walker,Studio City,Standing,,,,,,1951,1704,3,2,1,34.137,-118.4099
+h454,Smith House,Rodney Walker,Sherman Oaks,Needs review,,,,,,2005,4751,5,6,1,34.151,-118.4697
+h455,Davis House,Roland E. Coate,Pasadena,Standing,,,,,,1936,5989,8,5,1,34.1245,-118.1574
+h456,Barber House,Roland E. Coate,Pasadena,Standing,,,,,,1926,4191,6,6,1,34.1413,-118.1639
+h457,Vinmont House,Roland E. Coate,East Hollywood,Standing,,,,,,1926,7087,7,6,1,34.1103,-118.3019
+h458,Campbell House,Roland E. Coate,Pasadena,Standing,,,,,,1925,4078,4,4,1,34.126,-118.1317
+h459,Baer House,Roland E. Coate,South Pasadena,Standing,,,,,,1929,14547,7,11,1,34.111,-118.1424
+h460,Norcross House,Roland E. Coate,Los Angeles,Standing,,,,,,1927,18654,14,18,1,34.0817,-118.4455
+h461,Mudd House,Roland E. Coate,Holmby Hills,Needs review,,,,,,1997,8415,5,8,1,34.076,-118.4308
+h462,Forrest House,Roland E. Coate,Beverly Hills,Standing,,,,,,1931,6015,6,7,1,34.0745,-118.4072
+h463,"House, 1915",Rossiter-Banfield Company,Pasadena,Standing,,,,,,1915,3832,4,3,1,34.1232,-118.1404
+h464,Schoolcraft House,Rudolph M. Schindler,Palos Verdes Estates,Standing,,,,,,1926,4510,7,5,1,33.7984,-118.3948
+h465,Von Koerber House,Rudolph M. Schindler,Redondo Beach,Standing,,,,,,1932,1770,4,4,1,33.815,-118.3833
+h466,Wolfe House,Rudolph M. Schindler,Avalon,Needs review,,,,,,2003,3000,3,4,1,33.3454,-118.3273
+h467,Presburger House,Rudolph M. Schindler,Lynwood,Standing,,,,,,1947,,,,2,33.9166,-118.1937
+h468,Schlesinger House,Rudolph M. Schindler,Los Feliz,Needs review,,,,,,1955,1258,2,2,1,34.1047,-118.2796
+h469,Elliot House,Rudolph M. Schindler,Los Feliz,Standing,,LA Historic-Cultural Monument No. 690,,,,1930,1582,2,2,1,34.1051,-118.2824
+h470,Skolnik House,Rudolph M. Schindler,Los Feliz,Standing,,,,,,1951,1822,3,2,1,34.1163,-118.2954
+h471,Fitzpatrick House,Rudolph M. Schindler,Hollywood Hills West,Standing,,,,,,1936,2664,3,2,1,34.1226,-118.3762
+h472,Janson House,Rudolph M. Schindler,Hollywood Hills West,Standing,,,,,,1950,925,1,2,1,34.1161,-118.3841
+h473,Reis House,Rudolph M. Schindler,Los Angeles,Standing,,,,,,1952,1822,2,2,1,34.0953,-118.3756
+h474,Erlik House,Rudolph M. Schindler,Los Angeles,Standing,,,,,,1951,1222,2,2,1,34.102,-118.3561
+h475,Tucker House,Rudolph M. Schindler,Hollywood Hills West,Standing,,,,,,1951,1832,3,2,1,34.1034,-118.3644
+h476,Schindler House,Rudolph M. Schindler,West Hollywood,Standing,,National Register of Historic Places No. 71000150,,,,1922,2468,3,3,1,34.086,-118.3701
+h477,Howe House,Rudolph M. Schindler,Silver Lake,Standing,,LA Historic-Cultural Monument No. 895,,,,1925,2426,2,2,1,34.1023,-118.2549
+h478,Van Patten House,Rudolph M. Schindler,Silver Lake,Standing,,,,,,1935,2466,3,3,1,34.1017,-118.2702
+h479,Droste House,Rudolph M. Schindler,Silver Lake,Standing,,LA Historic-Cultural Monument No. 837,,,,1940,1778,3,3,1,34.0952,-118.2693
+h480,Walker House,Rudolph M. Schindler,Silver Lake,Standing,,,,,,1936,1902,3,2,1,34.0966,-118.2677
+h481,Wilson House,Rudolph M. Schindler,Silver Lake,Standing,,LA Historic-Cultural Monument No. 965,,,,1938,2337,3,3,1,34.0965,-118.269
+h482,Bubeshko Apartments,Rudolph M. Schindler,Silver Lake,Standing,,LA Historic-Cultural Monument No. 831,,,,1941,2578,3,4,1,34.0994,-118.2741
+h483,Westby House,Rudolph M. Schindler,Silver Lake,Standing,,,,,,1939,2084,2,3,1,34.094,-118.2762
+h484,Packard House,Rudolph M. Schindler,Pasadena,Needs review,,,,,,1999,7490,11,14,1,34.1316,-118.0877
+h485,Mackey Apartment,Rudolph M. Schindler,Mid-Wilshire,Standing,,,,,,1939,4352,6,5,1,34.0554,-118.3514
+h486,Rodakiewicz House,Rudolph M. Schindler,Beverly Hills,Standing,,,,,,1937,6374,4,7,1,34.1168,-118.3926
+h487,Tischler House,Rudolph M. Schindler,Brentwood,Standing,,LA Historic-Cultural Monument No. 506,,,,1950,1271,3,2,1,34.0723,-118.4547
+h488,Kallis House,Rudolph M. Schindler,Los Angeles,Standing,,LA Historic-Cultural Monument No. 860,,,,1948,2873,2,3,1,34.1301,-118.3607
+h489,Roth House,Rudolph M. Schindler,Studio City,Standing,,,,,,1946,1564,3,3,1,34.1379,-118.3922
+h490,Laurelwood Apartment,Rudolph M. Schindler,Studio City,Standing,,LA Historic-Cultural Monument No. 228,,,,1949,9759,20,10,1,34.1411,-118.3919
+h491,Goodwin House,Rudolph M. Schindler,Studio City,Standing,,,,,,1941,1531,2,3,1,34.1402,-118.3901
+h492,Gold House,Rudolph M. Schindler,Studio City,Standing,,,,,,1946,2602,3,3,1,34.1376,-118.3892
+h493,Van Dekker House,Rudolph M. Schindler,Woodland Hills,Needs review,,,,,,1957,2857,4,3,1,34.1665,-118.5692
+h494,O'Neill House and Pavilion,Santa Monica Architectural Group,Beverly Hills,Standing,,,,,,1987,5181,5,6,1,34.0707,-118.4036
+h495,Bolt House,Seymour Locke and Jasper Newton Preston,Pasadena,Standing,,,,,,1893,8834,10,6,1,34.139,-118.1608
+h496,Feitler House,Siegal Diamond Architects,Los Angeles,Standing,,,,,,1995,4164,3,4,1,34.054,-118.4183
+h497,Crowell House,Smith and Williams,Pasadena,Standing,,,,,,1952,2854,4,3,1,34.1294,-118.1679
+h498,Williams House,Smith and Williams,Mount Washington,Standing,,,,,,1949,922,2,2,1,34.0988,-118.2132
+h499,Hampstead House,Steven Ehrlich,Marina del Rey,Standing,,,,,,1992,2397,2,2,1,33.9864,-118.4502
+h500,House,Steven Ehrlich,Venice,Standing,,,TRUE,,,1989,3537,3,3,1,33.9818,-118.4697
+h501,Gold-Friedman House,Steven Ehrlich Architects,Santa Monica,Standing,,,,,,1936,1227,2,1,1,34.0385,-118.5071
+h502,Ehrlich House,Steven Ehrlich Architects,Santa Monica,Standing,,,,,,1952,3551,4,4,1,34.036,-118.5075
+h503,Israel House,Steven Ehrlich Architects,Santa Monica,Standing,,,,,,1990,3243,3,4,1,34.0166,-118.5006
+h504,Lummis House,Sumner Hunt and Theodore Eisen,Montecito Heights,Standing,,LA Historic-Cultural Monument No. 68; National Register of Historic Places No. 71000148; California Historical Landmark No. 531,,,,,,,,1,34.0921,-118.2061
+h505,"House, 1910",Sylvanus Marston,Pasadena,Standing,,National Register of Historic Places No. 98000959,,,,1911,3615,4,4,1,34.1299,-118.1392
+h506,Buckingham House,Sylvanus Marston,Pasadena,Standing,,,,,,1901,3818,8,4,1,34.1303,-118.1582
+h507,Thomas House,Sylvanus Marston,Pasadena,Standing,,National Register of Historic Places No. 98000958,,,,1919,3530,4,3,1,34.133,-118.1618
+h508,Rich House,T.M. Abell,Los Angeles,Standing,,LA Historic-Cultural Monument No. 834,,,,1967,3108,3,3,1,34.0696,-118.4879
+h509,Multi-Family Residence,Ted Tokio Tanaka,Venice,Standing,,,,,,1989,2279,2,3,1,33.9898,-118.4646
+h510,Multi-Family Residence,Ted Tokio Tanaka,Venice,Standing,,,,,,1989,2244,2,3,1,33.989,-118.4668
+h511,Multi-Family Residence,Ted Tokio Tanaka,Venice,Standing,,,,,,1989,2244,2,3,1,33.9906,-118.4645
+h512,Multi-Family Residence,Ted Tokio Tanaka,Venice,Standing,,,,,,1989,2279,2,3,1,33.992,-118.4663
+h513,Wyle Guest House,Tedesco Architects,Los Angeles,Standing,,,,,,1963,3925,5,3,1,34.0801,-118.4777
+h514,Donovan House,Theodore Eisen,Larchmont,Standing,,,,,,1913,7015,4,6,1,34.0679,-118.3203
+h515,Ladd House,Thornton Ladd,Pasadena,Standing,,,,,,1951,3391,3,4,1,34.1513,-118.1718
+h516,LeBrun House,Thornton M. Abell,Malibu,Standing,,,,,,1963,2482,3,2,1,34.0196,-118.8136
+h517,Haines House,Thornton M. Abell,Santa Monica,Needs review,,,,,,1995,5612,4,6,1,34.0333,-118.5169
+h518,Newfield House,Thornton M. Abell,Brentwood,Needs review,,,,,,1995,8919,7,8,1,34.053,-118.4906
+h519,Siskin House,Thornton M. Abell,Brentwood,Standing,,,,,,1965,6297,7,7,1,34.0584,-118.4918
+h520,Leslie House,Thornton M. Abell,Westgate Heights,Standing,,,,,,1949,5015,4,4,1,34.0727,-118.4762
+h521,Beck House,Thornton M. Abell,Los Angeles,Standing,,,,,,1950,2128,3,3,1,34.0894,-118.4595
+h522,Maslon House,Thornton M. Abell,Holmby Hills,Standing,,,,,,1969,3672,5,4,1,34.0697,-118.427
+h523,Ullman House,Thornton M. Abell,Santa Monica,Standing,,,,,,1956,3615,3,3,1,34.0407,-118.5073
+h524,Wright House,Timothy Walsh,Pasadena,Standing,,,,,,1909,4694,5,5,1,34.1335,-118.1635
+h525,"House, circa 1910",Timothy Walsh,Pasadena,Standing,,,,,,1907,3249,4,3,1,34.1348,-118.1646
+h526,Three Houses,Tom Roberts,Beverly Hills,Standing,,,,,,1979,2632,2,3,1,34.1164,-118.4045
+h527,Three Houses,Tom Roberts,Beverly Hills,Standing,,,,,,1979,2760,2,3,1,34.1175,-118.4046
+h528,Apartment House,Tom Roberts,Tarzana,Standing,,,,,,1978,12385,26,20,1,34.1851,-118.5345
+h529,Condominium Town Houses,Tossman/Day,Santa Monica,Standing,,,,,,1980,,,,4,34.0127,-118.4788
+h530,Robert Williams House,Train and Williams,Los Angeles,Needs review,,LA Historic-Cultural Monument No. 411,,,,1961,12710,,4,1,34.1224,-118.1739
+h531,Two Houses,Train and Williams,Pasadena,Standing,,,,,,1912,3720,5,4,1,34.1517,-118.1668
+h532,Two Houses,Train and Williams,Pasadena,Standing,,,,,,1917,4083,7,4,1,34.1508,-118.1668
+h533,Park House,Unknown,Glendora,Standing,,,,,,1903,,,,6,34.1367,-117.8687
+h534,"House, circa 1897",Unknown,Pomona,Needs review,,,,,,1952,1101,3,1,1,34.0684,-117.7172
+h535,McLean House,Unknown,Pasadena,Standing,,,,,,1925,2205,5,2,1,34.1773,-118.1232
+h536,Griffith House,Unknown,Altadena,Lost,Lost in the January 2025 Eaton Fire,,,,,1923,6182,6,5,1,34.1875,-118.1432
+h537,Blood House,Unknown,Altadena,Lost,Lost in the January 2025 Eaton Fire,,,,,1890,6938,10,2,1,34.1887,-118.1381
+h538,"House, circa 1915",Unknown,Pasadena,Standing,,,,,,1915,2830,5,5,1,34.1433,-118.1032
+h539,Hale House,Unknown,Pasadena,Standing,,,,,,1910,2795,4,2,1,34.1594,-118.123
+h540,Blood House,Unknown,Pasadena,Standing,,,,,,1913,2332,5,2,1,34.1348,-118.1393
+h541,"House, circa 1901",Unknown,Pasadena,Standing,,,,,,,,,,1,34.128,-118.1527
+h542,"House, circa 1900",Unknown,Pasadena,Standing,,,,,,1891,3480,7,3,1,34.1257,-118.1512
+h543,Westridge School,Unknown,Pasadena,Standing,,,,,,1999,,,,2,34.1252,-118.1571
+h544,Clapp House,Unknown,Pasadena,Standing,,,,,,1980,3556,3,4,1,34.1319,-118.1631
+h545,Noble House,Unknown,Pasadena,Standing,,,,,,1901,7416,10,7,1,34.1361,-118.16
+h546,Clapp House,Unknown,Pasadena,Standing,,,,,,1886,2646,5,5,1,34.1333,-118.1616
+h547,Newcomb House,Unknown,Pasadena,Standing,,,,,,1923,8917,10,6,1,34.1477,-118.1653
+h548,Wadsworth House,Unknown,Pasadena,Standing,,,,,,1925,1538,3,2,1,34.1648,-118.1763
+h549,House,Unknown,Pasadena,Standing,,National Register of Historic Places No. 11000495,,,,1888,1744,3,2,1,34.1708,-118.1806
+h550,Chambers House,Unknown,Eagle Rock,Standing,,,,,,1923,2450,5,3,1,34.1321,-118.2128
+h551,House,Unknown,Eagle Rock,Standing,,,,,,1922,3046,4,3,1,34.1443,-118.22
+h552,"House, 1929",Unknown,Glendale,Standing,,,,,,1931,2280,3,2,1,34.1484,-118.2125
+h553,"House, circa 1920",Unknown,Glendale,Standing,,,,,,1925,1842,4,2,1,34.1588,-118.2272
+h554,"House, 1980",Unknown,Glendale,Standing,,,,,,1980,4444,4,5,1,34.1602,-118.2334
+h555,Senator Madison Jones House,Unknown,Glendale,Standing,,,,,,1922,5698,4,4,1,34.1698,-118.2712
+h556,"House, circa 1895",Unknown,Highland Park,Standing,,LA Historic-Cultural Monument No. 143,,,,1900,2628,3,2,1,34.1109,-118.1851
+h557,"House, circa 1910",Unknown,Highland Park,Standing,,LA Historic-Cultural Monument No. 374,,,,1905,2731,4,1,1,34.111,-118.1892
+h558,Yoakum House,Unknown,Highland Park,Standing,,LA Historic-Cultural Monument No. 287,,,,1895,6140,8,4,1,34.1101,-118.1892
+h559,House,Unknown,Highland Park,Standing,,LA Historic-Cultural Monument No. 142; National Register of Historic Places No. 82000971,,,,1890,4528,6,3,1,34.1148,-118.1949
+h560,Mason House,Unknown,Eagle Rock,Standing,,,,,,1915,2426,4,1,1,34.1301,-118.2217
+h561,Ledyard House,Unknown,Pasadena,Standing,,,,,,1909,3412,4,7,1,34.1239,-118.1356
+h562,"House, circa 1985",Unknown,South Pasadena,Standing,,,,,,1902,13393,8,5,1,34.1208,-118.1554
+h563,"House, circa 1885",Unknown,South Pasadena,Standing,,,,,,1885,2778,5,3,1,34.124,-118.1549
+h564,"House, circa 1910",Unknown,South Pasadena,Standing,,,,,,1911,7702,8,8,1,34.1101,-118.1664
+h565,"House, circa 1890",Unknown,Lincoln Heights,Standing,,LA Historic-Cultural Monument No. 144,,,,1887,1674,3,1,1,34.0699,-118.2092
+h566,"House, circa 1895",Unknown,Boyle Heights,Standing,,LA Historic-Cultural Monument No. 262,,,,1890,1738,3,2,1,34.0396,-118.2075
+h567,"House, circa 1900",Unknown,Boyle Heights,Standing,,,,,,1906,2668,4,1,1,34.0367,-118.2191
+h568,Dora Apartments,Unknown,Westlake,Standing,,,,,,1962,,,,2,34.0556,-118.2721
+h569,Wright-Mooers House,Unknown,Westlake,Standing,,LA Historic-Cultural Monument No. 45; National Register of Historic Places No. 76000489,,,,1893,4617,5,2,1,34.0532,-118.2779
+h570,Untitled residence,Unknown,Westlake,Standing,,,,,,1923,1647,2,3,1,34.0484,-118.2754
+h571,"House, circa 1898",Unknown,Westlake,Standing,,,,,,1908,2942,5,2,1,34.0493,-118.2746
+h572,Untitled residence,Unknown,Pico-Union,Standing,,,,,,1952,1000,,,1,34.0501,-118.2803
+h573,Ponce de Leon Apartments,Unknown,Pico-Union,Standing,,,,,,1912,16113,,24,1,34.0483,-118.2791
+h574,"House, circa 1905",Unknown,Westlake,Standing,,,,,,1895,3292,6,4,1,34.0487,-118.2769
+h575,"House, circa 1897",Unknown,Westlake,Standing,,LA Historic-Cultural Monument No. 433,,,,1890,3494,7,3,1,34.0509,-118.2783
+h576,"House, circa 1895",Unknown,Westlake,Standing,,LA Historic-Cultural Monument No. 99,,,,1895,2845,4,3,1,34.0504,-118.2795
+h577,"House, circa 1896",Unknown,Westlake,Standing,,,,,,1890,2857,4,1,1,34.0509,-118.2789
+h578,"Marlinex Apartment Building, circa 1930",Unknown,Westlake,Standing,,,,,,1930,62984,,,1,34.0511,-118.2806
+h579,"House, circa 1900",Unknown,Pico-Union,Standing,,,,,,,3040,6,3,1,34.0444,-118.2799
+h580,Gilbert House,Unknown,Pico-Union,Standing,,LA Historic-Cultural Monument No. 85,,,,1902,5476,5,4,1,34.047,-118.2824
+h581,Gilbert House,Unknown,Pico-Union,Standing,,,,,,1905,4064,4,2,1,34.0466,-118.2831
+h582,Barmore House,Unknown,Pico-Union,Standing,,LA Historic-Cultural Monument No. 83,,,,1905,6793,,5,1,34.0467,-118.2796
+h583,Milner Apartment Building,Unknown,Pico-Union,Standing,,,,,,1928,34292,12,48,1,34.0433,-118.2835
+h584,Apartment Building,Unknown,Victoria Park,Standing,,,,,,,21893,39,27,1,34.0338,-118.3279
+h585,"House, circa 1900",Unknown,Pico-Union,Standing,,,,,,1901,3836,5,4,1,34.0458,-118.2831
+h586,Milbank House,Unknown,Santa Monica,Standing,,National Register of Historic Places No. 100009159; Santa Monica Landmark No. 42,,,,1912,,,,2,34.0279,-118.512
+h587,Gate House,Unknown,Beverly Hills,Standing,,,,,,1933,4254,5,6,1,34.0867,-118.4261
+h588,Jones House,Unknown,Santa Monica,Standing,,Santa Monica Landmark No. 34,,,,1906,6189,6,6,1,34.0261,-118.5153
+h589,Vawter House,Unknown,Santa Monica,Standing,,,,,,1980,3198,2,1,1,33.9994,-118.4756
+h590,Hromadka House,Unknown,Santa Monica,Standing,,,,,,1937,2468,4,3,1,34.043,-118.492
+h591,House,Unknown,Santa Monica,Standing,,,,,,1941,1585,2,2,1,34.0218,-118.4616
+h592,Putnam Place Town House,Unknown,Santa Monica,Standing,,,,,,1983,,,,6,34.0236,-118.4593
+h593,The Taos West Apartments,Unknown,Panorama City,Standing,,,,,,1971,,,,79,34.2163,-118.4309
+h594,Graham House,W. F. Norton,South Pasadena,Standing,,,,,,1887,3621,4,5,1,34.1086,-118.1593
+h595,McDonald House,W. F. Staunton,Pasadena,Standing,,,,,,1930,4990,6,4,1,34.1309,-118.1336
+h596,Rhodes House,W. J. Saunders,Pasadena,Standing,,,,,,1905,5720,6,3,1,34.1382,-118.1593
+h597,Hill House,Walker and Vawter,Westlake,Standing,,LA Historic-Cultural Monument No. 980,,,,1910,1860,2,1,1,34.0683,-118.2778
+h598,Hill House,Walker and Vawter,Brentwood,Needs review,,,,,,2012,8391,4,6,1,34.0521,-118.4914
+h599,Elliott House,Wallace Neff,Pasadena,Standing,,,TRUE,,,1928,6804,6,6,1,34.1267,-118.1327
+h600,Experimental Dome House,Wallace Neff,Pasadena,Standing,,,,,,1947,1121,2,1,1,34.1276,-118.1425
+h601,Galli Curci House,Wallace Neff,Brentwood,Standing,,,,,,1936,3814,4,5,1,34.073,-118.4591
+h602,Miller House,Wallace Neff,Los Angeles,Needs review,,,,,,2012,4495,2,3,1,34.0819,-118.4432
+h603,Singleton House,Wallace Neff,Holmby Hills,Standing,,,,,,1970,,,,3,34.0842,-118.4322
+h604,Imerman House,Wallace Neff,Beverly Hills,Standing,,,,,,1936,6053,5,7,1,34.0898,-118.4213
+h605,Coates House,Whitney R. Smith,Altadena,Standing,,,,,,1938,1432,3,2,1,34.1871,-118.1429
+h606,Burton-Hill Town Houses,Widon-Wein and Associates,Beverly Hills,Standing,,,,,,1974,,,,2,34.0718,-118.396
+h607,Menzies House,William Cameron,Beverly Hills,Standing,,,,,,1987,6950,4,3,1,34.0686,-118.4117
+h608,Three Houses,William Kesling,Silver Lake,Standing,,,,,,1935,1125,2,2,1,34.0878,-118.2653
+h609,Judson House,William Lees Judson,Los Angeles,Standing,,,,,,1894,2879,4,1,1,34.1121,-118.1805
+h610,Shoor House,William S. Beckett,Westgate Heights,Standing,,,,,,1951,1823,4,2,1,34.0732,-118.4838
+h611,Sperry House,"Wurster, Bernardi, and Emmons",Los Angeles,Needs review,,,,,,2008,,,,2,34.0749,-118.4943
+h612,Untitled residence,Unknown,Pasadena,Standing,,,,,,1931,702,,,1,34.143,-118.1618
+h613,Untitled residence,Unknown,Pasadena,Standing,,,,,,1910,3431,5,4,1,34.1236,-118.1361
