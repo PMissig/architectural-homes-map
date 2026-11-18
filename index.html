@@ -334,7 +334,7 @@ const base=new Base({tileSize:256,updateWhenZooming:false,keepBuffer:4}).addTo(m
 const labelPane=map.createPane("labels");labelPane.style.zIndex=450;labelPane.style.pointerEvents="none";
 
 /* ---------- Homes ---------- */
-let HOMES=[],markers=new Map();
+let HOMES=[],markers=new Map(),cardEls=new Map();
 const state={architect:null,saleOnly:false};
 const cluster=L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:46,spiderfyDistanceMultiplier:1.6,
   spiderLegPolylineOptions:{weight:1,color:"#141414",opacity:.35},
@@ -376,7 +376,7 @@ function card(h){
     </div>
     <div class="foot"><a href="https://missigteam.com" target="_top">Curated by Missig Team</a></div>`;
   const nb=el.querySelector('[data-act="notify"]');
-  if(nb)nb.onclick=()=>notifyForm(el,h);
+  if(nb)nb.onclick=e=>{e.preventDefault();e.stopPropagation();setTimeout(()=>notifyForm(el,h),0);}; // swap after the click finishes so the popup doesn't treat it as a map click
   return el;
 }
 
@@ -394,8 +394,8 @@ function notifyForm(el,h){
    </form>`;
   const f=el.querySelector("form"),msg=f.querySelector(".msg");
   const relayout=()=>{const m=markers.get(h.id),p=m&&m.getPopup();if(p&&p.isOpen()){p._updateLayout();p._updatePosition();p._adjustPan&&p._adjustPan();}}; // reflow only: update() would re-run card() and wipe the form
-  f.querySelector('[data-act="cancel"]').onclick=()=>{const fresh=card(h);el.replaceWith(fresh);relayout();};
-  relayout();f.querySelector("input").focus();
+  f.querySelector('[data-act="cancel"]').onclick=e=>{e.stopPropagation();const fresh=card(h);cardEls.set(h.id,fresh);el.replaceWith(fresh);relayout();};
+  relayout();f.querySelector("input").focus({preventScroll:true});
   f.addEventListener("submit",async e=>{
     e.preventDefault();
     const E=f.elements,name=E.name.value.trim(),email=E.email.value.trim(),phone=E.phone.value.trim(),website=E.website.value;
@@ -498,7 +498,9 @@ Promise.all([fetch(CONFIG.dataFile).then(r=>r.text()),fetch(CONFIG.basemapFile).
   if(sale)HOMES.forEach(h=>{if(sale.has(h.id))h.forSale=sale.get(h.id)&&h.status!=="Lost";});
   HOMES.forEach(h=>{
     const m=L.marker([h.lat,h.lon],{icon:pinIcon(h),home:h,title:h.house,alt:h.house,riseOnHover:true,zIndexOffset:h.forSale?1000:0});
-    m.bindPopup(()=>card(h),{maxWidth:340,minWidth:200,autoPanPaddingTopLeft:window.innerWidth>640?[360,20]:[16,16],autoPanPaddingBottomRight:[20,20],className:""});
+    // Keep one card per home while its popup is open, so a redraw (pan, cluster refresh) keeps the form instead of resetting it.
+    m.bindPopup(()=>{let c=cardEls.get(h.id);if(!c){c=card(h);cardEls.set(h.id,c);}return c;},{maxWidth:340,minWidth:200,autoPanPaddingTopLeft:window.innerWidth>640?[360,20]:[16,16],autoPanPaddingBottomRight:[20,20],className:""});
+    m.on("popupclose",()=>setTimeout(()=>{if(!m.isPopupOpen())cardEls.delete(h.id);},500));
     markers.set(h.id,m);
   });
   const forSale=HOMES.filter(h=>h.forSale).length;
