@@ -1,16 +1,16 @@
 id,house,architect,area,status,lost_note,designation,for_sale,listing_url,architect_page_url,year,sqft,beds,baths,units,lat,lon
 h001,Sprague House,A. A. Sprague,Pasadena,Standing,,,,,,1910,5131,4,5,1,34.1409,-118.1576
-h002,Leavitt House,A. Quincey Jones and Frederick E. Emmons,Glendale,Needs review,,,,,,1999,4255,4,3,1,34.1906,-118.2252
+h002,Leavitt House,A. Quincy Jones and Frederick E. Emmons,Glendale,Needs review,,,,,,1999,4255,4,3,1,34.1906,-118.2252
 h003,Jones House and Studio,A. Quincy Jones,Hollywood Hills West,Standing,,,,,,1939,2158,2,2,1,34.1063,-118.3788
 h004,Winans Apartment,A. Quincy Jones,Brentwood,Standing,,,,,,1948,10313,12,14,1,34.0778,-118.4686
 h005,Nordlinger House,A. Quincy Jones,Brentwood,Standing,,,,,,1948,2950,4,4,1,34.075,-118.4669
 h006,national Boulevard Apartments,A. Quincy Jones,Holmby Hills,Standing,,,,,,1950,12488,9,8,1,34.0781,-118.4297
 h007,Garfield Court Apartments,A.J. Waid,East Hollywood,Standing,,,,,,1927,,,,2,34.1061,-118.3112
-h008,Ralphs House,"Ain , Johnson, and Day",Pasadena,Standing,,,,,,1950,3678,6,4,1,34.1595,-118.1741
-h009,Cole House,"Ain , Johnson, and Day",Los Feliz,Standing,,,,,,1948,1285,2,2,1,34.1164,-118.2782
-h010,Avenel Housing,"Ain , Johnson, and Day",Los Angeles,Standing,,National Register of Historic Places No. 05000070,,,,1947,1096,2,1,1,34.1085,-118.2677
-h011,Shairer House,"Ain , Johnson, and Day",Brentwood,Standing,,,,,,1949,3004,7,4,1,34.0553,-118.4704
-h012,Miller House,"Ain , Johnson, and Day",Beverly Hills,Standing,,,,,,1948,3037,3,4,1,34.1004,-118.4039
+h008,Ralphs House,"Ain , Johnson, and Day",Pasadena,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1950,3678,6,4,1,34.1595,-118.1741
+h009,Cole House,"Ain , Johnson, and Day",Los Feliz,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1948,1285,2,2,1,34.1164,-118.2782
+h010,Avenel Housing,"Ain , Johnson, and Day",Los Angeles,Standing,,National Register of Historic Places No. 05000070,,,https://www.missigteam.com/architects/gregory-ain,1947,1096,2,1,1,34.1085,-118.2677
+h011,Shairer House,"Ain , Johnson, and Day",Brentwood,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1949,3004,7,4,1,34.0553,-118.4704
+h012,Miller House,"Ain , Johnson, and Day",Beverly Hills,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1948,3037,3,4,1,34.1004,-118.4039
 h013,Norton House,Alfred Heineman,Pasadena,Standing,,,,,,1905,2390,4,2,1,34.1359,-118.1603
 h014,House,Alfred Heineman,Los Feliz,Standing,,,,,,1918,1988,2,1,1,34.1148,-118.2851
 h015,Siple House,Allen Siple,Los Angeles,Standing,,,,,,1953,2932,2,2,1,34.0865,-118.503
@@ -85,17 +85,17 @@ h083,Walker House,Charles F. Whittlesey,Los Angeles,Standing,,LA Historic-Cultur
 h084,Lindsay House,Charles F. Whittlesey,Los Angeles,Standing,,,,,,1912,4956,6,6,1,34.0322,-118.3244
 h085,Willheim House,Charles W. Moore,Sherman Oaks,Standing,,,,,,1981,2173,2,2,1,34.1435,-118.4633
 h086,Rancho Estates,Cliff May Eichler,Long Beach,Standing,,,,,,1970,2162,4,3,1,33.814,-118.0976
-h087,Kubly House,Craig Ellwood,Pasadena,Standing,,,,,,1965,2156,4,2,1,34.1492,-118.1688
-h088,Moore House,Craig Ellwood,Los Feliz,Standing,,,,,,1965,1701,3,2,1,34.1154,-118.2949
-h089,Courtyard Apartments,Craig Ellwood,Hollywood,Standing,,LA Historic-Cultural Monument No. 801,,,,1953,3360,8,4,1,34.1004,-118.3215
+h087,Kubly House,Craig Ellwood,Pasadena,Standing,,,,,https://www.missigteam.com/architects/craig-ellwood,1965,2156,4,2,1,34.1492,-118.1688
+h088,Moore House,Craig Ellwood,Los Feliz,Standing,,,,,https://www.missigteam.com/architects/craig-ellwood,1965,1701,3,2,1,34.1154,-118.2949
+h089,Courtyard Apartments,Craig Ellwood,Hollywood,Standing,,LA Historic-Cultural Monument No. 801,,,https://www.missigteam.com/architects/craig-ellwood,1953,3360,8,4,1,34.1004,-118.3215
 h090,Eltinge House,Craig Ellwood,Silver Lake,Standing,,,,,,1918,5779,4,3,1,34.0927,-118.2597
-h091,Hunt House,Craig Ellwood,Malibu,Standing,,National Register of Historic Places No. 100004118,,,,1957,1335,2,2,1,34.0304,-118.7079
-h092,Anderson House,Craig Ellwood,Santa Monica,Standing,,,,,,1955,1569,2,2,1,34.0401,-118.5125
-h093,Elton House,Craig Ellwood,Santa Monica,Standing,,,,,,1953,2560,3,2,1,34.0401,-118.5169
-h094,Zimmerman House,Craig Ellwood,Brentwood,Standing,,,,,,1950,2770,5,3,1,34.065,-118.4845
-h095,Hale House,Craig Ellwood,Beverly Hills,Standing,,,,,,1951,1852,2,2,1,34.113,-118.4277
-h096,Broughton House,Craig Ellwood,Los Angeles,Standing,,,,,,1949,1827,3,3,1,34.0914,-118.4369
-h097,Case Study House #16,Craig Ellwood,Beverly Glen,Standing,,National Register of Historic Places No. 13000515,,,,1953,1664,2,2,1,34.1016,-118.4519
+h091,Hunt House,Craig Ellwood,Malibu,Standing,,National Register of Historic Places No. 100004118,,,https://www.missigteam.com/architects/craig-ellwood,1957,1335,2,2,1,34.0304,-118.7079
+h092,Anderson House,Craig Ellwood,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/craig-ellwood,1955,1569,2,2,1,34.0401,-118.5125
+h093,Elton House,Craig Ellwood,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/craig-ellwood,1953,2560,3,2,1,34.0401,-118.5169
+h094,Zimmerman House,Craig Ellwood,Brentwood,Standing,,,,,https://www.missigteam.com/architects/craig-ellwood,1950,2770,5,3,1,34.065,-118.4845
+h095,Hale House,Craig Ellwood,Beverly Hills,Standing,,,,,https://www.missigteam.com/architects/craig-ellwood,1951,1852,2,2,1,34.113,-118.4277
+h096,Broughton House,Craig Ellwood,Los Angeles,Standing,,,,,https://www.missigteam.com/architects/craig-ellwood,1949,1827,3,3,1,34.0914,-118.4369
+h097,Case Study House #16,Craig Ellwood,Beverly Glen,Standing,,National Register of Historic Places No. 13000515,,,https://www.missigteam.com/architects/craig-ellwood,1953,1664,2,2,1,34.1016,-118.4519
 h098,Gunther House,D. E. Postle Co,Altadena,Standing,,,,,,1922,5459,3,5,1,34.1848,-118.111
 h099,Smith House,David A. Ogilvie,Pasadena,Standing,,,,,,1929,3793,5,3,1,34.1468,-118.1676
 h100,"House, 1926",David A. Ogilvie,South Pasadena,Standing,,,,,,1925,5264,8,3,1,34.1113,-118.1405
@@ -113,8 +113,8 @@ h111,Rucker House,Douglas W. Rucker,Malibu,Standing,,,,,,1973,,,,2,34.0416,-118.
 h112,Toleston House,E. P. Zimmerman,Pasadena,Standing,,,,,,1911,4449,9,3,1,34.1309,-118.1391
 h113,Jevne House,Eager and Eager,Pasadena,Standing,,,,,,1913,,,,2,34.1273,-118.1677
 h114,Apartment Building,Earl D. Stonerod,Harvard Heights,Standing,,,,,,1936,5983,,,1,34.0446,-118.3096
-h115,Sunset Lanai Apartments,Edward Ficket,West Hollywood,Standing,,,,,,1952,23978,,,1,34.0957,-118.3713
-h116,Fire Engine House No. 18,Edward Ficket,Los Angeles,Standing,,LA Historic-Cultural Monument No. 349,,,,,,,,1,34.0318,-118.3088
+h115,Sunset Lanai Apartments,Edward Fickett,West Hollywood,Standing,,,,,,1952,23978,,,1,34.0957,-118.3713
+h116,Fire Engine House No. 18,Edward Fickett,Los Angeles,Standing,,LA Historic-Cultural Monument No. 349,,,,,,,,1,34.0318,-118.3088
 h117,House,Edward Richard Lind,Melrose Hill,Standing,,,,,,1938,1462,2,2,1,34.0858,-118.2965
 h118,Fowler House,Edward W. Fowler,Pasadena,Standing,,,,,,1928,4738,6,5,1,34.1479,-118.1677
 h119,Brauch House,Egasse and Brauch,Eagle Rock,Standing,,,,,,1923,2187,4,2,1,34.1432,-118.2181
@@ -129,7 +129,7 @@ h127,Nilsson House,Eugene Kupper,Los Angeles,Standing,,,,,,1999,7640,7,6,1,34.09
 h128,Walt Disney House,F. Scott Crowhurst,Los Feliz,Standing,,,,,,1932,6388,4,5,1,34.1152,-118.2828
 h129,Pearce House,Frank Lloyd Wright,Bradbury,Standing,,,,,https://www.missigteam.com/architects/frank-lloyd-wright,1955,1988,2,2,1,34.1461,-117.9664
 h130,Millard House,Frank Lloyd Wright,Pasadena,Standing,,National Register of Historic Places No. 76000493,,,https://www.missigteam.com/architects/frank-lloyd-wright,1924,4230,3,3,1,34.1555,-118.1596
-h131,John Sowden House,Lloyd Wright,East Hollywood,Standing,,LA Historic-Cultural Monument No. 762; National Register of Historic Places No. 71000151,,,,1927,5600,4,5,1,34.106,-118.2997
+h131,John Sowden House,Lloyd Wright,East Hollywood,Standing,,LA Historic-Cultural Monument No. 762; National Register of Historic Places No. 71000151,,,https://www.missigteam.com/architects/lloyd-wright,1927,5600,4,5,1,34.106,-118.2997
 h132,Ennis House,Frank Lloyd Wright,Los Feliz,Standing,,LA Historic-Cultural Monument No. 149; National Register of Historic Places No. 71000145; California Historical Landmark No. 1011,,,https://www.missigteam.com/architects/frank-lloyd-wright,1924,5484,3,4,1,34.1153,-118.2942
 h133,Storer House,Frank Lloyd Wright,Hollywood Hills West,Standing,,LA Historic-Cultural Monument No. 96; National Register of Historic Places No. 71000152,,,https://www.missigteam.com/architects/frank-lloyd-wright,1924,2967,4,3,1,34.0999,-118.3663
 h134,Freeman House,Frank Lloyd Wright,Hollywood,Standing,,LA Historic-Cultural Monument No. 247; National Register of Historic Places No. 71000146; California Historical Landmark No. 1011,,,https://www.missigteam.com/architects/frank-lloyd-wright,1925,2884,3,2,1,34.1074,-118.3397
@@ -169,34 +169,34 @@ h167,Berns House,Gordon Drake,Malibu,Standing,,,,,,1950,4456,3,3,1,34.037,-118.8
 h168,House,Grable and Austin,Pasadena,Standing,,,,,,1913,3700,4,3,1,34.1365,-118.1602
 h169,Williams House,Grable and Austin,Pasadena,Standing,,,,,,1911,2270,4,2,1,34.1361,-118.1625
 h170,Austin House,Grable and Austin,Pasadena,Standing,,,,,,1912,2887,4,4,1,34.1337,-118.1629
-h171,Ernest House,Gregory Ain,East Hollywood,Standing,,LA Historic-Cultural Monument No. 840,,,,1937,2082,3,3,1,34.111,-118.3108
-h172,Edwards House,Gregory Ain,East Hollywood,Standing,,LA Historic-Cultural Monument No. 260,,,,1936,1426,2,2,1,34.1119,-118.3143
-h173,Ain House,Gregory Ain,Hollywood Hills West,Standing,,,,,,1943,1964,3,2,1,34.1208,-118.3694
-h174,Beckman House,Gregory Ain,Fairfax,Standing,,,,,,1938,2411,3,3,1,34.0772,-118.3382
-h175,Byler House,Gregory Ain,Mount Washington,Standing,,,,,,1937,1597,3,2,1,34.0985,-118.2202
-h176,Tierman House,Gregory Ain,Silver Lake,Standing,,LA Historic-Cultural Monument No. 124,,,,1938,1400,2,2,1,34.1013,-118.2692
-h177,Orans House,Gregory Ain,Silver Lake,Standing,,,,,,1941,2144,3,3,1,34.1022,-118.2676
-h178,Daniels House,Gregory Ain,Silver Lake,Standing,,,,,,1939,992,2,1,1,34.0959,-118.2702
-h179,Dunsmuir Apartments,Gregory Ain,Mid-Wilshire,Standing,,LA Historic-Cultural Monument No. 954,,,,1938,4784,8,8,1,34.052,-118.3514
-h180,Vorkapich Garden House,Gregory Ain,Beverly Hills,Needs review,,,,,,2001,7245,7,9,1,34.1084,-118.4373
-h181,Mesner House,Gregory Ain,Sherman Oaks,Standing,,,,,,1953,4665,6,6,1,34.1463,-118.4531
+h171,Ernest House,Gregory Ain,East Hollywood,Standing,,LA Historic-Cultural Monument No. 840,,,https://www.missigteam.com/architects/gregory-ain,1937,2082,3,3,1,34.111,-118.3108
+h172,Edwards House,Gregory Ain,East Hollywood,Standing,,LA Historic-Cultural Monument No. 260,,,https://www.missigteam.com/architects/gregory-ain,1936,1426,2,2,1,34.1119,-118.3143
+h173,Ain House,Gregory Ain,Hollywood Hills West,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1943,1964,3,2,1,34.1208,-118.3694
+h174,Beckman House,Gregory Ain,Fairfax,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1938,2411,3,3,1,34.0772,-118.3382
+h175,Byler House,Gregory Ain,Mount Washington,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1937,1597,3,2,1,34.0985,-118.2202
+h176,Tierman House,Gregory Ain,Silver Lake,Standing,,LA Historic-Cultural Monument No. 124,,,https://www.missigteam.com/architects/gregory-ain,1938,1400,2,2,1,34.1013,-118.2692
+h177,Orans House,Gregory Ain,Silver Lake,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1941,2144,3,3,1,34.1022,-118.2676
+h178,Daniels House,Gregory Ain,Silver Lake,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1939,992,2,1,1,34.0959,-118.2702
+h179,Dunsmuir Apartments,Gregory Ain,Mid-Wilshire,Standing,,LA Historic-Cultural Monument No. 954,,,https://www.missigteam.com/architects/gregory-ain,1938,4784,8,8,1,34.052,-118.3514
+h180,Vorkapich Garden House,Gregory Ain,Beverly Hills,Needs review,,,,,https://www.missigteam.com/architects/gregory-ain,2001,7245,7,9,1,34.1084,-118.4373
+h181,Mesner House,Gregory Ain,Sherman Oaks,Standing,,,,,https://www.missigteam.com/architects/gregory-ain,1953,4665,6,6,1,34.1463,-118.4531
 h182,Grossman House,Greta Magnusson Grossman,Beverly Hills,Standing,,,,,,1948,2101,3,3,1,34.1008,-118.406
 h183,Byles and Weston House,H. Douglas Byles and Eugene Weston 3,Pasadena,Standing,,,,,,1950,1040,2,1,1,34.1743,-118.1636
 h184,Model House,H. Roy Kelley,Sherman Oaks,Standing,,,,,,1934,2155,3,3,1,34.1451,-118.441
 h185,Dumbacher House,Hagy Belzberg,Pasadena,Standing,,,,,,1994,3783,3,6,1,34.1568,-118.1764
 h186,Fargo House,Harry Grey,Los Angeles,Standing,,LA Historic-Cultural Monument No. 464,,,,1909,2500,5,1,1,34.1126,-118.1802
-h187,Bauer House,Harwell H. Harris,Glendale,Standing,,,,,,1938,1795,2,2,1,34.15,-118.2085
-h188,Laing House,Harwell H. Harris,Pasadena,Standing,,,,,,1935,1449,2,2,1,34.1327,-118.1825
-h189,Birtcher-Share House,Harwell H. Harris,Mount Washington,Standing,,LA Historic-Cultural Monument No. 612,,,,1942,3228,2,3,1,34.1098,-118.2187
-h190,Hawk House,Harwell H. Harris,Silver Lake,Standing,,,,,,1939,1201,2,1,1,34.1,-118.2568
-h191,Hansen House,Harwell H. Harris,Silver Lake,Standing,,,,,,1951,1440,2,1,1,34.1028,-118.2678
-h192,Alexander House,Harwell H. Harris,Silver Lake,Standing,,,,,,1940,1665,3,2,1,34.1028,-118.269
-h193,Hopmans House,Harwell H. Harris,Silver Lake,Standing,,,,,,1960,2497,2,2,1,34.0898,-118.2719
-h194,Walther House,Harwell H. Harris,Silver Lake,Standing,,,,,,1937,,,,3,34.0883,-118.2666
-h195,Entenza House,Harwell H. Harris,Santa Monica,Standing,,,,,,1937,824,2,1,1,34.035,-118.5157
-h196,Pumphrey House,Harwell H. Harris,Santa Monica,Standing,,,,,,1940,1728,4,3,1,34.0351,-118.5114
-h197,Dean McHenry House,Harwell H. Harris,Holmby Hills,Standing,,,,,,1940,2280,5,4,1,34.0686,-118.4321
-h198,English House,Harwell H. Harris,Beverly Hills,Standing,,,,,,1950,7509,5,7,1,34.0975,-118.4089
+h187,Bauer House,Harwell H. Harris,Glendale,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1938,1795,2,2,1,34.15,-118.2085
+h188,Laing House,Harwell H. Harris,Pasadena,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1935,1449,2,2,1,34.1327,-118.1825
+h189,Birtcher-Share House,Harwell H. Harris,Mount Washington,Standing,,LA Historic-Cultural Monument No. 612,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1942,3228,2,3,1,34.1098,-118.2187
+h190,Hawk House,Harwell H. Harris,Silver Lake,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1939,1201,2,1,1,34.1,-118.2568
+h191,Hansen House,Harwell H. Harris,Silver Lake,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1951,1440,2,1,1,34.1028,-118.2678
+h192,Alexander House,Harwell H. Harris,Silver Lake,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1940,1665,3,2,1,34.1028,-118.269
+h193,Hopmans House,Harwell H. Harris,Silver Lake,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1960,2497,2,2,1,34.0898,-118.2719
+h194,Walther House,Harwell H. Harris,Silver Lake,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1937,,,,3,34.0883,-118.2666
+h195,Entenza House,Harwell H. Harris,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1937,824,2,1,1,34.035,-118.5157
+h196,Pumphrey House,Harwell H. Harris,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1940,1728,4,3,1,34.0351,-118.5114
+h197,Dean McHenry House,Harwell H. Harris,Holmby Hills,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1940,2280,5,4,1,34.0686,-118.4321
+h198,English House,Harwell H. Harris,Beverly Hills,Standing,,,,,https://www.missigteam.com/architects/harwell-hamilton-harris,1950,7509,5,7,1,34.0975,-118.4089
 h199,Alice Lynch House,Harwood Hewitt,Los Angeles,Standing,,LA Historic-Cultural Monument No. 621,,,,1922,2560,5,3,1,34.0363,-118.3196
 h200,Schulitz House,Helmut Schulitz,Beverly Hills,Standing,,,,,,1976,1932,3,2,1,34.0977,-118.4017
 h201,Savage House,Henry Greene,Pasadena,Standing,,,,,https://www.missigteam.com/architects/greene-and-greene,1924,1870,2,2,1,34.1693,-118.1472
@@ -224,23 +224,23 @@ h222,Mannheim House,Jean Mannheim,Pasadena,Standing,,,,,,1909,2323,3,1,1,34.1387
 h223,Cheesewright House #1,"Jeffrey, Van Trees, and Millar",Pasadena,Standing,,,,,,1910,3420,4,3,1,34.1343,-118.1648
 h224,Cheesewright House #2,"Jeffrey, Van Trees, and Millar",Pasadena,Standing,,,,,,1913,4349,7,5,1,34.1386,-118.167
 h225,Lingenbrink House,Jock Peters,Hollywood,Standing,,,,,,1930,1743,2,2,1,34.1065,-118.3328
-h226,Barclay House,John Byers,Pacific Palisades,Needs review,,,,,,1997,13143,7,12,1,34.0561,-118.4998
-h227,Bradbury House,John Byers,Santa Monica,Standing,,LA Historic-Cultural Monument No. 594,,,,1955,,,,2,34.0262,-118.5167
-h228,Byers House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 52,,,,1925,4802,4,4,1,34.0463,-118.4979
-h229,Tinglof House,John Byers,Santa Monica,Standing,,,,,,1926,4271,6,6,1,34.0453,-118.497
-h230,Zimmer House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 84,,,,1924,,,,2,34.044,-118.4992
-h231,Thompson House,John Byers,Santa Monica,Standing,,,,,,1925,,,,2,34.0441,-118.4975
-h232,Bundy House,John Byers,Santa Monica,Standing,,,,,,1925,5960,8,8,1,34.0464,-118.4995
-h233,Armstrong-Cobb House,John Byers,Santa Monica,Standing,,,,,,1926,5924,8,6,1,34.0445,-118.5011
-h234,Temple House,John Byers,Brentwood,Standing,,,,,,1936,5042,4,6,1,34.0606,-118.4913
-h235,Stedman House,John Byers,Brentwood,Standing,,,,,,1936,4208,5,5,1,34.0629,-118.4843
-h236,Hamilton House,John Byers,Brentwood,Standing,,,,,,,,,,1,34.0593,-118.4856
-h237,Kerr House,John Byers,Brentwood,Standing,,,,,,1934,4498,6,4,1,34.0641,-118.4877
-h238,Murray House,John Byers,Brentwood,Standing,,,,,,1930,3542,4,3,1,34.0658,-118.4868
-h239,MacBennel House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 61,,,,1840,3014,5,6,1,34.0273,-118.5077
-h240,Gorham-Holliday House,John Byers,Santa Monica,Needs review,,,,,,1987,5998,4,5,1,34.028,-118.5136
-h241,Carrillo House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 110,,,,1925,3526,4,5,1,34.0412,-118.5025
-h242,House,John Byers and Edla Muir,Pacific Palisades,Lost,Lost in the January 2025 Palisades Fire,,,,,1940,1760,2,2,1,34.0455,-118.5395
+h226,Barclay House,John Byers,Pacific Palisades,Needs review,,,,,https://www.missigteam.com/architects/john-byers,1997,13143,7,12,1,34.0561,-118.4998
+h227,Bradbury House,John Byers,Santa Monica,Standing,,LA Historic-Cultural Monument No. 594,,,https://www.missigteam.com/architects/john-byers,1955,,,,2,34.0262,-118.5167
+h228,Byers House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 52,,,https://www.missigteam.com/architects/john-byers,1925,4802,4,4,1,34.0463,-118.4979
+h229,Tinglof House,John Byers,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/john-byers,1926,4271,6,6,1,34.0453,-118.497
+h230,Zimmer House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 84,,,https://www.missigteam.com/architects/john-byers,1924,,,,2,34.044,-118.4992
+h231,Thompson House,John Byers,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/john-byers,1925,,,,2,34.0441,-118.4975
+h232,Bundy House,John Byers,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/john-byers,1925,5960,8,8,1,34.0464,-118.4995
+h233,Armstrong-Cobb House,John Byers,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/john-byers,1926,5924,8,6,1,34.0445,-118.5011
+h234,Temple House,John Byers,Brentwood,Standing,,,,,https://www.missigteam.com/architects/john-byers,1936,5042,4,6,1,34.0606,-118.4913
+h235,Stedman House,John Byers,Brentwood,Standing,,,,,https://www.missigteam.com/architects/john-byers,1936,4208,5,5,1,34.0629,-118.4843
+h236,Hamilton House,John Byers,Brentwood,Standing,,,,,https://www.missigteam.com/architects/john-byers,,,,,1,34.0593,-118.4856
+h237,Kerr House,John Byers,Brentwood,Standing,,,,,https://www.missigteam.com/architects/john-byers,1934,4498,6,4,1,34.0641,-118.4877
+h238,Murray House,John Byers,Brentwood,Standing,,,,,https://www.missigteam.com/architects/john-byers,1930,3542,4,3,1,34.0658,-118.4868
+h239,MacBennel House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 61,,,https://www.missigteam.com/architects/john-byers,1840,3014,5,6,1,34.0273,-118.5077
+h240,Gorham-Holliday House,John Byers,Santa Monica,Needs review,,,,,https://www.missigteam.com/architects/john-byers,1987,5998,4,5,1,34.028,-118.5136
+h241,Carrillo House,John Byers,Santa Monica,Standing,,Santa Monica Landmark No. 110,,,https://www.missigteam.com/architects/john-byers,1925,3526,4,5,1,34.0412,-118.5025
+h242,House,John Byers and Edla Muir,Pacific Palisades,Lost,Lost in the January 2025 Palisades Fire,,,,https://www.missigteam.com/architects/john-byers,1940,1760,2,2,1,34.0455,-118.5395
 h243,Leonard J. Malin House,John Lautner,Los Angeles,Standing,,LA Historic-Cultural Monument No. 785,,,https://www.missigteam.com/architects/john-lautner,1960,2062,3,2,1,34.1258,-118.3683
 h244,Mauer House,John Lautner,Mount Washington,Standing,,LA Historic-Cultural Monument No. 481,,,https://www.missigteam.com/architects/john-lautner,1948,2547,3,3,1,34.1053,-118.2186
 h245,Familian House,John Lautner,Beverly Hills,Standing,,,,,https://www.missigteam.com/architects/john-lautner,1971,8335,7,9,1,34.0836,-118.4179
@@ -284,18 +284,18 @@ h283,"House, 1950",Leland Evison,Pasadena,Standing,,,,,,1950,2402,4,4,1,34.1236,
 h284,Schonbach House,Leland Evison,Pasadena,Standing,,,,,,1948,2086,4,3,1,34.1584,-118.1709
 h285,Meade House,Lester Sherer,Los Angeles,Standing,,,,,,1927,13041,9,10,1,34.077,-118.3359
 h286,Cravens House,Lewis P. Hobart,Pasadena,Standing,,,,,,1930,19970,11,7,1,34.1248,-118.1605
-h287,Dorland House,Lloyd Wright,Altadena,Standing,,,,,,1949,1442,3,1,1,34.1812,-118.1223
-h288,Mace House,Lloyd Wright,Hollywood Hills West,Standing,,,,,,1959,1442,2,2,1,34.0981,-118.3715
-h289,Henry Bollman House,Lloyd Wright,Los Angeles,Standing,,LA Historic-Cultural Monument No. 235,,,,1923,2518,4,2,1,34.0989,-118.3612
-h290,Otto Bollman House,Lloyd Wright,Hollywood,Standing,,,,,,1923,2299,3,2,1,34.1116,-118.3405
-h291,Weber House,Lloyd Wright,Country Club Park,Standing,,LA Historic-Cultural Monument No. 707,,,,1921,1859,3,2,1,34.0553,-118.3156
-h292,Nables House,Lloyd Wright,Santa Monica,Standing,,,,,,1950,2284,3,3,1,34.0495,-118.4951
-h293,Avery House,Lloyd Wright,Brentwood,Standing,,,,,,1936,6096,5,6,1,34.0623,-118.4932
-h294,Samuel House,Lloyd Wright,Westgate Heights,Standing,,,,,,1934,3496,3,3,1,34.071,-118.4755
-h295,Evans house,Lloyd Wright,Westgate Heights,Standing,,,,,,1936,3161,4,5,1,34.0694,-118.4747
-h296,Healy House,Lloyd Wright,Westwood,Needs review,,,,,,1991,11027,5,8,1,34.077,-118.4466
-h297,Karaski House,Lloyd Wright,Beverly Hills,Standing,,National Register of Historic Places No. 11000933; Beverly Hills Landmark No. 7,,,,1961,3170,4,4,1,34.0581,-118.4104
-h298,Greer House,Lloyd Wright,North Hills,Standing,,,,,,1956,,,,2,34.2376,-118.4742
+h287,Dorland House,Lloyd Wright,Altadena,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1949,1442,3,1,1,34.1812,-118.1223
+h288,Mace House,Lloyd Wright,Hollywood Hills West,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1959,1442,2,2,1,34.0981,-118.3715
+h289,Henry Bollman House,Lloyd Wright,Los Angeles,Standing,,LA Historic-Cultural Monument No. 235,,,https://www.missigteam.com/architects/lloyd-wright,1923,2518,4,2,1,34.0989,-118.3612
+h290,Otto Bollman House,Lloyd Wright,Hollywood,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1923,2299,3,2,1,34.1116,-118.3405
+h291,Weber House,Lloyd Wright,Country Club Park,Standing,,LA Historic-Cultural Monument No. 707,,,https://www.missigteam.com/architects/lloyd-wright,1921,1859,3,2,1,34.0553,-118.3156
+h292,Nables House,Lloyd Wright,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1950,2284,3,3,1,34.0495,-118.4951
+h293,Avery House,Lloyd Wright,Brentwood,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1936,6096,5,6,1,34.0623,-118.4932
+h294,Samuel House,Lloyd Wright,Westgate Heights,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1934,3496,3,3,1,34.071,-118.4755
+h295,Evans house,Lloyd Wright,Westgate Heights,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1936,3161,4,5,1,34.0694,-118.4747
+h296,Healy House,Lloyd Wright,Westwood,Needs review,,,,,https://www.missigteam.com/architects/lloyd-wright,1991,11027,5,8,1,34.077,-118.4466
+h297,Karaski House,Lloyd Wright,Beverly Hills,Standing,,National Register of Historic Places No. 11000933; Beverly Hills Landmark No. 7,,,https://www.missigteam.com/architects/lloyd-wright,1961,3170,4,4,1,34.0581,-118.4104
+h298,Greer House,Lloyd Wright,North Hills,Standing,,,,,https://www.missigteam.com/architects/lloyd-wright,1956,,,,2,34.2376,-118.4742
 h299,Lomax House,Lomax-Mills Associates,Hollywood Hills West,Standing,,,,,,1971,2970,4,4,1,34.1055,-118.3806
 h300,House,Lomax-Mills Associates,Westgate Heights,Standing,,,,,,1973,2309,3,2,1,34.0669,-118.48
 h301,"House, circa 1906",Louis B. Easton,Altadena,Lost,Lost in the January 2025 Eaton Fire,,,,,1906,816,3,1,1,34.1899,-118.158
@@ -342,26 +342,26 @@ h341,Three Houses,Oakley Norton,Eagle Rock,Standing,,,,,,1962,1512,2,3,1,34.1305
 h342,Franks House,Palmer Sabin,Pasadena,Standing,,,,,,1930,3394,6,4,1,34.1687,-118.1683
 h343,Bilike House,Parkinson and Bergstrom,South Pasadena,Standing,,,,,,1918,14307,,,1,34.1122,-118.1613
 h344,"House, circa 1910",Paul Arnold Needham,Hollywood Hills West,Standing,,,,,,1914,3782,4,3,1,34.1087,-118.3699
-h345,Paul R. Williams House,Paul R Williams and Associates,Victoria Park,Standing,,LA Historic-Cultural Monument No. 170,,,,1951,4440,4,5,1,34.0417,-118.3294
-h346,Gabriel Duque House,Paul R. Williams,Los Angeles,Standing,,,,,,1933,5888,5,9,1,34.0781,-118.3377
-h347,Banning House #1,Paul R. Williams,Los Angeles,Standing,,,,,,1929,5733,6,5,1,34.0799,-118.3361
-h348,Rothman House,Paul R. Williams,Los Angeles,Standing,,,,,,1926,7322,5,5,1,34.0629,-118.3274
-h349,Leistikow House,Paul R. Williams,Country Club Park,Standing,,,,,,1923,6165,9,5,1,34.0634,-118.3214
+h345,Paul R. Williams House,Paul R Williams and Associates,Victoria Park,Standing,,LA Historic-Cultural Monument No. 170,,,https://www.missigteam.com/architects/paul-r-williams,1951,4440,4,5,1,34.0417,-118.3294
+h346,Gabriel Duque House,Paul R. Williams,Los Angeles,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1933,5888,5,9,1,34.0781,-118.3377
+h347,Banning House #1,Paul R. Williams,Los Angeles,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1929,5733,6,5,1,34.0799,-118.3361
+h348,Rothman House,Paul R. Williams,Los Angeles,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1926,7322,5,5,1,34.0629,-118.3274
+h349,Leistikow House,Paul R. Williams,Country Club Park,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1923,6165,9,5,1,34.0634,-118.3214
 h350,Zeigler House,Paul Sterling Hoag,Los Angeles,Standing,,,,,,1952,2158,3,3,1,34.084,-118.4749
 h351,Parker House,Paul Sterling Hoag,Beverly Hills,Standing,,,,,,1951,5357,4,5,1,34.0904,-118.4102
 h352,Dyer House,Paul Sterling Hoag,Sherman Oaks,Standing,,,,,,1979,2061,2,2,1,34.1416,-118.4489
 h353,House,Paul Thoryk,Santa Monica,Standing,,,,,,1975,3940,4,4,1,34.0352,-118.514
-h354,Degnan House,Paul Williams,La Canada Flintridge,Standing,,,,,,1929,7724,5,4,1,34.2216,-118.2094
-h355,Mitchell House,Paul Williams,La Canada Flintridge,Standing,,,,,,1923,5144,6,7,1,34.193,-118.1917
-h356,Founder's Church of Religious Science,Paul Williams,Koreatown,Standing,,,,,,1959,14838,,,1,34.0625,-118.2947
-h357,national Boulevard Apartments,Paul Williams,Nevin,Standing,,,,,,1926,23685,,,1,34.0164,-118.2583
-h358,Golden State Mutual Life Insurance Building,Paul Williams,Los Angeles,Standing,,LA Historic-Cultural Monument No. 1000,,,,1948,54234,,,1,34.0331,-118.3069
-h359,Hunt Residence,Paul Williams,Brentwood,Standing,,,TRUE,,,1940,3867,4,4,1,34.0683,-118.4908
-h360,Trousdale Estates,Paul Williams,Beverly Hills,Standing,,,,,,1960,3364,5,6,1,34.1012,-118.3971
-h361,Westwood Medical Plaza,Paul Williams,Westwood,Standing,,,,,,1962,147876,,,1,34.058,-118.4432
-h362,Castera-Ward Residence,Paul Williams,Los Angeles,Standing,,LA Historic-Cultural Monument No. 893,,,,1937,11650,8,7,1,34.0813,-118.4461
-h363,Saks Fifth Avenue,Paul Williams,Beverly Hills,Standing,,,,,,1938,87886,,,1,34.067,-118.402
-h364,Hillside Memorial Park,Paul Williams,Fox Hills,Standing,,,,,,1958,,,,2,33.976,-118.3864
+h354,Degnan House,Paul Williams,La Canada Flintridge,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1929,7724,5,4,1,34.2216,-118.2094
+h355,Mitchell House,Paul Williams,La Canada Flintridge,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1923,5144,6,7,1,34.193,-118.1917
+h356,Founder's Church of Religious Science,Paul Williams,Koreatown,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1959,14838,,,1,34.0625,-118.2947
+h357,national Boulevard Apartments,Paul Williams,Nevin,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1926,23685,,,1,34.0164,-118.2583
+h358,Golden State Mutual Life Insurance Building,Paul Williams,Los Angeles,Standing,,LA Historic-Cultural Monument No. 1000,,,https://www.missigteam.com/architects/paul-r-williams,1948,54234,,,1,34.0331,-118.3069
+h359,Hunt Residence,Paul Williams,Brentwood,Standing,,,TRUE,,https://www.missigteam.com/architects/paul-r-williams,1940,3867,4,4,1,34.0683,-118.4908
+h360,Trousdale Estates,Paul Williams,Beverly Hills,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1960,3364,5,6,1,34.1012,-118.3971
+h361,Westwood Medical Plaza,Paul Williams,Westwood,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1962,147876,,,1,34.058,-118.4432
+h362,Castera-Ward Residence,Paul Williams,Los Angeles,Standing,,LA Historic-Cultural Monument No. 893,,,https://www.missigteam.com/architects/paul-r-williams,1937,11650,8,7,1,34.0813,-118.4461
+h363,Saks Fifth Avenue,Paul Williams,Beverly Hills,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1938,87886,,,1,34.067,-118.402
+h364,Hillside Memorial Park,Paul Williams,Fox Hills,Standing,,,,,https://www.missigteam.com/architects/paul-r-williams,1958,,,,2,33.976,-118.3864
 h365,De Bretteville-Simon Houses,Peter de Bretteville,Hollywood Hills West,Standing,,,,,,1975,2476,2,2,1,34.1179,-118.3706
 h366,De Bretteville-Simon Houses,Peter de Bretteville,Hollywood Hills West,Standing,,,,,,1975,2188,3,3,1,34.1174,-118.3735
 h367,Churchill House,Pierpont and Walter S. Davis,Los Angeles,Standing,,,,,,1926,6057,8,6,1,34.0752,-118.3354
@@ -373,27 +373,27 @@ h372,Koenig House #2,Pierre Koenig,Brentwood,Standing,,,,,,1926,2827,3,3,1,34.04
 h373,Apartment Building,"Pulliam, Matthews, and Associates",Pasadena,Standing,,,,,,1964,16104,30,30,1,34.1406,-118.128
 h374,Cunningham House,"Pulliam, Matthews, and Associates",Pasadena,Standing,,,,,,1976,6191,7,6,1,34.1335,-118.1708
 h375,Heidemann House,"Pulliam, Matthews, and Associates",Beverly Hills,Standing,,,,,,1971,5758,3,5,1,34.0902,-118.4265
-h376,Schrage House,Raphael S. Soriano,Los Feliz,Standing,,,,,,1951,2598,3,3,1,34.1187,-118.2838
-h377,Gogol House,Raphael S. Soriano,Los Feliz,Standing,,,,,,1939,2138,2,2,1,34.1107,-118.2819
-h378,Shulman House and Studio,Raphael S. Soriano,Hollywood Hills West,Standing,,LA Historic-Cultural Monument No. 325,,,,1950,3382,4,3,1,34.1242,-118.368
-h379,Polito House,Raphael S. Soriano,Hollywood Hills West,Standing,,,,,,1940,1496,2,2,1,34.0996,-118.3755
-h380,Koosis House,Raphael S. Soriano,Hollywood,Standing,,,,,,1940,2374,3,2,1,34.1069,-118.3413
-h381,Lipetz House,Raphael S. Soriano,Silver Lake,Standing,,LA Historic-Cultural Monument No. 967,,,,1936,1550,2,2,1,34.0934,-118.2681
-h382,Meyers House,Raphael S. Soriano,Echo Park,Standing,,,,,,1938,1532,2,2,1,34.0883,-118.268
-h383,Ross House,Raphael S. Soriano,Silver Lake,Standing,,LA Historic-Cultural Monument No. 964,,,,1938,1751,3,2,1,34.0908,-118.2487
-h384,Lukens House,Raphael S. Soriano,Los Angeles,Standing,,LA Historic-Cultural Monument No. 866,,,,1940,1363,2,2,1,34.0299,-118.3238
-h385,Cast Study House,Raphael S. Soriano,Pacific Palisades,Standing,,,,,,1950,3199,5,4,1,34.0497,-118.5067
-h386,Curtis-Noyes House,Raphael S. Soriano,Westwood,Standing,,,,,,1950,6037,5,7,1,34.0771,-118.4413
-h387,Phineas Kappe Residence,Raymond Kappe,Whittier,Standing,,,,,,1955,,,,2,33.9284,-117.9983
-h388,Bernheim House,Raymond Kappe,Los Angeles,Standing,,,,,,1959,1957,3,2,1,34.0771,-118.4856
-h389,Gould House,Raymond Kappe,Los Angeles,Standing,,LA Historic-Cultural Monument No. 886,,,,1967,3448,5,4,1,34.0808,-118.4882
-h390,Gertler House,Raymond Kappe,Santa Monica,Standing,,,,,,1970,4755,4,3,1,34.0357,-118.5163
-h391,Kappe House,Raymond Kappe,Pacific Palisades,Standing,,LA Historic-Cultural Monument No. 623,,,,1967,4157,5,3,1,34.0431,-118.5164
-h392,National Boulevard Apartments,Raymond Kappe,Palms,Standing,,,,,,1955,3965,6,5,1,34.0313,-118.4118
-h393,House,Raymond Kappe,Manhattan Beach,Standing,,,,,,1985,5226,2,6,1,33.8863,-118.4132
-h394,Fredonia Apartment Building,Raymond Kappe,Los Angeles,Standing,,,TRUE,,,1963,,,,12,34.1349,-118.361
-h395,Barsha House,Raymond Kappe,Sherman Oaks,Standing,,,,,,1960,3171,4,3,1,34.1331,-118.473
-h396,Handman House,Raymond Kappe,Sherman Oaks,Standing,,,,,,1963,4193,3,4,1,34.14,-118.4728
+h376,Schrage House,Raphael S. Soriano,Los Feliz,Standing,,,,,https://www.missigteam.com/architects/raphael-soriano,1951,2598,3,3,1,34.1187,-118.2838
+h377,Gogol House,Raphael S. Soriano,Los Feliz,Standing,,,,,https://www.missigteam.com/architects/raphael-soriano,1939,2138,2,2,1,34.1107,-118.2819
+h378,Shulman House and Studio,Raphael S. Soriano,Hollywood Hills West,Standing,,LA Historic-Cultural Monument No. 325,,,https://www.missigteam.com/architects/raphael-soriano,1950,3382,4,3,1,34.1242,-118.368
+h379,Polito House,Raphael S. Soriano,Hollywood Hills West,Standing,,,,,https://www.missigteam.com/architects/raphael-soriano,1940,1496,2,2,1,34.0996,-118.3755
+h380,Koosis House,Raphael S. Soriano,Hollywood,Standing,,,,,https://www.missigteam.com/architects/raphael-soriano,1940,2374,3,2,1,34.1069,-118.3413
+h381,Lipetz House,Raphael S. Soriano,Silver Lake,Standing,,LA Historic-Cultural Monument No. 967,,,https://www.missigteam.com/architects/raphael-soriano,1936,1550,2,2,1,34.0934,-118.2681
+h382,Meyers House,Raphael S. Soriano,Echo Park,Standing,,,,,https://www.missigteam.com/architects/raphael-soriano,1938,1532,2,2,1,34.0883,-118.268
+h383,Ross House,Raphael S. Soriano,Silver Lake,Standing,,LA Historic-Cultural Monument No. 964,,,https://www.missigteam.com/architects/raphael-soriano,1938,1751,3,2,1,34.0908,-118.2487
+h384,Lukens House,Raphael S. Soriano,Los Angeles,Standing,,LA Historic-Cultural Monument No. 866,,,https://www.missigteam.com/architects/raphael-soriano,1940,1363,2,2,1,34.0299,-118.3238
+h385,Cast Study House,Raphael S. Soriano,Pacific Palisades,Standing,,,,,https://www.missigteam.com/architects/raphael-soriano,1950,3199,5,4,1,34.0497,-118.5067
+h386,Curtis-Noyes House,Raphael S. Soriano,Westwood,Standing,,,,,https://www.missigteam.com/architects/raphael-soriano,1950,6037,5,7,1,34.0771,-118.4413
+h387,Phineas Kappe Residence,Raymond Kappe,Whittier,Standing,,,,,https://www.missigteam.com/architects/ray-kappe,1955,,,,2,33.9284,-117.9983
+h388,Bernheim House,Raymond Kappe,Los Angeles,Standing,,,,,https://www.missigteam.com/architects/ray-kappe,1959,1957,3,2,1,34.0771,-118.4856
+h389,Gould House,Raymond Kappe,Los Angeles,Standing,,LA Historic-Cultural Monument No. 886,,,https://www.missigteam.com/architects/ray-kappe,1967,3448,5,4,1,34.0808,-118.4882
+h390,Gertler House,Raymond Kappe,Santa Monica,Standing,,,,,https://www.missigteam.com/architects/ray-kappe,1970,4755,4,3,1,34.0357,-118.5163
+h391,Kappe House,Raymond Kappe,Pacific Palisades,Standing,,LA Historic-Cultural Monument No. 623,,,https://www.missigteam.com/architects/ray-kappe,1967,4157,5,3,1,34.0431,-118.5164
+h392,National Boulevard Apartments,Raymond Kappe,Palms,Standing,,,,,https://www.missigteam.com/architects/ray-kappe,1955,3965,6,5,1,34.0313,-118.4118
+h393,House,Raymond Kappe,Manhattan Beach,Standing,,,,,https://www.missigteam.com/architects/ray-kappe,1985,5226,2,6,1,33.8863,-118.4132
+h394,Fredonia Apartment Building,Raymond Kappe,Los Angeles,Standing,,,TRUE,,https://www.missigteam.com/architects/ray-kappe,1963,,,,12,34.1349,-118.361
+h395,Barsha House,Raymond Kappe,Sherman Oaks,Standing,,,,,https://www.missigteam.com/architects/ray-kappe,1960,3171,4,3,1,34.1331,-118.473
+h396,Handman House,Raymond Kappe,Sherman Oaks,Standing,,,,,https://www.missigteam.com/architects/ray-kappe,1963,4193,3,4,1,34.14,-118.4728
 h397,Brenta Apartments,Rebecca Binder,Venice,Standing,,,,,,1991,8980,16,16,1,33.9941,-118.4568
 h398,Gardner House,Rebecca Binder,Venice,Standing,,,,,,1991,2708,3,3,1,33.9823,-118.4681
 h399,Bernstein House,Rebecca Binder,Sherman Oaks,Standing,,,,,,1949,3880,5,4,1,34.1475,-118.4642
