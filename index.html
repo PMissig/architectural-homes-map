@@ -1,457 +1,511 @@
-<!doctype html>
-<html lang="en" data-theme="light">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Los Angeles Architect Family Tree | MISSIG TEAM</title>
-<meta name="description" content="Who trained whom among Los Angeles architects, from Frank Lloyd Wright and Schindler to Neutra, Lautner and Greene and Greene.">
-<base target="_blank">
-
+<title>Architectural Homes Map</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:wght@300;400;700&display=swap">
 <style>
-/* Layout: one editorial column; the tree sits in a wide drawing frame, other roots in a two-column grid, fact-check as stacked rows. */
+/* Layout: one full-bleed custom-drawn map, a slim search bar top-left that opens on tap, square ink pins. */
 :root{
-  --paper:#FFFFFF; --ink:#17140F; --stone:#F1ECE3; --stone-2:#DCD3C5; --muted:#6B6256;
-  --brass:#C9A84C; --brass-ink:#8C7128; --line:#2B261F; --line-soft:#9A8F80;
-  --node:#FFFFFF; --node-edge:#CFC5B5; --sel:#17140F; --sel-fg:#FBF9F5;
-  --serif:"Lato", "Helvetica Neue", Arial, sans-serif;
-  --sans:"Lato", "Helvetica Neue", Arial, sans-serif;
+  --ink:#141414;          /* Ink */
+  --paper:#FBFAF7;        /* Paper */
+  --brass:#C9A84C;        /* Brass accent, used sparingly */
+  --brass-deep:#9A7F33;   /* brass for text on paper */
+  --green:#2D5A44;        /* For sale: deep green */
+  --stone:#EFEBE3;        /* Warm stone: land */
+  --stone-2:#E4DED2;      /* open space */
+  --sea:#DCDDD9;          /* ocean and water */
+  --road-major:#FFFFFF;
+  --road-major-edge:#CFC8BA;
+  --road:#FFFFFF;
+  --road-minor:#F7F4EE;
+  --muted:#6F6A61;
+  --hair:#D9D3C7;
+  --serif:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --sans:"Lato","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#13110E; --ink:#F1ECE3; --stone:#1E1B17; --stone-2:#36302A; --muted:#A99E8F;
-  --brass:#C9A84C; --brass-ink:#D8BC68; --line:#E6DFD3; --line-soft:#7C7366;
-  --node:#1B1814; --node-edge:#3E372F; --sel:#F1ECE3; --sel-fg:#13110E; color-scheme:dark }}
-:root[data-theme="dark"]{
-  --paper:#13110E; --ink:#F1ECE3; --stone:#1E1B17; --stone-2:#36302A; --muted:#A99E8F;
-  --brass:#C9A84C; --brass-ink:#D8BC68; --line:#E6DFD3; --line-soft:#7C7366;
-  --node:#1B1814; --node-edge:#3E372F; --sel:#F1ECE3; --sel-fg:#13110E; color-scheme:dark }
+html,body{height:100%}
+body{margin:0;background:var(--stone);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+#map{position:absolute;inset:0;background:var(--stone)}
 
-*{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;
-  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:8px 24px;background:transparent}
-html{background:transparent}
-.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
-a{color:inherit;text-decoration-color:var(--brass);text-underline-offset:3px}
-.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:700}
-h1{font-family:var(--serif);font-weight:500;font-size:clamp(38px,6vw,64px);line-height:1.02;margin:10px 0 0;text-wrap:balance;letter-spacing:-.01em}
-h2{font-family:var(--serif);font-weight:300;font-size:clamp(24px,3vw,32px);line-height:1.15;letter-spacing:.01em;margin:6px 0 0;text-wrap:balance}
-h3{font-family:var(--serif);font-weight:700;font-size:18px;margin:0;line-height:1.2}
-p{margin:0}
-.lede{max-width:62ch;color:var(--muted);font-size:16px;margin-top:16px}
-.rule{height:1px;background:var(--stone-2);border:0;margin:0}
+/* ---------- Leaflet core (inlined) ---------- */
+.leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
+.leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font-family:var(--sans);outline-offset:1px}
+.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
+.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}
+.leaflet-container .leaflet-tile,.leaflet-container .leaflet-marker-pane img{max-width:none!important;max-height:none!important}
+.leaflet-container.leaflet-touch-zoom{touch-action:pan-x pan-y}
+.leaflet-container.leaflet-touch-drag{touch-action:none;touch-action:pinch-zoom}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{touch-action:none}
+.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}
+.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto;float:left;clear:both}
+.leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}
+.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}
+.leaflet-right .leaflet-control{float:right}
+.leaflet-fade-anim .leaflet-popup{opacity:0;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}
+.leaflet-zoom-animated{transform-origin:0 0}
+.leaflet-zoom-anim .leaflet-zoom-animated{transition:transform .25s cubic-bezier(0,0,.25,1)}
+.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}
+.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{transition:none}
+.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:grab}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-marker-draggable{cursor:grabbing}
+.leaflet-marker-icon,.leaflet-image-layer,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}
+.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive{pointer-events:visiblePainted;pointer-events:auto}
+.leaflet-popup{position:absolute;text-align:left;margin-bottom:18px}
+.leaflet-popup-content-wrapper{padding:0;text-align:left;border-radius:0}
+.leaflet-popup-content{margin:0;min-height:1px}
+.leaflet-popup-tip-container{width:40px;height:18px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}
+.leaflet-popup-tip{width:14px;height:14px;padding:1px;margin:-8px auto 0;transform:rotate(45deg)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--paper);color:var(--ink);box-shadow:0 6px 24px rgba(20,20,20,.14)}
+.leaflet-popup-tip{box-shadow:none;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.leaflet-popup-content-wrapper{border:1px solid var(--hair)}
+.leaflet-container a.leaflet-popup-close-button{position:absolute;top:6px;right:6px;width:32px;height:32px;display:grid;place-items:center;font:300 22px/1 var(--sans);color:var(--muted);text-decoration:none;background:transparent;border:0}
+.leaflet-container a.leaflet-popup-close-button:hover{color:var(--ink)}
+.leaflet-cluster-anim .leaflet-marker-icon,.leaflet-cluster-anim .leaflet-marker-shadow{transition:transform .3s ease-out,opacity .3s ease-in}
+.leaflet-cluster-spider-leg{transition:stroke-dashoffset .3s ease-out,stroke-opacity .3s ease-in}
+@media (prefers-reduced-motion:reduce){.leaflet-zoom-anim .leaflet-zoom-animated,.leaflet-cluster-anim .leaflet-marker-icon,.leaflet-fade-anim .leaflet-popup{transition:none!important}}
 
-header.hero{display:flex;flex-direction:column;gap:6px;border-bottom:1px solid var(--stone-2);padding-bottom:28px}
-.draft{display:inline-flex;align-self:flex-start;gap:8px;align-items:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--stone-2);padding:4px 10px;color:var(--muted)}
-.draft i{width:6px;height:6px;background:var(--brass);display:inline-block}
+/* ---------- Pins and clusters ---------- */
+/* Pin = the notched block from the Missig Team mark. */
+.pin{display:grid;place-items:center;color:var(--ink);filter:drop-shadow(0 0 .5px rgba(20,20,20,.3))}
+.pin svg{display:none;overflow:visible}
+.pin svg path{fill:currentColor;stroke:var(--paper);stroke-width:1.6;stroke-linejoin:miter;paint-order:stroke;vector-effect:non-scaling-stroke}
+/* Option A, triangle: the top mark of the logo, a right-angle chevron pointing down at the home. */
+body.pins-triangle .pin .p-tri{display:block;width:16px;height:8px}
+body.pins-triangle .pin.sale .p-tri{width:20px;height:10px}
+/* Option B, outline: the notched block from the logo, drawn as a fine ink outline. */
+body.pins-outline .pin .p-block{display:block;width:11px;height:13px}
+body.pins-outline .pin .p-block path{fill:var(--paper);stroke:var(--ink);stroke-width:1.5;paint-order:normal}
+body.pins-outline .pin.sale .p-block{width:13px;height:15px}
+body.pins-outline .pin.sale .p-block path{fill:var(--green)}
+/* Option C, solid block: the Version 3 pin, kept for comparison. */
+body.pins-solid .pin .p-block{display:block;width:12px;height:14px}
+body.pins-solid .pin.sale .p-block{width:14px;height:16px}
+.pin.sale .p-block path{stroke:var(--brass);stroke-width:3}
+.pin .p-tri .ring{display:none}
+.pin.sale .p-tri .ring{display:inline;fill:var(--paper);stroke:var(--brass);stroke-width:1}
+.pin.sale{color:var(--green);filter:drop-shadow(0 0 .5px rgba(20,20,20,.35)) drop-shadow(0 1px 1.5px rgba(45,90,68,.35))}
+.pin.review{background:rgba(201,168,76,.45);box-shadow:0 0 0 4px rgba(201,168,76,.45)}
+.pin-wrap{display:grid;place-items:center;width:28px;height:28px}
+.pin-wrap:focus-visible{outline:2px solid var(--brass);outline-offset:0}
+/* Clusters: paper tile, thin brass ring, ink count. */
+.cluster{display:grid;place-items:center;width:100%;height:100%;box-sizing:border-box;background:var(--paper);color:var(--ink);font:700 11.5px/1 var(--sans);letter-spacing:.06em;border:1px solid var(--brass);outline:1px solid rgba(251,250,247,.9);box-shadow:inset 0 0 0 3px var(--paper),inset 0 0 0 4px rgba(20,20,20,.85);font-variant-numeric:tabular-nums}
+.cluster.has-sale{border:2px solid var(--green)}
+.leaflet-marker-icon:hover .cluster{background:var(--stone)}
+.place-label{display:inline-block;white-space:nowrap;transform:translate(-50%,-50%);font:400 10px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-shadow:0 0 3px var(--stone),0 0 3px var(--stone),0 0 6px var(--stone)}
+.place-label.city{font-weight:700;color:#59544B;letter-spacing:.26em}
+.place-label.hood{font-size:9.5px}
+#map.z-low .place-label.hood{display:none}
+#map.z-far .place-label{display:none}
+#map.z-far .place-label.major{display:block}
 
-.legend{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:12px;letter-spacing:.06em;color:var(--muted);margin-top:14px}
-.legend span{display:inline-flex;gap:10px;align-items:center}
-.legend svg{flex:none}
+/* ---------- Popup ---------- */
+.card{width:min(300px,calc(100vw - 72px));padding:24px 24px 18px;display:grid;gap:14px}
+.card .badge{justify-self:start;font:700 10px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--paper);background:var(--green);padding:6px 8px}
+.card h3{margin:0;padding-right:22px;font:600 25px/1.08 var(--serif);text-wrap:balance}
+.card .by{font:700 10.5px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.card .by a{color:inherit;text-decoration:none;border-bottom:1px solid var(--brass)}
+.card .by a:hover{color:var(--brass-deep)}
+.card .where{font:400 13px/1.3 var(--sans);color:var(--muted);margin-top:-9px}
+.card dl{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(56px,1fr));gap:1px;background:var(--hair);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.card dl div{background:var(--paper);padding:11px 4px 10px;display:grid;gap:6px;justify-items:center;text-align:center}
+.card dt{font:400 9px/1 var(--sans);letter-spacing:.2em;padding-left:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.card dd{margin:0;font:500 18px/1 var(--serif);font-variant-numeric:lining-nums tabular-nums}
+.card .desig{display:grid;gap:3px;font:400 11.5px/1.35 var(--sans);color:var(--ink)}
+.card .desig span{padding-left:10px;border-left:1px solid var(--brass)}
+.card .foot{margin:0;padding-top:12px;text-align:center;border-top:1px solid var(--hair);font:400 9px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.card .foot a{color:inherit;text-decoration:none}
+.card .foot a:hover{color:var(--ink)}
+.card .note{font:italic 500 15px/1.3 var(--serif);color:var(--muted)}
+.card .flag{font:400 11px/1.4 var(--sans);color:var(--brass-deep);border-left:2px solid var(--brass);padding-left:8px}
+.card .actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn{appearance:none;cursor:pointer;font:700 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:12px 14px;border-radius:0;border:1px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:#2c2c2c}
+.btn.brass{background:var(--brass);border-color:var(--brass);color:var(--ink)}
+.btn.brass:hover{background:#d6b862}
+.btn:focus-visible,.field input:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.notify{display:grid;gap:10px}
+.notify .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.notify p{margin:0;font:400 13px/1.45 var(--sans);color:var(--muted)}
+.field{display:grid;gap:5px}
+.field label{font:400 9px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.field input{font:400 14px/1.2 var(--sans);padding:9px 10px;border:1px solid var(--hair);border-radius:0;background:#fff;color:var(--ink);width:100%;box-sizing:border-box}
+.notify .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.linkish{background:none;border:0;padding:4px 0;font:400 12px/1 var(--sans);color:var(--muted);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.done{font:italic 500 17px/1.35 var(--serif)}
 
-.tree-frame{border:1px solid var(--stone-2);background:var(--stone);overflow-x:auto;-webkit-overflow-scrolling:touch}
-.tree-frame svg{display:block;min-width:980px;width:100%;height:auto}
-.mlist{display:none;margin-top:16px}
-.mlist .mhint{font-size:12px;color:var(--muted);margin:0 0 6px}
-.mrow{margin-top:18px}
-.mrow .eyebrow{margin:0 0 8px}
-.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.mnode{position:relative;display:flex;align-items:center;gap:10px;text-align:left;appearance:none;background:var(--node);border:1px solid var(--stone-2);padding:10px;font:inherit;color:var(--ink);cursor:pointer;min-height:64px}
-.mnode .medal{width:40px;height:40px}
-.mnode .mt{display:flex;flex-direction:column;min-width:0}
-.mnode b{font-size:13px;line-height:1.25;font-weight:700}
-.mnode small{font-size:11px;color:var(--muted);letter-spacing:.04em}
-.mnode .md{position:absolute;top:6px;right:6px;width:6px;height:6px;background:var(--brass)}
-.mnode.sel{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.mnode.sel small{color:var(--stone-2)}
-@media (max-width:700px){.tree-frame,.scroll-hint{display:none!important}.mlist{display:block}.legend span:not(:last-child){display:none}}
-@media (max-width:360px){.mgrid{grid-template-columns:1fr}}
-.scroll-hint{font-size:12px;color:var(--muted);margin-top:8px;display:none}
-@media (max-width:1000px){.scroll-hint{display:block}}
+/* ---------- Search bar ---------- */
+.panel{position:absolute;z-index:1100;top:calc(16px + env(safe-area-inset-top,0px));left:max(16px,env(safe-area-inset-left,0px));width:300px;max-width:calc(100% - 86px);background:var(--paper);border:1px solid var(--hair);box-shadow:0 2px 10px rgba(20,20,20,.08)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bar{display:flex;align-items:stretch;height:44px}
+/* Icon is the full mark at the logo's proportions: right-angle triangle twice the block's width, notched block below. */
+.bar .ico{flex:none;width:46px;display:grid;place-items:center;color:var(--ink)}
+.bar .ico svg{width:14px;height:17px;fill:currentColor}
+.search{position:relative;flex:1;min-width:0;display:flex}
+#arch{flex:1;min-width:0;border:0;padding:0 4px 0 2px;font:300 14px/1.2 var(--sans);letter-spacing:.04em;background:transparent;color:var(--ink);border-radius:0}
+#arch::placeholder{color:#6b6b6b;font:300 12px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+#arch:focus-visible{outline:none}
+.panel::after{content:"";position:absolute;left:-1px;right:-1px;bottom:-1px;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.panel:focus-within::after{transform:scaleX(1)}
+@media (prefers-reduced-motion:reduce){.panel::after{transition:none}}
+#clear{flex:none;border:0;background:transparent;padding:0 10px;cursor:pointer;font:700 9px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+#clear:hover{color:var(--ink)}
+.toggle-panel{flex:none;appearance:none;width:44px;border:0;border-left:1px solid var(--hair);background:transparent;cursor:pointer;display:grid;place-items:center;color:var(--ink)}
+.toggle-panel svg{width:14px;height:14px;transition:transform .2s}
+.toggle-panel[aria-expanded="true"] svg{transform:rotate(180deg)}
+.toggle-panel:hover{background:var(--stone)}
+.toggle-panel:focus-visible,#clear:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+#drop{position:absolute;left:-47px;right:-45px;top:calc(100% + 1px);z-index:5;background:var(--paper);border:1px solid var(--hair);border-top:1px solid var(--brass);box-shadow:0 8px 20px rgba(20,20,20,.10)}
+#list{margin:0;padding:4px 0;list-style:none;max-height:min(300px,50vh);overflow:auto}
+#list li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 16px 7px 46px;cursor:pointer;border-bottom:1px solid transparent}
+#list li span:first-child{font:500 17px/1.2 var(--serif);color:var(--ink)}
+#list li span:last-child{font:400 11px/1 var(--sans);letter-spacing:.08em;color:var(--muted);font-variant-numeric:tabular-nums}
+#list li[aria-selected="true"],#list li:hover{background:var(--stone);border-bottom-color:var(--brass)}
+#list li.unknown{border-top:1px solid var(--hair)}
+#list li.unknown span:first-child{font-style:italic;color:var(--muted)}
+#list .empty{font:italic 500 16px/1.3 var(--serif);color:var(--muted);cursor:default}
+#drop .sig{padding:10px 16px 11px 46px;border-top:1px solid var(--hair);font:300 9px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#6b6b6b}
+.body{display:grid;gap:12px;padding:12px 16px 14px 46px;border-top:1px solid var(--hair)}
+.panel.collapsed .body{display:none}
+.count{font:400 12px/1.3 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums}
+.row2{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.chip{appearance:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--hair);background:transparent;font:700 9.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink);border-radius:0}
+.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.chip[aria-pressed="true"] .sw{background:#5E9C7C}
+.chip .sw{width:12px;height:6px;box-sizing:border-box;background:var(--green);clip-path:polygon(0 0,100% 0,50% 100%)}
+.chip:disabled{opacity:.45;cursor:default}
+.chip:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font:400 11.5px/1.2 var(--sans);color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend .pin{width:16px;justify-items:center}
+.legend .cl-sale{width:11px;height:11px;box-sizing:border-box;background:var(--paper);border:2px solid var(--green);margin-left:-3px}
+body.pins-triangle .legend .pin .p-tri{width:12px;height:6px}
+body.pins-outline .legend .pin .p-block,body.pins-solid .legend .pin .p-block{width:9px;height:11px}
+/* Preview-only pin picker */
+.picker{position:absolute;z-index:1000;left:50%;transform:translateX(-50%);bottom:calc(34px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:0;background:var(--paper);border:1px solid var(--hair);box-shadow:0 2px 10px rgba(20,20,20,.08)}
+.picker[hidden]{display:none!important}
+.picker .lbl{padding:0 12px 0 14px;font:400 9px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.picker button{appearance:none;border:0;border-left:1px solid var(--hair);background:transparent;padding:10px 12px;cursor:pointer;font:400 10px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.picker button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.picker button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+.fine{font:400 11px/1.45 var(--sans);color:var(--muted);margin:0}
+.wordmark{position:absolute;z-index:1000;left:max(14px,env(safe-area-inset-left,0px));bottom:calc(11px + env(safe-area-inset-bottom,0px));font:300 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink);opacity:.38;pointer-events:none;user-select:none}
+.attrib{position:absolute;z-index:1000;right:max(10px,env(safe-area-inset-right,0px));bottom:calc(8px + env(safe-area-inset-bottom,0px));font:400 9.5px/1.3 var(--sans);color:var(--muted);background:rgba(251,250,247,.8);padding:3px 6px}
+.zoom{position:absolute;z-index:1000;right:max(16px,env(safe-area-inset-right,0px));top:calc(16px + env(safe-area-inset-top,0px));display:grid;border:1px solid var(--hair);background:var(--paper)}
+.zoom button{appearance:none;width:38px;height:38px;border:0;background:transparent;font:300 20px/1 var(--sans);color:var(--ink);cursor:pointer}
+.zoom button+button{border-top:1px solid var(--hair)}
+.zoom button:hover{background:var(--stone)}
+.zoom button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+.loading{position:absolute;inset:0;display:grid;place-items:center;font:italic 500 20px var(--serif);color:var(--muted);z-index:900;pointer-events:none}
 
-.node rect{fill:var(--node);stroke:var(--node-edge);stroke-width:1}
-.node{cursor:pointer}
-.node:hover rect, .node:focus rect{stroke:var(--ink)}
-.node:focus{outline:none}
-.node:focus-visible rect{stroke:var(--brass);stroke-width:2}
-.node.sel rect{fill:var(--sel);stroke:var(--sel)}
-.node.sel .nm, .node.sel .yr{fill:var(--sel-fg)}
-.node.root rect{fill:transparent;stroke-dasharray:3 3}
-.nm{font-family:var(--serif);font-size:13px;font-weight:700;fill:var(--ink)}
-.yr{font-family:var(--sans);font-size:10.5px;letter-spacing:.08em;fill:var(--muted)}
-.mapdot{fill:var(--brass)}
-.ln{fill:none;stroke:var(--line);stroke-width:1.3}
-.ln.inf{stroke:var(--line-soft);stroke-dasharray:5 5}
-.ln.fam{stroke:var(--brass);stroke-width:2.2}
-.rowlab{font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;fill:var(--muted)}
-
-.detail{border-top:2px solid var(--ink);padding-top:18px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px 40px;margin-top:22px}
-.detail .who{display:flex;flex-direction:column;gap:6px}
-.detail .yrs{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.detail ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
-.detail li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;font-size:14px;border-bottom:1px solid var(--stone-2);padding-bottom:8px}
-.detail li b{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;padding-top:3px}
-.pagelink{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.onmap{display:inline-flex;gap:8px;align-items:center;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-ink);font-weight:700}
-.onmap i{width:7px;height:7px;background:var(--brass);display:inline-block}
-@media (max-width:720px){.detail{grid-template-columns:1fr}.detail li{grid-template-columns:1fr;gap:2px}}
-
-.roots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-@media (max-width:760px){.roots{grid-template-columns:1fr}}
-.root{border:1px solid var(--stone-2);padding:20px 22px;display:flex;flex-direction:column;gap:14px;min-width:0}
-.root .note{font-size:13.5px;color:var(--muted)}
-.chain{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
-.chain li{position:relative;padding:0 0 14px 22px;min-width:0}
-.chain li::before{content:"";position:absolute;left:4px;top:8px;width:9px;height:9px;border:1.5px solid var(--ink);background:var(--paper)}
-.chain li.m::before{background:var(--brass);border-color:var(--brass)}
-.chain li::after{content:"";position:absolute;left:8.5px;top:19px;bottom:-1px;border-left:1.3px solid var(--line)}
-.chain li.inf::after{border-left:1.3px dashed var(--line-soft)}
-.chain li:last-child::after{display:none}
-.chain .n{font-family:var(--serif);font-size:16px;font-weight:700;line-height:1.2}
-.chain .n small{font-family:var(--sans);font-size:11px;letter-spacing:.08em;color:var(--muted);font-weight:400;margin-left:6px}
-.chain .r{font-size:13px;color:var(--muted)}
-
-.sources{font-size:13px;color:var(--muted);columns:2;column-gap:40px}
-.sources a{display:block;margin-bottom:6px;break-inside:avoid;overflow-wrap:anywhere}
-@media (max-width:760px){.sources{columns:1}}
-footer{font-size:12px;color:var(--muted);border-top:1px solid var(--stone-2);padding-top:18px}
-@media (prefers-reduced-motion:no-preference){.node rect{transition:fill .15s,stroke .15s}}
-
-.art-head{margin:4px 0 6px;color:var(--ink)}
-.art-head svg{display:block;width:100%;height:auto}
-.hl{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round}
-.ht{fill:none;stroke:var(--line-soft);stroke-width:1}
-.hb{fill:none;stroke:var(--brass);stroke-width:1.6}
-.hf{fill:var(--brass)}
-.il{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round}
-.ib{fill:var(--brass)}
-.med{fill:var(--node);stroke:var(--brass);stroke-width:1.2}
-.medal{flex:none;width:72px;height:72px;border-radius:50%;border:1px solid var(--brass);background:var(--node);overflow:hidden;display:block}
-.medal svg{display:block;width:100%;height:100%}
-.who-row{display:flex;gap:16px;align-items:center}
-.tabs{display:flex;flex-wrap:wrap;gap:8px;position:sticky;top:0;z-index:5;background:var(--paper);padding:12px 0;border-bottom:1px solid var(--stone-2);margin-top:0}
-.tab{flex:none;appearance:none;background:var(--node);border:1px solid var(--stone-2);border-radius:0;padding:10px 14px;font:700 11px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);cursor:pointer;white-space:nowrap;transition:background .15s,color .15s,border-color .15s}
-.tab:hover{color:var(--ink);border-color:var(--ink)}
-.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink);box-shadow:inset 0 -3px 0 var(--brass)}
-@media (max-width:600px){.tab{padding:9px 10px;letter-spacing:.1em}}
-.tab:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
-.tree-head{margin-top:26px}
+@media (max-width:640px){
+  .panel{top:calc(12px + env(safe-area-inset-top,0px));left:max(12px,env(safe-area-inset-left,0px));width:auto;right:calc(62px + env(safe-area-inset-right,0px));max-width:none}
+  .bar{height:42px}
+  .bar .ico{width:42px}
+  #drop{left:-43px}
+  #list li,#drop .sig{padding-left:16px}
+  .body{padding-left:16px}
+  .picker{bottom:calc(30px + env(safe-area-inset-bottom,0px))}
+  .picker .lbl{display:none}
+  .zoom{top:calc(12px + env(safe-area-inset-top,0px));right:max(12px,env(safe-area-inset-right,0px))}
+  .body{max-height:50vh;overflow:auto}
+  #list{max-height:40vh}
+}
 </style>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="ic-sullivan" viewBox="0 0 40 40"><rect x="10" y="6" width="20" height="28" class="il"/><path d="M13 34 V22 A7 7 0 0 1 27 22 V34" class="il"/><path d="M16 34 V23 A4 4 0 0 1 24 23 V34" class="il"/><line x1="10" y1="10" x2="30" y2="10" class="il"/></symbol><symbol id="ic-gill" viewBox="0 0 40 40"><rect x="6" y="14" width="28" height="20" class="il"/><path d="M10 34 V27 A3 3 0 0 1 16 27 V34" class="il"/><path d="M20 26 V22 A3 3 0 0 1 26 22 V26 Z" class="il"/><line x1="4" y1="14" x2="36" y2="14" class="il"/></symbol><symbol id="ic-lloyd" viewBox="0 0 40 40"><rect x="4" y="12" width="32" height="22" class="il"/><path d="M11 34 V23 L13 21 V19 L16 16 H24 L27 19 V21 L29 23 V34" class="il"/><path d="M15 34 V25 L17 22 H23 L25 25 V34" class="il"/><path d="M4 16 H11 M29 16 H36" class="il"/><rect x="19" y="9" width="2" height="2" class="ib"/></symbol><symbol id="ic-eric" viewBox="0 0 40 40"><path d="M4 20 L20 12 L36 20" class="il"/><rect x="9" y="20" width="22" height="13" class="il"/><circle cx="20" cy="26" r="3.5" class="il"/><line x1="4" y1="33" x2="36" y2="33" class="il"/></symbol><symbol id="ic-walker" viewBox="0 0 40 40"><path d="M3 21 H14 V16 H26 V21 H37" class="il"/><path d="M17 16 V21 M23 16 V21" class="il"/><rect x="18" y="10" width="4" height="22" class="il"/><rect x="5" y="21" width="10" height="11" class="il"/><rect x="25" y="21" width="10" height="11" class="il"/><path d="M5 25 H15 M25 25 H35 M10 25 V32 M30 25 V32" class="il"/><path d="M2 32 H38" class="il"/><rect x="19" y="12" width="2" height="2" class="ib"/></symbol><symbol id="ic-ain" viewBox="0 0 40 40"><rect x="4" y="20" width="10" height="13" class="il"/><rect x="15" y="17" width="10" height="16" class="il"/><rect x="26" y="20" width="10" height="13" class="il"/><line x1="3" y1="20" x2="15" y2="20" class="il"/><line x1="14" y1="17" x2="26" y2="17" class="il"/></symbol><symbol id="ic-harris" viewBox="0 0 40 40"><path d="M4 10 H36 M4 18 H36" class="il"/><path d="M9 10 V18 M15 10 V18 M21 10 V18 M27 10 V18 M33 10 V18" class="il"/><path d="M6 18 L10 27 L14 18 M16 18 L20 27 L24 18 M26 18 L30 27 L34 18" class="il"/><path d="M3 35 C 12 31, 24 29, 37 28" class="il"/><rect x="19" y="5" width="2" height="2" class="ib"/></symbol><symbol id="ic-soriano" viewBox="0 0 40 40"><rect x="6" y="12" width="28" height="21" class="il"/><path d="M13 12 V33 M20 12 V33 M27 12 V33 M6 22 H34" class="il"/></symbol><symbol id="ic-drake" viewBox="0 0 40 40"><path d="M5 18 L20 13 L35 18" class="il"/><path d="M9 18 V33 M31 18 V33 M9 25 H31" class="il"/><line x1="4" y1="33" x2="36" y2="33" class="il"/></symbol><symbol id="ic-koenig" viewBox="0 0 40 40"><line x1="6" y1="15" x2="36" y2="15" class="il"/><path d="M8 15 V24 H36 M14 15 V24 M20 15 V24 M26 15 V24" class="il"/><path d="M4 34 C8 28, 12 26, 18 26 L18 24" class="il"/><circle cx="31" cy="9" r="2" class="ib"/></symbol><symbol id="ic-wright" viewBox="0 0 40 40"><rect x="7" y="7" width="26" height="26" class="il"/><path d="M7 7 L10 10 M33 7 L30 10 M7 33 L10 30 M33 33 L30 30" class="il"/><path d="M10 15 H13 V13 H15 V10 M30 15 H27 V13 H25 V10 M10 25 H13 V27 H15 V30 M30 25 H27 V27 H25 V30" class="il"/><path d="M20 15 L25 20 L20 25 L15 20 Z" class="il"/><path d="M20 10 V15 M20 25 V30 M10 20 H15 M25 20 H30" class="il"/><rect x="18.8" y="18.8" width="2.4" height="2.4" class="ib"/></symbol><symbol id="ic-schindler" viewBox="0 0 40 40"><path d="M3 22 H37" class="il"/><rect x="6" y="22" width="28" height="11" class="il"/><path d="M11 22 V33 M16 22 V33 M24 22 V33 M29 22 V33" class="il"/><rect x="8" y="15" width="9" height="7" class="il"/><rect x="23" y="15" width="9" height="7" class="il"/><rect x="19" y="18" width="2" height="2" class="ib"/></symbol><symbol id="ic-neutra" viewBox="0 0 40 40"><rect x="10" y="9" width="24" height="5" class="il"/><rect x="12" y="16" width="26" height="5" class="il"/><rect x="14" y="23" width="22" height="5" class="il"/><path d="M18 28 V35 M30 28 V37" class="il"/><path d="M3 15 C 8 22, 12 32, 18 36 L 38 37" class="il"/><rect x="35" y="6" width="2" height="2" class="ib"/></symbol><symbol id="ic-lautner" viewBox="0 0 40 40"><path d="M7 16 L12 11 H28 L33 16 L28 20 H12 Z" class="il"/><path d="M7 16 H33" class="il"/><path d="M18 20 L17 28 M22 20 L23 27" class="il"/><path d="M3 36 C 14 30, 26 24, 37 21" class="il"/><rect x="19" y="8" width="2" height="2" class="ib"/></symbol><symbol id="ic-greene" viewBox="0 0 40 40"><path d="M3 24 L20 19 L37 24" class="il"/><rect x="7" y="24" width="26" height="10" class="il"/><path d="M8 17 L15 14.5 L22 17 M19 15 L27 12.5 L35 15" class="il"/><path d="M10 17 V20.5 M20 17 V19 M22 15 V18.5 M32 15 V22.5" class="il"/><rect x="18" y="28" width="4" height="6" class="il"/><rect x="19.2" y="29.5" width="1.6" height="1.6" class="ib"/></symbol><symbol id="ic-williams" viewBox="0 0 40 40"><path d="M5 34 Q20 1 35 34" class="il"/><path d="M10 34 Q20 12 30 34" class="il"/><path d="M18 34 V18 M22 34 V18" class="il"/><ellipse cx="20" cy="18" rx="8" ry="2.4" class="il"/><rect x="19" y="4" width="2" height="2" class="ib"/></symbol><symbol id="ic-jones" viewBox="0 0 40 40"><path d="M3 23 L20 12 L37 23 Z" class="il"/><rect x="7" y="23" width="26" height="10" class="il"/><path d="M12 23 V33 M17 23 V33 M23 23 V33 M28 23 V33" class="il"/><rect x="19" y="14" width="2" height="2" class="ib"/></symbol><symbol id="ic-jemmons" viewBox="0 0 40 40"><path d="M4 33 V21 L17 13 L30 21 V33" class="il"/><path d="M4 21 H30 M10 21 V33 M17 13 V33 M24 21 V33" class="il"/><rect x="30" y="25" width="7" height="8" class="il"/><path d="M2 33 H38" class="il"/></symbol><symbol id="ic-pries" viewBox="0 0 40 40"><path d="M9 30 V10 L28 30 Z" class="il"/><path d="M12 27 V17 L21 27 Z" class="il"/><path d="M4 33 H36 M4 30 V36" class="il"/><rect x="31" y="9" width="2" height="2" class="ib"/></symbol><symbol id="ic-honnold" viewBox="0 0 40 40"><path d="M6 20 L33 14 L34 17 L7 23 Z" class="il"/><path d="M12 19 L22 17 L22 12 Z" class="il"/><path d="M10 22 V34 M30 17 V34 M10 29 H30" class="il"/><path d="M4 34 H36" class="il"/></symbol><symbol id="ic-schutt" viewBox="0 0 40 40"><rect x="6" y="7" width="28" height="26" class="il"/><path d="M10 11 H30 V29 H10 Z M10 20 H19 V29 M19 11 V15 M23 20 H30 M23 20 V24" class="il"/><rect x="13" y="13" width="2" height="2" class="ib"/></symbol><symbol id="ic-gropius" viewBox="0 0 40 40"><rect x="4" y="9" width="20" height="24" class="il"/><path d="M9 9 V33 M14 9 V33 M19 9 V33 M4 15 H24 M4 21 H24 M4 27 H24" class="il"/><rect x="24" y="18" width="12" height="15" class="il"/><path d="M24 23 H36 M24 28 H36" class="il"/></symbol><symbol id="ic-breuer" viewBox="0 0 40 40"><path d="M13 34 V27 H11 V19 H8 V8 H33 V34 Z" class="il"/><path d="M15 13 L23 11 V19 L15 17 Z" class="il"/><path d="M3 34 H37" class="il"/></symbol><symbol id="ic-meier" viewBox="0 0 40 40"><rect x="4" y="15" width="20" height="18" class="il"/><path d="M9 15 V33 M14 15 V33 M19 15 V33 M4 21 H24 M4 27 H24" class="il"/><path d="M24 33 V16 M36 33 V16" class="il"/><ellipse cx="30" cy="16" rx="6" ry="2.2" class="il"/><path d="M24 24 Q30 26 36 24" class="il"/></symbol><symbol id="ic-pei" viewBox="0 0 40 40"><path d="M5 32 L20 8 L35 32 Z" class="il"/><path d="M11 32 L23 13 M17 32 L26 18 M23 32 L29 23 M29 32 L17 13 M23 32 L14 18 M17 32 L11 23" class="il"/><path d="M2 32 H38" class="il"/></symbol><symbol id="ic-mies" viewBox="0 0 40 40"><path d="M4 13 H36 M4 25 H36 M24 29 H34" class="il"/><path d="M7 13 V33 M15 13 V33 M25 13 V33 M33 13 V33" class="il"/><path d="M10 13 V25 M30 13 V25" class="il"/><path d="M2 33 H38" class="il"/></symbol><symbol id="ic-ellwood" viewBox="0 0 40 40"><rect x="3" y="14" width="34" height="10" class="il"/><path d="M3 14 L11 24 L19 14 L27 24 L35 14 M11 14 V24 M19 14 V24 M27 14 V24" class="il"/><path d="M6 24 V34 M34 24 V34" class="il"/><path d="M3 34 Q20 22 37 34" class="il"/></symbol><symbol id="ic-saarinen" viewBox="0 0 40 40"><rect x="4" y="21" width="32" height="13" class="il"/><rect x="25" y="6" width="7" height="15" class="il"/><circle cx="28.5" cy="10" r="1.6" class="ib"/><path d="M9 34 V27 A5 5 0 0 1 19 27 V34" class="il"/></symbol><symbol id="ic-ceames" viewBox="0 0 40 40"><path d="M9 23 Q18 25 27 23" class="il"/><path d="M25 22 Q28 15 31 8" class="il"/><path d="M12 24 L10 34 M24 24 L26 34 M12 28 Q18 29 24 28" class="il"/></symbol><symbol id="ic-hofmann" viewBox="0 0 40 40"><rect x="6" y="8" width="16" height="16" class="il"/><rect x="15" y="17" width="19" height="15" class="il"/><rect x="25" y="8" width="6" height="6" class="ib"/></symbol><symbol id="ic-ray" viewBox="0 0 40 40"><path d="M5 14 H35 M7 25 H33" class="il"/><circle cx="10" cy="18" r="3" class="il"/><circle cx="20" cy="18" r="3" class="ib"/><circle cx="30" cy="18" r="3" class="il"/><circle cx="15" cy="29" r="3" class="il"/><circle cx="25" cy="29" r="3" class="il"/></symbol><symbol id="ic-eames" viewBox="0 0 40 40"><rect x="3" y="12" width="34" height="21" class="il"/><path d="M8 12 V33 M13 12 V33 M18 12 V33 M23 12 V33 M28 12 V33 M33 12 V33 M3 22 H37" class="il"/><rect x="13.6" y="12.6" width="3.8" height="8.8" class="ib"/><rect x="28.6" y="22.6" width="3.8" height="9.8" class="ib"/></symbol><symbol id="ic-straub" viewBox="0 0 40 40"><path d="M20 7 L12 32 M20 7 L28 32" class="il"/><path d="M9 31 Q20 37 31 31" class="il"/><circle cx="20" cy="6" r="1.8" class="ib"/></symbol><symbol id="ic-buffhens" viewBox="0 0 40 40"><path d="M3 13 H37" class="il"/><path d="M8 13 V28 M16 13 V28 M24 13 V28 M32 13 V28" class="il"/><path d="M3 28 H37" class="il"/><path d="M10 32 H30 M14 35 H26" class="il"/></symbol><symbol id="ic-bsh" viewBox="0 0 40 40"><path d="M3 20 L37 11" class="il"/><path d="M6 19 V33 M34 12 V33" class="il"/><path d="M12 18 V33 M18 16 V33 M24 15 V33 M30 13 V33" class="il"/><path d="M6 24 H34 M3 33 H37" class="il"/></symbol><symbol id="ic-kappe" viewBox="0 0 40 40"><rect x="12" y="13" width="4" height="22" class="il"/><rect x="25" y="13" width="4" height="20" class="il"/><path d="M4 13 H33 M8 20 H37 M3 27 H30" class="il"/><path d="M2 36 Q20 30 38 33" class="il"/><rect x="31" y="9" width="2" height="2" class="ib"/></symbol><symbol id="ic-mayne" viewBox="0 0 40 40"><path d="M6 32 L12 11 L31 8 L34 26 L19 33 Z" class="il"/><path d="M12 11 L19 33 M31 8 L19 33" class="il"/><path d="M2 34 H38" class="il"/></symbol><symbol id="ic-rotondi" viewBox="0 0 40 40"><path d="M7 33 V17 L28 12 V33" class="il"/><path d="M28 12 L34 4" class="il"/><path d="M7 25 L28 20 M14 15.5 V33 M21 14 V33" class="il"/><path d="M3 33 H37" class="il"/></symbol><symbol id="ic-moss" viewBox="0 0 40 40"><path d="M6 31 L10 15 L30 13 L34 29 Z" class="il"/><path d="M10 15 L14 31 M30 13 L26 30" class="il"/><path d="M17 14 L21 4 L25 13.5" class="il"/><path d="M2 33 H38" class="il"/></symbol><symbol id="ic-mendelsohn" viewBox="0 0 40 40"><path d="M4 33 Q6 24 14 23 H26 Q34 24 36 33" class="il"/><path d="M15 23 V12 Q15 8 20 8 Q25 8 25 12 V23" class="il"/><path d="M17 8.6 Q20 4 23 8.6" class="il"/><path d="M18 14 H22 M18 18 H22 M9 28 H13 M27 28 H31" class="il"/><path d="M2 33 H38" class="il"/><rect x="19" y="10" width="2" height="2" class="ib"/></symbol><symbol id="ic-emmons" viewBox="0 0 40 40"><path d="M2 15 H38" class="il"/><path d="M5 15 V33 M35 15 V33" class="il"/><path d="M5 19 H35" class="il"/><path d="M12 19 V33 M20 19 V33 M28 19 V33" class="il"/><path d="M2 33 H38" class="il"/><rect x="13" y="24" width="6" height="2" class="ib"/></symbol></defs></svg>
-<div class="wrap">
-  <section aria-labelledby="t-main">
-    <div class="tabs" role="tablist" aria-label="Choose a lineage" id="tabs"></div>
-    <div class="tree-head">
-      <p class="eyebrow" id="t-eyebrow"></p>
-      <h2 id="t-main"></h2>
-      <p class="lede" id="t-note"></p>
+<div id="map" class="z-far" role="region" aria-label="Map of architecturally significant homes"></div>
+<div class="loading" id="loading">Drawing the map…</div>
+
+<section class="panel collapsed" id="panel" aria-label="Find a home">
+  <h1 class="sr">Missig Team: Architectural Homes of Los Angeles</h1>
+  <div class="bar">
+    <span class="ico" aria-hidden="true"><svg viewBox="0 0 20 24"><path d="M0 0H20L10 10Z"/><path d="M5 15 10 17.4 15 15V24H5Z"/></svg></span>
+    <div class="search">
+      <label class="sr" for="arch">Architect</label>
+      <input id="arch" type="text" autocomplete="off" spellcheck="false" placeholder="Search architects" role="combobox" aria-expanded="false" aria-controls="list" aria-autocomplete="list">
+      <button id="clear" type="button" hidden>Clear</button>
+      <div id="drop" hidden><ul id="list" role="listbox"></ul><div class="sig" aria-hidden="true">Missig Team</div></div>
     </div>
-    <div class="tree-frame" style="margin-top:22px" id="frame" role="tabpanel" aria-labelledby="t-main">
-      <svg id="tree" role="img"></svg>
+    <button class="toggle-panel" id="togglePanel" type="button" aria-expanded="false" aria-controls="panelBody" aria-label="More filters"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+  </div>
+  <div class="body" id="panelBody">
+    <div class="row2">
+      <button class="chip" id="saleOnly" type="button" aria-pressed="false"><span class="sw"></span>For sale only</button>
+      <div class="count" id="count" aria-live="polite">&nbsp;</div>
     </div>
     <div class="legend" aria-label="Legend">
-      <span><svg width="34" height="10"><line x1="0" y1="5" x2="34" y2="5" stroke="currentColor" stroke-width="1.5"/></svg>Worked for or apprenticed</span>
-      <span><svg width="34" height="10"><line x1="0" y1="5" x2="34" y2="5" stroke="currentColor" stroke-width="1.3" stroke-dasharray="5 5"/></svg>Taught, inspired or followed</span>
-      <span><svg width="34" height="10"><line x1="0" y1="5" x2="34" y2="5" stroke="#C9A84C" stroke-width="2.4"/></svg>Family or partners</span>
-      <span><svg width="10" height="10"><rect width="8" height="8" x="1" y="1" fill="#C9A84C"/></svg>Homes on our architectural map</span>
+      <span><i class="pin"><svg class="p-tri" viewBox="0 0 16 8" aria-hidden="true"><path class="ring" d="M-3.86 -1.6H19.86L8 10.26Z"/><path d="M0 0H16L8 8Z"/></svg><svg class="p-block" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0 6 3.4 12 0V14H0Z"/></svg></i>Home</span>
+      <span><i class="pin sale"><svg class="p-tri" viewBox="0 0 16 8" aria-hidden="true"><path class="ring" d="M-3.86 -1.6H19.86L8 10.26Z"/><path d="M0 0H16L8 8Z"/></svg><svg class="p-block" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0 6 3.4 12 0V14H0Z"/></svg></i><i class="cl-sale" aria-hidden="true"></i>For sale</span>
+      <span id="reviewLegend" hidden><i class="pin review"></i>Status under review</span>
     </div>
-    <p class="scroll-hint">Swipe sideways to see the whole tree.</p>
-    <div class="mlist" id="mlist"></div>
-    <div class="detail" id="detail" aria-live="polite"></div>
-  </section>
+    <p class="fine">Pins sit near each home, not on it, to respect owners’ privacy. Tap a pin for the architect and details.</p>
+  </div>
+</section>
 
-  <section aria-labelledby="t-src">
-    <p class="eyebrow">Sources</p>
-    <h3 id="t-src" style="margin:6px 0 14px">Where these facts come from</h3>
-    <div class="sources">
-      <a href="https://flwright.org/node/1030">Frank Lloyd Wright Foundation: Wright and Chicago</a>
-      <a href="https://www.irvingjgill.org/irving-gill">Irving J. Gill: biography</a>
-      <a href="https://en.wikipedia.org/wiki/Lloyd_Wright">Lloyd Wright</a>
-      <a href="https://en.wikipedia.org/wiki/Rudolph_Schindler_(architect)">Rudolph Schindler</a>
-      <a href="https://en.wikipedia.org/wiki/Richard_Neutra">Richard Neutra</a>
-      <a href="https://www.laconservancy.org/architects/richard-neutra">LA Conservancy: Richard Neutra</a>
-      <a href="https://neutra.org/resources/neutra-office-alumni/">Neutra Institute: office alumni</a>
-      <a href="https://www.laconservancy.org/architects/john-lautner">LA Conservancy: John Lautner</a>
-      <a href="https://en.wikipedia.org/wiki/Harwell_Hamilton_Harris">Harwell Hamilton Harris</a>
-      <a href="https://www.usmodernist.org/archart/lessons-learned-from-an-architect-for-the-ages/index.html">USModernist: Harwell Harris</a>
-      <a href="https://otis.edu/alumni/featured-alumni/harwell-hamilton-harris.html">Otis College: Harwell Hamilton Harris</a>
-      <a href="https://en.wikipedia.org/wiki/Gregory_Ain">Gregory Ain</a>
-      <a href="https://en.wikipedia.org/wiki/Raphael_Soriano">Raphael Soriano</a>
-      <a href="https://www.laconservancy.org/architects/pierre-koenig">LA Conservancy: Pierre Koenig</a>
-      <a href="https://modernsandiego.com/people/gordon-converse-drake/">Modern San Diego: Gordon Drake</a>
-      <a href="https://en.wikipedia.org/wiki/Rodney_Walker_(architect)">Rodney Walker</a>
-      <a href="https://en.wikipedia.org/wiki/A._Quincy_Jones">A. Quincy Jones</a>
-      <a href="https://usmodernist.org/qjones.htm">USModernist: A. Quincy Jones</a>
-      <a href="https://en.wikipedia.org/wiki/Craig_Ellwood">Craig Ellwood</a>
-      <a href="https://www.eamesinstitute.org/collection/early-charles-and-ray-eames">Eames Institute: early Charles and Ray Eames</a>
-      <a href="https://en.wikipedia.org/wiki/Buff,_Smith_and_Hensman">Buff, Smith and Hensman</a>
-      <a href="https://www.laconservancy.org/architects/buff-straub-hensman">LA Conservancy: Buff, Straub and Hensman</a>
-      <a href="https://en.wikipedia.org/wiki/Ray_Kappe">Ray Kappe</a>
-      <a href="https://en.wikipedia.org/wiki/Kappe_Residence">Kappe Residence</a>
-      <a href="https://en.wikipedia.org/wiki/Southern_California_Institute_of_Architecture">SCI-Arc</a>
-      <a href="https://en.wikipedia.org/wiki/Greene_and_Greene">Greene and Greene</a>
-      <a href="https://en.wikipedia.org/wiki/Weston_Havens_House">Weston Havens House</a>
-      <a href="https://www.laconservancy.org/locations/west-house-case-study-house-18">LA Conservancy: West House, Case Study House 18</a>
-      <a href="https://en.wikipedia.org/wiki/Southern_California_Institute_of_Architecture">Southern California Institute of Architecture</a>
+<div class="zoom" aria-label="Zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button></div>
+<div class="picker" id="picker" role="group" aria-label="Pin style (preview only)" hidden style="display:none"><span class="lbl">Pin style</span><button type="button" data-pin="triangle">Triangle</button><button type="button" data-pin="outline">Outline</button><button type="button" data-pin="solid">Solid</button></div>
+<div class="wordmark" aria-hidden="true">Missig Team</div>
+<div class="attrib">Map data © OpenStreetMap contributors, Overture Maps Foundation</div>
 
-    </div>
-  </section>
-
-</div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
 <script>
-/* Fill in a URL for any architect to turn their name into a link to their page on missigteam.com. */
-const ARCHITECT_PAGES = {
-  wright:"https://www.missigteam.com/architects/frank-lloyd-wright", schindler:"https://www.missigteam.com/architects/rudolph-schindler", neutra:"https://www.missigteam.com/architects/richard-neutra", lautner:"https://www.missigteam.com/architects/john-lautner", greene:"https://www.missigteam.com/architects/greene-and-greene", lloyd:"https://www.missigteam.com/architects/lloyd-wright", harris:"https://www.missigteam.com/architects/harwell-hamilton-harris", ain:"https://www.missigteam.com/architects/gregory-ain", williams:"https://www.missigteam.com/architects/paul-r-williams", ellwood:"https://www.missigteam.com/architects/craig-ellwood", soriano:"https://www.missigteam.com/architects/raphael-soriano", kappe:"https://www.missigteam.com/architects/ray-kappe"
+/* ============ SETTINGS: the only lines you may want to edit ============ */
+const CONFIG = {
+  dataFile: "map-data.csv",      // home list: edit for_sale, listing_url, architect_page_url here
+  forSaleSheetCsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2jwmqlhk6lI5cBP-AeSyupJ3cIU56uJmLHGkI3q7EiHswHRtSq3vClM6Nf1mU-_fXgsdWawRCvdJ1/pub?gid=1245734771&single=true&output=csv",           // published-to-web CSV link of the Sheet's "Public" tab (id, for_sale). Empty = use the flags in dataFile
+  basemapFile: "basemap.json",   // drawn background map
+  notifyEndpoint: "https://script.google.com/macros/s/AKfycbzW5xjeZzj4GrjR64-iEZ8Wx1SUjGZkZTjL1PDI4zgF4aL7nurmmt6RdZfeOvtMzEHf/exec",            // Apps Script Web app URL (ends in /exec) from the Notify Me Leads Sheet; empty = preview message
+  pinStyle: "triangle",          // "triangle", "outline" or "solid"
+  showPinPicker: false,          // true shows a small switch to compare pin styles
 };
+/* ===================================================================== */
 
-const W = 160, H = 64, MR = 20;
-const ROWS = [50, 185, 330, 475, 615];
+const REVIEW = location.hash === "#review";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 
-/* Each lineage: nodes {name, yrs, r(row), x, map, notes}, edges [from, to, type, optional label].
-   type: w = worked for or apprenticed, i = taught, inspired or followed, f = family or partners */
-const TREES = [
- {id:"wright", tab:"The Wright line", eyebrow:"The Wright line", title:"From Sullivan's office to the Hollywood Hills",
-  note:"Louis Sullivan trained Frank Lloyd Wright. Wright's office shaped Schindler, Neutra and Lautner. Neutra also worked for Erich Mendelsohn and stayed at Schindler's Kings Road House. Their offices trained the architects who built many of the hillside houses on our map.",
-  rows:["Chicago","Wright's era","Wright's office","Next generation","Their students"], start:"schindler", width:1120,
-  nodes:{
-  sullivan:{name:"Louis Sullivan", yrs:"1856–1924", r:0, x:470, map:false,
-    notes:[["Role","Chicago architect of the early skyscraper and Wright's mentor. Wright called him his \"Lieber Meister\"."],["Trained","Frank Lloyd Wright, 1888 to 1893, and Irving Gill, 1890 to 1893, at Adler & Sullivan."]]},
-  gill:{name:"Irving Gill", yrs:"1870–1936", r:1, x:250, map:true,
-    notes:[["Trained","Apprenticed at Adler & Sullivan in Chicago, 1890 to 1893, working beside Wright."],["Taught","Mentor to Lloyd Wright in San Diego around the 1915 Panama-California Exposition."],["Known for","Spare, white concrete houses that made him one of California's first modernists."]]},
-  wright:{name:"Frank Lloyd Wright", yrs:"1867–1959", r:1, x:640, map:true,
-    notes:[["Trained","First job with J. L. Silsbee in 1887, then Adler & Sullivan from 1888 until he opened his own practice in 1893."],["In LA","Hollyhock House for Aline Barnsdall (1919 to 1921), then the concrete textile block houses of the 1920s: Millard, Storer, Freeman and Ennis."],["Taught","His office and the Taliesin Fellowship trained Schindler, Lautner and his son Lloyd, and briefly Neutra."]]},
-  lloyd:{name:"Lloyd Wright", yrs:"1890–1978", r:2, x:250, map:true,
-    notes:[["Family","Eldest son of Frank Lloyd Wright. Born March 31, 1890; died May 31, 1978."],["Trained","Joined Olmsted and Olmsted in 1911, then worked under Irving Gill in San Diego around the 1915 Panama-California Exposition."],["In LA","Supervised Hollyhock House construction with Schindler. The Sowden House (1926) in Los Feliz and Wayfarers Chapel (1951) are his."]]},
-  schindler:{name:"R. M. Schindler", yrs:"1887–1953", r:2, x:500, map:true,
-    notes:[["Trained","Studied in Vienna at the Academy of Fine Arts (Otto Wagner's school) and heard Adolf Loos lecture."],["With Wright","Joined Wright's office in 1918, drew Hollyhock House and ran its construction while Wright was in Japan."],["In LA","Kings Road House (1922) and the Lovell Beach House (1926). Rodney Walker drafted for him; Soriano interned briefly in 1934; Gregory Ain was inspired by his house."]]},
-  neutra:{name:"Richard Neutra", yrs:"1892–1970", r:2, x:760, map:true,
-    notes:[["Trained","Studied in Vienna and attended Adolf Loos's school, then worked for Erich Mendelsohn in Berlin from 1921."],["With Wright","Spent several months at Wright's Taliesin studio before moving to Los Angeles in 1925, where he lived at Schindler's Kings Road House."],["In LA","The Lovell Health House (1929) made his name."],["Taught","Gregory Ain, Harwell Hamilton Harris and Raphael Soriano all trained in his office in the late 1920s and early 1930s."]]},
-  mendelsohn:{name:"Erich Mendelsohn", yrs:"1887–1953", r:1, x:930, map:false,
-    notes:[["Role","Berlin architect best known for the Einstein Tower in Potsdam (1921)."],["Trained","Richard Neutra worked in his office from 1921 before leaving for America."]]},
-  lautner:{name:"John Lautner", yrs:"1911–1994", r:2, x:1010, map:true,
-    notes:[["With Wright","One of the original Taliesin Fellows, 1933 to 1939, then began practicing in Los Angeles in the late 1930s."],["In LA","Chemosphere (1960, for Leonard Malin), Sheats-Goldstein, Silvertop, Garcia House and Googie's coffee shop."]]},
-  eric:{name:"Eric Lloyd Wright", yrs:"born 1929", r:3, x:250, map:true,
-    notes:[["Family","Son of Lloyd Wright and grandson of Frank Lloyd Wright."],["Work","Architect who later consulted on restoring his father's and grandfather's buildings."]]},
-  walker:{name:"Rodney Walker", yrs:"1910–1986", r:3, x:440, map:true,
-    notes:[["Trained","Drafted in Schindler's office after building his first house in 1937."],["In LA","Case Study Houses 16, 17 and 18 in the late 1940s. Number 18, the West House (1948), sits on a bluff in Pacific Palisades, its roof raised around a tall brick fireplace."]]},
-  ain:{name:"Gregory Ain", yrs:"1908–1988", r:3, x:610, map:true,
-    notes:[["Trained","Worked in Neutra's office from 1930 to 1935, alongside Harris."],["Inspired by","Schindler's Kings Road House, which he visited as a teenager."],["In LA","The Avenel Cooperative, and the Mar Vista Tract with partners Joseph Johnson and Alfred Day."]]},
-  harris:{name:"Harwell Hamilton Harris", yrs:"1903–1990", r:3, x:780, map:true,
-    notes:[["Trained","Studied sculpture at Otis, then apprenticed with Neutra from 1928 until 1932."],["Inspired by","Wright, whose influence shows in his plans. He never worked for Wright."],["In LA","Fellowship Park House and the Entenza House (1937)."],["Best known for","The Havens House in Berkeley (1940), carried on inverted triangular trusses over a hillside. He later taught and practiced in Texas and North Carolina."]]},
-  soriano:{name:"Raphael Soriano", yrs:"1904–1988", r:3, x:950, map:true,
-    notes:[["Trained","Interned in Neutra's office in 1931 and briefly with Schindler in 1934."],["In LA","Pioneer of steel houses: the 1950 Case Study House and the Shulman House (1950)."],["Taught","Pierre Koenig interned in his office."]]},
-  drake:{name:"Gordon Drake", yrs:"1917–1952", r:4, x:780, map:true,
-    notes:[["Trained","Taught by Harris at USC and worked in his office before and after World War II."],["Work","Compact post-and-beam houses. Died at 35 in a skiing accident."]]},
-  koenig:{name:"Pierre Koenig", yrs:"1925–2004", r:4, x:950, map:true,
-    notes:[["Trained","Interned with Raphael Soriano and Edward Fickett; USC degree in 1952."],["In LA","Case Study House 21 (Bailey House) and 22 (Stahl House, 1960). Photographed by Julius Shulman."],["Taught","USC architecture faculty for forty years from 1964."]]}
-  },
-  edges:[["sullivan","wright","w"],["sullivan","gill","w"],["gill","lloyd","w"],["wright","lloyd","f"],["wright","schindler","w"],["wright","neutra","w"],["mendelsohn","neutra","w"],["schindler","neutra","i","stayed at his Kings Road House, 1925"],["wright","lautner","w"],
-    ["lloyd","eric","f"],["schindler","walker","w"],["schindler","ain","i"],["neutra","ain","w"],["neutra","harris","w"],["neutra","soriano","w"],["harris","drake","w"],["soriano","koenig","w"]]},
-
- {id:"jones", tab:"A. Quincy Jones", eyebrow:"The A. Quincy Jones offices", title:"Learned in Los Angeles offices, not from Wright",
-  note:"Jones studied under Lionel Pries, then worked his way through three Los Angeles offices before opening his own. Jones and Emmons properties make up a big part of our map.",
-  rows:["Teacher and offices","The architect","The partnership"], start:"jones", width:980,
-  nodes:{
-  pries:{name:"Lionel Pries", yrs:"teacher", r:0, x:250, map:false,
-    notes:[["Role","Taught architecture at the University of Washington, where Jones studied under him in 1936."]]},
-  honnold:{name:"Honnold and Russell", yrs:"1936–37", r:0, x:450, map:true,
-    notes:[["Who","The office of Douglas Honnold and George Vernon Russell."],["With Jones","His first job in a Los Angeles office."]]},
-  schutt:{name:"Burton Schutt", yrs:"1937–39", r:0, x:650, map:false,
-    notes:[["With Jones","His second Los Angeles office."]]},
-  williams:{name:"Paul R. Williams", yrs:"1939–40", r:0, x:850, map:true,
-    notes:[["With Jones","Jones worked in his office, and the two later teamed up on Palm Springs projects."],["Known for","Part of the design team for the Theme Building at LAX."]]},
-  jones:{name:"A. Quincy Jones", yrs:"1913–1979", r:1, x:550, map:true,
-    notes:[["Trained","University of Washington under Lionel Pries, then the offices of Honnold and Russell, Burton Schutt and Paul R. Williams."],["Known for","The Brody House (1950) and Sunnylands (1966), with its broad pyramid roof."]]},
-  emmons:{name:"Frederick Emmons", yrs:"1907–1999", r:1, x:810, map:true,
-    notes:[["Role","Jones's partner from 1951 until he retired in 1969."]]},
-  jemmons:{name:"Jones and Emmons", yrs:"1951–1969", r:2, x:550, map:true,
-    notes:[["Partners","A. Quincy Jones and Frederick Emmons, until Emmons retired."],["Known for","Many of Joseph Eichler's tract houses, with their low gables and glass walls."]]}
-  },
-  edges:[["pries","jones","i","taught"],["honnold","jones","w"],["schutt","jones","w"],["williams","jones","w"],["jones","jemmons","f"],["emmons","jemmons","f"]]},
-
- {id:"bauhaus", tab:"Bauhaus to Harvard", eyebrow:"Bauhaus to Harvard", title:"The European line that reached America",
-  note:"Walter Gropius brought the Bauhaus to Harvard, where he and Marcel Breuer taught a generation. Mies van der Rohe, the Bauhaus's last director, shaped Craig Ellwood, who had no formal training.",
-  rows:["The Bauhaus","Students and followers","Next generation"], start:"breuer", width:960,
-  nodes:{
-  gropius:{name:"Walter Gropius", yrs:"1883–1969", r:0, x:330, map:true,
-    notes:[["Role","Founded the Bauhaus, then led the architecture school at Harvard."]]},
-  mies:{name:"Mies van der Rohe", yrs:"1886–1969", r:0, x:800, map:false,
-    notes:[["Role","Last director of the Bauhaus, then led architecture in Chicago. Known for the glass Farnsworth House."]]},
-  breuer:{name:"Marcel Breuer", yrs:"1902–1981", r:1, x:250, map:false,
-    notes:[["Trained","Bauhaus student, later Gropius's partner."],["Taught","Taught at Harvard, where I. M. Pei was a student."],["Known for","The Whitney building in New York, which steps outward as it rises."]]},
-  pei:{name:"I. M. Pei", yrs:"1917–2019", r:1, x:470, map:false,
-    notes:[["Trained","Degree from MIT in 1940, then studied under Gropius at Harvard."],["Known for","The glass pyramid at the Louvre. Not on our map."]]},
-  ellwood:{name:"Craig Ellwood", yrs:"1922–1992", r:1, x:800, map:true,
-    notes:[["Inspired by","Mies van der Rohe. He had no formal training."],["In LA","Case Study Houses 16, 17 and 18 in the 1950s. Retired to Italy in 1977."],["Known for","The Art Center College of Design in Pasadena, a steel bridge across a ravine."]]},
-  meier:{name:"Richard Meier", yrs:"born 1934", r:2, x:250, map:false,
-    notes:[["Trained","Worked for Marcel Breuer."],["In LA","The Getty Center."]]}
-  },
-  edges:[["gropius","breuer","w"],["gropius","pei","i","taught"],["breuer","pei","i","taught"],["breuer","meier","w"],["mies","ellwood","i","inspired"]]},
-
- {id:"cranbrook", tab:"Cranbrook", eyebrow:"Cranbrook", title:"How Charles and Ray Eames met",
-  note:"Charles Eames was sent home from Washington University for admiring Wright, then found his mentor in Eliel Saarinen at Cranbrook. Ray Kaiser came to Cranbrook as a painter who had studied with Hans Hofmann.",
-  rows:["Teachers","Students","Partners"], start:"eames", width:820,
-  nodes:{
-  saarinen:{name:"Eliel Saarinen", yrs:"1873–1950", r:0, x:270, map:false,
-    notes:[["Role","Head of Cranbrook Academy of Art. Earlier designed Helsinki's Central Station."]]},
-  hofmann:{name:"Hans Hofmann", yrs:"teacher", r:0, x:600, map:false,
-    notes:[["Role","Painter and teacher in New York. Ray Kaiser studied painting with him."]]},
-  ceames:{name:"Charles Eames", yrs:"1907–1978", r:1, x:270, map:false,
-    notes:[["Trained","Left Washington University over his interest in Wright; Cranbrook fellowship in 1938."],["Before Ray","Designed the Meyer House near St. Louis (1937)."]]},
-  ray:{name:"Ray Kaiser", yrs:"1912–1988", r:1, x:600, map:false,
-    notes:[["Trained","Studied painting with Hans Hofmann, then came to Cranbrook."]]},
-  eames:{name:"Charles and Ray Eames", yrs:"met 1940", r:2, x:435, map:true,
-    notes:[["Partners","Met at Cranbrook in 1940."],["In LA","The Eames House, Case Study House 8 (1949), in Pacific Palisades."]]}
-  },
-  edges:[["saarinen","ceames","i","taught"],["hofmann","ray","i","taught"],["ceames","eames","f"],["ray","eames","f"]]},
-
- {id:"usc", tab:"USC studio", eyebrow:"The USC studio", title:"A professor and two of his students",
-  note:"Calvin Straub taught at USC from 1946 and became senior partner to two of his students.",
-  rows:["Teacher","Students","The firm"], start:"bsh", width:820,
-  nodes:{
-  straub:{name:"Calvin Straub", yrs:"1920–1998", r:0, x:270, map:false,
-    notes:[["Role","USC professor from 1946."]]},
-  buffhens:{name:"Buff and Hensman", yrs:"from 1948", r:1, x:560, map:false,
-    notes:[["Who","Conrad Buff III (1926–1989) and Donald Hensman (1924–2002), USC students designing houses together by 1948."],["Note","Conrad Buff II, the painter, was Conrad III's father."]]},
-  bsh:{name:"Buff, Straub and Hensman", yrs:"1956–1961", r:2, x:415, map:true,
-    notes:[["Known for","The Bass House, Case Study House 20 (1958), in Altadena."]]}
-  },
-  edges:[["straub","buffhens","i","taught"],["straub","bsh","f"],["buffhens","bsh","f"]]},
-
- {id:"sciarc", tab:"SCI-Arc", eyebrow:"SCI-Arc", title:"A school as well as houses",
-  note:"Ray Kappe led the group that founded the Southern California Institute of Architecture in 1972. The architects who ran it after him also have homes on our map.",
-  rows:["Founding director","Co-founder and successor","Later director"], start:"kappe", width:820,
-  nodes:{
-  kappe:{name:"Ray Kappe", yrs:"1927–2019", r:0, x:415, map:true,
-    notes:[["Role","Led the group that founded SCI-Arc in 1972 and served as its director until 1987."],["Work","Partner with Rex Lotery in Kahn Kappe Lotery Boccato from 1968."],["In LA","The Kappe Residence, Los Angeles Historic-Cultural Monument No. 623 (1996), built on concrete towers over a hillside."]]},
-  mayne:{name:"Thom Mayne", yrs:"co-founder", r:1, x:270, map:false,
-    notes:[["Role","One of SCI-Arc's founders in 1972."]]},
-  rotondi:{name:"Michael Rotondi", yrs:"director", r:1, x:560, map:true,
-    notes:[["Role","Succeeded Kappe as director in 1987."]]},
-  moss:{name:"Eric Owen Moss", yrs:"director 2002–15", r:2, x:560, map:true,
-    notes:[["Role","Led SCI-Arc from 2002 to 2015. Neil Denari directed the school between Rotondi and Moss."]]}
-  },
-  edges:[["kappe","mayne","f","founded SCI-Arc together"],["kappe","rotondi","i","followed as director"],["rotondi","moss","i","later director"]]},
-
- {id:"greene", tab:"Pasadena", eyebrow:"Pasadena Arts and Crafts", title:"Greene and Greene came first",
-  note:"The Greene brothers had their Pasadena practice running by 1894, before Wright's first Prairie houses, and they have no mentor link to him.",
-  rows:["Pasadena"], start:"greene", width:820,
-  nodes:{
-  greene:{name:"Greene and Greene", yrs:"1868–1957 · 1870–1954", r:0, x:415, map:true,
-    notes:[["Who","Brothers Charles and Henry Greene."],["Trained","Two-year course at MIT, finished in 1891."],["Known for","The Gamble House in Pasadena (1908 to 1909)."]]}
-  },
-  edges:[]}
-];
-
-const svg=document.getElementById("tree");
-const NS="http://www.w3.org/2000/svg";
-function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);(parent||svg).appendChild(e);return e;}
-const rel={w:"worked for",i:"taught or inspired by",f:"family or partners"};
-let T=null, selected=null;
-
-function fitName(t){
-  t.removeAttribute("textLength"); t.removeAttribute("lengthAdjust");
-  const max=W-16;
-  try{ if(t.getComputedTextLength()>max){ t.setAttribute("textLength",max); t.setAttribute("lengthAdjust","spacingAndGlyphs"); } }catch(e){}
+function parseCSV(text){
+  const rows=[];let row=[],f="",q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){f+='"';i++;} else q=false; } else f+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){row.push(f);f="";}
+    else if(c==='\n'){row.push(f);rows.push(row);row=[];f="";}
+    else if(c!=='\r') f+=c;
+  }
+  if(f!==""||row.length){row.push(f);rows.push(row);}
+  const head=rows.shift().map(h=>h.trim());
+  return rows.filter(r=>r.length>1).map(r=>Object.fromEntries(head.map((h,i)=>[h,(r[i]||"").trim()])));
 }
+const yes = v => /^(yes|y|true|1|x)$/i.test(v||"");
+const int = v => { const n=Math.round(parseFloat(v)); return n>0?n:null; };
+const fmt = n => n.toLocaleString("en-US");
+const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^(https?:\/\/|\/)[^\s"'<>]*$/i.test(u||"") ? u : "";
 
-function draw(tree){
-  T=tree; selected=null;
-  while(svg.firstChild) svg.removeChild(svg.firstChild);
-  const nr=tree.rows.length, h=ROWS[nr-1]+H+20;
-  svg.setAttribute("viewBox",`0 0 ${tree.width} ${h}`);
-  svg.style.minWidth=Math.round(tree.width*0.875)+"px";
-  svg.setAttribute("aria-label",tree.title);
-  el("circle",{cx:W/2,cy:0,r:MR-1},el("clipPath",{id:"medclip"},el("defs",{})));
-  tree.rows.forEach((t,i)=>{const tx=el("text",{x:16,y:ROWS[i]+H/2+4,class:"rowlab"});tx.textContent=t;});
-  const gl=el("g",{});
-  tree.edges.forEach(([a,b,t])=>{
-    const A=tree.nodes[a],B=tree.nodes[b];
-    if(A.r===B.r){const l=Math.min(A.x,B.x)+W/2,r=Math.max(A.x,B.x)-W/2,y=ROWS[A.r]+H/2;
-      el("path",{d:`M${l},${y} H${r}`,class:"ln"+(t==="i"?" inf":t==="f"?" fam":"")},gl);return;}
-    const x1=A.x,y1=ROWS[A.r]+H,x2=B.x,y2=ROWS[B.r]-MR,my=(y1+y2)/2;
-    el("path",{d:`M${x1},${y1} C${x1},${my} ${x2},${my} ${x2},${y2}`,class:"ln"+(t==="i"?" inf":t==="f"?" fam":"")},gl);
-  });
-  Object.entries(tree.nodes).forEach(([id,n])=>{
-    const g=el("g",{class:"node",tabindex:"0",role:"button","aria-label":n.name+", "+n.yrs,"data-id":id,transform:`translate(${n.x-W/2},${ROWS[n.r]})`});
-    el("rect",{width:W,height:H},g);
-    el("circle",{cx:W/2,cy:0,r:MR,class:"med"},g);
-    const cg=el("g",{"clip-path":"url(#medclip)"},g);
-    const ic=el("svg",{x:W/2-MR+1,y:-MR+1,width:2*MR-2,height:2*MR-2,"aria-hidden":"true"},cg);
-    el("use",{href:"#ic-"+id,width:"100%",height:"100%"},ic);
-    const nm=el("text",{x:W/2,y:38,"text-anchor":"middle",class:"nm"},g);nm.textContent=n.name;
-    const yr=el("text",{x:W/2,y:55,"text-anchor":"middle",class:"yr"},g);yr.textContent=n.yrs;
-    if(n.map) el("rect",{x:W-11,y:6,width:6,height:6,class:"mapdot"},g);
-    g.addEventListener("click",()=>select(id));
-    g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id);}});
-    n.g=g; n.t=nm;
-  });
-  fitAll();
-  buildList(tree);
-  document.getElementById("t-eyebrow").textContent=tree.eyebrow;
-  document.getElementById("t-main").textContent=tree.title;
-  document.getElementById("t-note").textContent=tree.note;
-  document.getElementById("frame").scrollLeft=0;
-  select(tree.start);
-}
-function buildList(tree){
-  const box=document.getElementById("mlist"); if(!box) return;
-  let h='<p class="mhint">Tap a name to see who trained them and who they trained.</p>';
-  tree.rows.forEach((lab,r)=>{
-    const ns=Object.entries(tree.nodes).filter(([,n])=>n.r===r).sort((a,b)=>a[1].x-b[1].x);
-    if(!ns.length) return;
-    h+=`<div class="mrow"><p class="eyebrow">${lab}</p><div class="mgrid">`+ns.map(([id,n])=>`<button type="button" class="mnode" data-id="${id}"><span class="medal" aria-hidden="true"><svg viewBox="0 0 40 40"><use href="#ic-${id}"/></svg></span><span class="mt"><b>${n.name}</b><small>${n.yrs}</small></span>${n.map?'<i class="md" aria-hidden="true"></i>':''}</button>`).join("")+`</div></div>`;
-  });
-  box.innerHTML=h;
-  box.querySelectorAll(".mnode").forEach(b=>b.addEventListener("click",()=>{select(b.dataset.id);try{document.getElementById("detail").scrollIntoView({behavior:"smooth",block:"start"});}catch(e){}}));
-}
-function fitAll(){ if(T) Object.values(T.nodes).forEach(n=>n.t&&fitName(n.t)); }
-if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fitAll);
+/* ---------- Map ---------- */
+const map = L.map("map",{zoomControl:false,attributionControl:false,minZoom:9,maxZoom:15,zoomSnap:0.5,
+  maxBounds:[[33.0,-119.4],[34.7,-117.3]],maxBoundsViscosity:0.8,preferCanvas:true}).setView([34.06,-118.33],10);
+document.getElementById("zin").onclick=()=>map.zoomIn();
+document.getElementById("zout").onclick=()=>map.zoomOut();
+function zoomClass(){const z=map.getZoom(),el=document.getElementById("map");
+  el.classList.toggle("z-far",z<10.5);el.classList.toggle("z-low",z<11.5);}
+map.on("zoomend",zoomClass);
 
-function select(id){
-  if(selected) T.nodes[selected].g.classList.remove("sel");
-  selected=id; const n=T.nodes[id]; n.g.classList.add("sel");
-  document.querySelectorAll(".mnode").forEach(b=>b.classList.toggle("sel",b.dataset.id===id));
-  const up=T.edges.filter(e=>e[1]===id).map(([a,,t,l])=>`${T.nodes[a].name} (${l||rel[t]})`).join("; ");
-  const down=T.edges.filter(e=>e[0]===id).map(([,b])=>T.nodes[b].name).join(", ");
-  const url=ARCHITECT_PAGES[id];
-  document.getElementById("detail").innerHTML=`<div class="who"><div class="who-row"><span class="medal" aria-hidden="true"><svg viewBox="0 0 40 40"><use href="#ic-${id}"/></svg></span><span class="yrs">${n.yrs}</span></div><h3 style="font-size:24px">${url?`<a href="${url}" target="_top">${n.name}</a>`:n.name}</h3>
-    ${n.map?`<span class="onmap"><i></i>Homes on our map</span>`:""}
-    ${id in ARCHITECT_PAGES?`<span class="pagelink">${url?`<a href="${url}" target="_top">Architect page</a>`:"Architect page: link to come"}</span>`:""}</div>
-    <ul>${up?`<li><b>Came from</b><span>${up}</span></li>`:""}${n.notes.map(([k,v])=>`<li><b>${k}</b><span>${v}</span></li>`).join("")}${down?`<li><b>Passed it to</b><span>${down}</span></li>`:""}</ul>`;
+/* Custom basemap drawn on canvas tiles from bundled geometry */
+const TAU=Math.PI*2;
+function merc(lon,lat){const s=Math.sin(lat*Math.PI/180);return[(lon+180)/360,0.5-Math.log((1+s)/(1-s))/(4*Math.PI)];}
+function decode(arr){const pts=new Float64Array(arr.length);let x=0,y=0;
+  for(let i=0;i<arr.length;i+=2){x+=arr[i];y+=arr[i+1];const m=merc(x/1e4,y/1e4);pts[i]=m[0];pts[i+1]=m[1];}
+  return pts;}
+function bbox(pts){let a=1,b=1,c=0,d=0;for(let i=0;i<pts.length;i+=2){const x=pts[i],y=pts[i+1];if(x<a)a=x;if(x>c)c=x;if(y<b)b=y;if(y>d)d=y;}return[a,b,c,d];}
+let BASE=null;
+function prepBase(raw){
+  const lines=k=>(raw[k]||[]).map(a=>{const p=decode(a);return{p,b:bbox(p)};});
+  const polys=k=>(raw[k]||[]).map(rings=>{const r=rings.map(decode);return{r,b:bbox(r[0])};});
+  return{ocean:polys("ocean"),green:polys("green"),water:polys("water"),motorway:lines("motorway"),primary:lines("primary"),secondary:lines("secondary")};
 }
-
-/* Tabs */
-const tabs=document.getElementById("tabs");
-TREES.forEach((t,i)=>{
-  const b=document.createElement("button");
-  b.className="tab"; b.type="button"; b.setAttribute("role","tab"); b.id="tab-"+t.id; b.textContent=t.tab;
-  b.setAttribute("aria-controls","frame");
-  b.addEventListener("click",()=>show(t.id,true));
-  b.addEventListener("keydown",e=>{
-    if(e.key!=="ArrowRight"&&e.key!=="ArrowLeft")return;
-    const k=(i+(e.key==="ArrowRight"?1:TREES.length-1))%TREES.length;
-    show(TREES[k].id,true); document.getElementById("tab-"+TREES[k].id).focus();
-  });
-  tabs.appendChild(b);
+const Base=L.GridLayer.extend({
+  createTile(c){
+    const t=document.createElement("canvas"),dpr=Math.min(window.devicePixelRatio||1,2),S=256;
+    t.width=S*dpr;t.height=S*dpr;const g=t.getContext("2d");if(!g)return t;g.scale(dpr,dpr);
+    if(!BASE)return t;
+    const z=c.z,n=Math.pow(2,z)*S,ox=c.x*S,oy=c.y*S,pad=8/n;
+    const x0=c.x*S/n-pad,y0=c.y*S/n-pad,x1=(c.x+1)*S/n+pad,y1=(c.y+1)*S/n+pad;
+    const hit=b=>!(b[2]<x0||b[0]>x1||b[3]<y0||b[1]>y1);
+    const path=p=>{g.moveTo(p[0]*n-ox,p[1]*n-oy);for(let i=2;i<p.length;i+=2)g.lineTo(p[i]*n-ox,p[i+1]*n-oy);};
+    const fill=(set,color)=>{g.beginPath();for(const f of set)if(hit(f.b))for(const r of f.r){path(r);g.closePath();}g.fillStyle=color;g.fill("evenodd");};
+    const stroke=(set,color,w)=>{g.beginPath();for(const f of set)if(hit(f.b))path(f.p);g.strokeStyle=color;g.lineWidth=w;g.stroke();};
+    g.lineJoin="round";g.lineCap="round";
+    fill(BASE.green,css("--stone-2"));
+    fill(BASE.water,css("--sea"));
+    fill(BASE.ocean,css("--sea"));
+    const k=Math.max(0,z-9);
+    if(z>=11.5)stroke(BASE.secondary,css("--road-minor"),0.6+0.45*(z-11.5));
+    if(z>=10)stroke(BASE.primary,css("--road"),0.7+0.35*k);
+    stroke(BASE.motorway,css("--road-major-edge"),1.6+0.75*k);
+    stroke(BASE.motorway,css("--road-major"),0.6+0.55*k);
+    return t;
+  }
 });
-function show(id,push){
-  const t=TREES.find(x=>x.id===id)||TREES[0];
-  TREES.forEach(x=>{const b=document.getElementById("tab-"+x.id);const on=x.id===t.id;b.setAttribute("aria-selected",on);b.tabIndex=on?0:-1;});
-  draw(t);
-  if(push){ try{history.replaceState(null,"","#"+t.id);}catch(e){} }
+const base=new Base({tileSize:256,updateWhenZooming:false,keepBuffer:4}).addTo(map);
+const labelPane=map.createPane("labels");labelPane.style.zIndex=450;labelPane.style.pointerEvents="none";
+
+/* ---------- Homes ---------- */
+let HOMES=[],markers=new Map(),cardEls=new Map();
+const state={architect:null,saleOnly:false};
+const cluster=L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:46,spiderfyDistanceMultiplier:1.6,
+  spiderLegPolylineOptions:{weight:1,color:"#141414",opacity:.35},
+  iconCreateFunction(c){const n=c.getChildCount(),s=n<10?30:n<50?36:n<150?42:48;
+    // A count box holding a for-sale home turns green, so the green follows the listing as you zoom in.
+    const sale=c.getAllChildMarkers().some(m=>m.options.home.forSale);
+    return L.divIcon({html:`<div class="cluster${sale?" has-sale":""}">${n}</div>`,className:"",iconSize:[s,s]});}});
+map.addLayer(cluster);
+
+const PIN_SVG='<svg class="p-tri" viewBox="0 0 16 8" aria-hidden="true"><path class="ring" d="M-3.86 -1.6H19.86L8 10.26Z"/><path d="M0 0H16L8 8Z"/></svg><svg class="p-block" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0 6 3.4 12 0V14H0Z"/></svg>';
+function pinIcon(h){
+  const cls=h.forSale?"sale":"";
+  const rv=REVIEW&&h.status==="Needs review"?" review":"";
+  return L.divIcon({className:"",html:`<span class="pin-wrap"><i class="pin ${cls}${rv}">${PIN_SVG}</i></span>`,iconSize:[28,28]});
 }
-show((location.hash||"").slice(1)||"wright",false);
 
-</script>
+function card(h){
+  const el=document.createElement("div");el.className="card";
+  const archUrl=h.architect!=="Unknown"?safeUrl(h.archPage):"";
+  const by=h.architect==="Unknown"?"Architect unknown":
+    archUrl?`<a href="${esc(archUrl)}" target="_top">${esc(h.architect)}</a>`:esc(h.architect);
+  const specs=[];
+  if(h.year)specs.push(["Built",String(h.year)]);
+  if(h.units>1)specs.push(["Residences",String(h.units)]);
+  else if(h.status!=="Lost"){ if(h.sqft)specs.push(["Sq ft",fmt(h.sqft)]); if(h.beds)specs.push(["Beds",String(h.beds)]); if(h.baths)specs.push(["Baths",String(h.baths)]); }
+  const listing=safeUrl(h.listing);
+  el.innerHTML=`
+    ${h.forSale?'<span class="badge">For sale</span>':""}
+    <h3>${esc(h.house)}</h3>
+    <div class="by">${by}</div>
+    <div class="where">${esc(h.area)}</div>
+    ${specs.length?`<dl>${specs.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl>`:""}
+    ${h.desig.length?`<div class="desig">${h.desig.map(d=>`<span>${esc(d)}</span>`).join("")}</div>`:""}
+    ${h.status==="Lost"?`<div class="note">${esc(h.lostNote||"Lost")}</div>`:""}
+    ${REVIEW&&h.status==="Needs review"?'<div class="flag">Status under review: details may describe a later structure.</div>':""}
+    <div class="actions">
+      ${h.status!=="Lost"?'<button class="btn solid" type="button" data-act="notify">Notify me</button>':""}
+      ${h.forSale&&listing?`<a class="btn brass" href="${esc(listing)}" target="_top">View listing</a>`:""}
+    </div>
+    <div class="foot"><a href="https://missigteam.com" target="_top">Curated by Missig Team</a></div>`;
+  const nb=el.querySelector('[data-act="notify"]');
+  if(nb)nb.onclick=e=>{e.preventDefault();e.stopPropagation();setTimeout(()=>notifyForm(el,h),0);}; // swap after the click finishes so the popup doesn't treat it as a map click
+  return el;
+}
 
-<script>
-(function(){function send(){try{parent.postMessage({mtTreeHeight:document.documentElement.scrollHeight},"*");}catch(e){}}
-window.addEventListener("load",send);window.addEventListener("resize",send);
-if(window.ResizeObserver){new ResizeObserver(send).observe(document.body);}
-document.addEventListener("click",function(){setTimeout(send,60);});send();})();
+function notifyForm(el,h){
+  const id="n"+h.id;
+  el.querySelector(".actions").outerHTML=`
+   <form class="notify" novalidate>
+     <p>Be the first to hear if ${esc(h.house)} comes to market.</p>
+     <div class="field"><label for="${id}-name">Name</label><input id="${id}-name" name="name" autocomplete="name" required></div>
+     <div class="field"><label for="${id}-email">Email</label><input id="${id}-email" name="email" type="email" autocomplete="email" required></div>
+     <div class="field"><label for="${id}-phone">Phone (optional)</label><input id="${id}-phone" name="phone" type="tel" autocomplete="tel"></div>
+     <div class="hp" aria-hidden="true"><label for="${id}-website">Website</label><input id="${id}-website" name="website" tabindex="-1" autocomplete="off"></div>
+     <div class="row"><button class="btn solid" type="submit">Notify me</button><button class="linkish" type="button" data-act="cancel">Cancel</button></div>
+     <p class="msg" aria-live="polite"></p>
+   </form>`;
+  const f=el.querySelector("form"),msg=f.querySelector(".msg");
+  const relayout=()=>{const m=markers.get(h.id),p=m&&m.getPopup();if(p&&p.isOpen()){p._updateLayout();p._updatePosition();p._adjustPan&&p._adjustPan();}}; // reflow only: update() would re-run card() and wipe the form
+  f.querySelector('[data-act="cancel"]').onclick=e=>{e.stopPropagation();const fresh=card(h);cardEls.set(h.id,fresh);el.replaceWith(fresh);relayout();};
+  relayout();f.querySelector("input").focus({preventScroll:true});
+  f.addEventListener("submit",async e=>{
+    e.preventDefault();
+    const E=f.elements,name=E.name.value.trim(),email=E.email.value.trim(),phone=E.phone.value.trim(),website=E.website.value;
+    if(!name){msg.textContent="Please add your name.";E.name.focus();return;}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg.textContent="Please enter a valid email address.";E.email.focus();return;}
+    if(!/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(CONFIG.notifyEndpoint)){msg.textContent="Preview only: this form is not connected yet, so nothing was sent.";return;}
+    const btn=f.querySelector('[type="submit"]');btn.disabled=true;msg.textContent="Sending…";
+    try{
+      await fetch(CONFIG.notifyEndpoint,{method:"POST",mode:"no-cors",body:new URLSearchParams({
+        name,email,phone,website,house:h.house,architect:h.architect,area:h.area,map_id:h.id,
+        source:"Architectural Homes Map",page:document.referrer||location.href})});
+      f.outerHTML=`<div class="done">Thank you. We’ll let you know if ${esc(h.house)} comes to market.</div>`;relayout();
+    }catch(err){btn.disabled=false;msg.textContent="That didn’t go through. Please check your connection and try again.";}
+  });
+}
+
+function visible(h){
+  if(state.architect&&h.architect!==state.architect)return false;
+  if(state.saleOnly&&!h.forSale)return false;
+  return true;
+}
+function apply(fit){
+  const list=HOMES.filter(visible);
+  cluster.clearLayers();cluster.addLayers(list.map(h=>markers.get(h.id)));
+  const res=list.reduce((a,h)=>a+h.units,0);
+  document.getElementById("count").textContent=
+    list.length?`Showing ${fmt(list.length)} ${list.length===1?"location":"locations"}${res!==list.length?`, ${fmt(res)} residences`:""}`:"No homes match these filters";
+  if(fit&&list.length){const b=L.latLngBounds(list.map(h=>[h.lat,h.lon]));
+    map.flyToBounds(b,{padding:[60,60],maxZoom:13,duration:.8,paddingTopLeft:[30,70]});}
+}
+
+/* ---------- Architect type-ahead ---------- */
+const input=document.getElementById("arch"),listEl=document.getElementById("list"),dropEl=document.getElementById("drop"),clearBtn=document.getElementById("clear");
+let ARCH=[],active=-1;
+function buildArch(){
+  const c=new Map();HOMES.forEach(h=>c.set(h.architect,(c.get(h.architect)||0)+1));
+  ARCH=[...c.entries()].sort((a,b)=>a[0]==="Unknown"?1:b[0]==="Unknown"?-1:a[0].localeCompare(b[0],"en",{sensitivity:"base"}));
+}
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+function renderList(){
+  const q=norm(input.value.trim());
+  const items=ARCH.filter(([a])=>!q||norm(a).split(/[\s.,&/-]+/).some(w=>w.startsWith(q))||norm(a).includes(q));
+  active=-1;
+  listEl.innerHTML=items.length?items.map(([a,n],i)=>`<li role="option" id="opt${i}" data-a="${esc(a)}" class="${a==="Unknown"?"unknown":""}" aria-selected="false"><span>${esc(a==="Unknown"?"Unknown architect":a)}</span><span>${n}</span></li>`).join(""):'<li class="empty">No architect by that name</li>';
+  dropEl.hidden=false;input.setAttribute("aria-expanded","true");
+}
+function closeList(){dropEl.hidden=true;input.setAttribute("aria-expanded","false");input.removeAttribute("aria-activedescendant");}
+function choose(a){
+  state.architect=a;input.value=a==="Unknown"?"Unknown architect":a;clearBtn.hidden=false;closeList();map.closePopup();apply(true);
+}
+function clearArch(){state.architect=null;input.value="";clearBtn.hidden=true;closeList();apply(false);}
+input.addEventListener("focus",renderList);
+input.addEventListener("input",()=>{if(state.architect){state.architect=null;clearBtn.hidden=!input.value;apply(false);}clearBtn.hidden=!input.value;renderList();});
+input.addEventListener("keydown",e=>{
+  const opts=[...listEl.querySelectorAll("li[data-a]")];
+  if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();if(dropEl.hidden)renderList();
+    active=(active+(e.key==="ArrowDown"?1:-1)+opts.length)%opts.length;
+    opts.forEach((o,i)=>o.setAttribute("aria-selected",i===active));
+    if(opts[active]){opts[active].scrollIntoView({block:"nearest"});input.setAttribute("aria-activedescendant",opts[active].id);}}
+  else if(e.key==="Enter"){e.preventDefault();const o=opts[active]||(opts.length===1?opts[0]:null);if(o)choose(o.dataset.a);}
+  else if(e.key==="Escape"){closeList();}
+});
+listEl.addEventListener("mousedown",e=>{const li=e.target.closest("li[data-a]");if(li){e.preventDefault();choose(li.dataset.a);}});
+document.addEventListener("mousedown",e=>{if(!e.target.closest(".search"))closeList();});
+input.addEventListener("focus",()=>{if(!panel.classList.contains("collapsed")){panel.classList.add("collapsed");tp.setAttribute("aria-expanded","false");tp.setAttribute("aria-label","More filters");}});
+clearBtn.onclick=clearArch;
+
+const saleBtn=document.getElementById("saleOnly");
+saleBtn.onclick=()=>{state.saleOnly=!state.saleOnly;saleBtn.setAttribute("aria-pressed",state.saleOnly);map.closePopup();apply(state.saleOnly);};
+const panel=document.getElementById("panel"),tp=document.getElementById("togglePanel");
+tp.onclick=()=>{const open=panel.classList.toggle("collapsed")===false;tp.setAttribute("aria-expanded",open);tp.setAttribute("aria-label",open?"Fewer filters":"More filters");if(open)closeList();};
+if(REVIEW)document.getElementById("reviewLegend").hidden=false;
+/* Pin style: CONFIG default, or #pins=outline in the address, or the preview picker */
+const pinFromHash=(location.hash.match(/pins=(triangle|outline|solid)/)||[])[1];
+function setPins(s){["triangle","outline","solid"].forEach(k=>document.body.classList.toggle("pins-"+k,k===s));
+  document.querySelectorAll("#picker [data-pin]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.pin===s));}
+setPins(pinFromHash||CONFIG.pinStyle);
+if(CONFIG.showPinPicker){const pk=document.getElementById("picker");pk.hidden=false;pk.addEventListener("click",e=>{const b=e.target.closest("[data-pin]");if(b)setPins(b.dataset.pin);});}
+
+/* ---------- Load ---------- */
+/* For-sale flags from the Sheet, if set. Any failure quietly falls back to the data file's own flags. */
+function loadSaleSheet(){
+  if(!/^https:\/\/docs\.google\.com\/spreadsheets\//.test(CONFIG.forSaleSheetCsv))return Promise.resolve(null);
+  const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),6000);
+  return fetch(CONFIG.forSaleSheetCsv,{cache:"no-store",signal:ctl.signal}).then(r=>r.ok?r.text():null).then(txt=>{
+    clearTimeout(t);if(!txt)return null;
+    const rows=parseCSV(txt);if(!rows.length||!("id" in rows[0])||!("for_sale" in rows[0]))return null;
+    return new Map(rows.map(r=>[r.id,yes(r.for_sale)]));
+  }).catch(()=>null);
+}
+Promise.all([fetch(CONFIG.dataFile).then(r=>r.text()),fetch(CONFIG.basemapFile).then(r=>r.json()),loadSaleSheet()]).then(([csv,raw,sale])=>{
+  BASE=prepBase(raw);base.redraw();
+  raw.labels.forEach(([n,lon,lat,lvl])=>{
+    L.marker([lat,lon],{pane:"labels",interactive:false,keyboard:false,
+      icon:L.divIcon({className:"",iconSize:[0,0],html:`<span class="place-label ${lvl===1?"city":"hood"}${/^(Los Angeles|Pasadena|Santa Monica|Malibu|Beverly Hills|Glendale|Long Beach)$/.test(n)?" major":""}">${esc(n)}</span>`})}).addTo(map);
+  });
+  HOMES=parseCSV(csv).map(r=>({id:r.id,house:r.house,architect:r.architect||"Unknown",area:r.area,status:r.status||"Standing",
+    forSale:yes(r.for_sale),listing:r.listing_url,archPage:r.architect_page_url,year:int(r.year),sqft:int(r.sqft),beds:int(r.beds),baths:int(r.baths),
+    units:int(r.units)||1,lat:+r.lat,lon:+r.lon,lostNote:r.lost_note,desig:(r.designation||"").split(";").map(x=>x.trim()).filter(Boolean)})).filter(h=>isFinite(h.lat)&&isFinite(h.lon)&&h.lat);
+  if(sale)HOMES.forEach(h=>{if(sale.has(h.id))h.forSale=sale.get(h.id)&&h.status!=="Lost";});
+  HOMES.forEach(h=>{
+    const m=L.marker([h.lat,h.lon],{icon:pinIcon(h),home:h,title:h.house,alt:h.house,riseOnHover:true,zIndexOffset:h.forSale?1000:0});
+    // Keep one card per home while its popup is open, so a redraw (pan, cluster refresh) keeps the form instead of resetting it.
+    m.bindPopup(()=>{let c=cardEls.get(h.id);if(!c){c=card(h);cardEls.set(h.id,c);}return c;},{maxWidth:340,minWidth:200,autoPanPaddingTopLeft:window.innerWidth>640?[360,20]:[16,16],autoPanPaddingBottomRight:[20,20],className:""});
+    m.on("popupclose",()=>setTimeout(()=>{if(!m.isPopupOpen())cardEls.delete(h.id);},500));
+    markers.set(h.id,m);
+  });
+  const forSale=HOMES.filter(h=>h.forSale).length;
+  if(!forSale){saleBtn.disabled=true;saleBtn.title="No homes are marked for sale right now";}
+  buildArch();apply(false);zoomClass();
+  document.getElementById("loading").remove();
+}).catch(()=>{document.getElementById("loading").textContent="The map data didn’t load. Please refresh the page.";});
 </script>
